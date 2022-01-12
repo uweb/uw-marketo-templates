@@ -26,9 +26,9 @@
 
     <!--colors-->
     <meta class="mktoList" id="WhiteBgColor" mktoName="Background Color" values="#ffffff,#4b2e83,#e8e3d3, #efeef4" default="#ffffff" mktoModuleScope="true" />
-    <meta class="mktoList" id="LightPurpleBgColor" mktoName="Background Color" values="#ffffff,#4b2e83,#e8e3d3,#5a5a5a,#efeef4" default="#efeef4" mktoModuleScope="true" />
-    <meta class="mktoList" id="PurpleBgColor" mktoName="Background Color" values="#ffffff,#4b2e83,#e8e3d3,#5a5a5a,#efeef4" default="#4b2e83" mktoModuleScope="true" />
-    <meta class="mktoList" id="ColBgColor" mktoName="Column Background Color" values="#ffffff,#4b2e83,#e8e3d3,#5a5a5a,#efeef4" default="#ffffff" mktoModuleScope="true" />
+    <meta class="mktoList" id="LightPurpleBgColor" mktoName="Background Color" values="#ffffff,#4b2e83,#e8e3d3,#3d3d3d,#efeef4" default="#efeef4" mktoModuleScope="true" />
+    <meta class="mktoList" id="PurpleBgColor" mktoName="Background Color" values="#ffffff,#4b2e83,#e8e3d3,#3d3d3d,#efeef4" default="#4b2e83" mktoModuleScope="true" />
+    <meta class="mktoList" id="ColBgColor" mktoName="Column Background Color" values="#ffffff,#4b2e83,#e8e3d3,#3d3d3d,#efeef4" default="#ffffff" mktoModuleScope="true" />
       
     <meta class="mktoList" id="HeadlineColor" mktoName="Headline Color" values="#ffffff,#4b2e83,#e8e3d3,#3D3D3D" default="#4b2e83" mktoModuleScope="true" />
       
@@ -200,6 +200,9 @@
 			line-height: inherit !important;
 			}
 			.textColor {color:#333333  !important;outline: none !important; text-decoration:none !important; }
+        .white-link{
+        	color: #ffffff;
+        }
 			.phone-bg{background-size:cover !important;}
 			@media only screen and (max-width: 640px){
                table.tableCollapse {width:100%!important;}
@@ -364,6 +367,7 @@
                                           </tr>
                                         </tbody>
                                       </table>
+                                      </td>
                                   </tr> 
                                  
                                   <tr> 
@@ -435,7 +439,8 @@
                                     <td height="${body_section3_btm_space}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
                                   </tr> 
                                 </tbody> 
-                              </table> </td> 
+                              </table> 
+                              </td> 
                           </tr> 
                         </tbody> 
                       </table>
@@ -454,25 +459,32 @@
                                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="${BtnAlignCenter}"> 
                                           <tbody> 
                                             <tr> 
-                                              <td bgcolor="${btnColor}" style="background-color:${btnColor};text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;color:${btnTextColor};line-height: 14px;height:40px; " valign="middle"> <a aria-label="RSVP Button Link" style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section4_URL}">${body_section4_text}</a></td> 
+                                              <td bgcolor="${btnColor}" style="background-color:${btnColor};text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;color:${btnTextColor};line-height: 14px;height:40px; " valign="middle"> 
+                                                  <a aria-label="RSVP Button Link" style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section4_URL}">${body_section4_text}</a>
+                                              </td> 
                                               <td style="display: inline-block; height: 40px;" align="center"> 
                                                 <a href="${body_section4_URL}"> 
                                                 <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> 
-                                                </a> </td> 
+                                                </a> 
+                                              </td> 
                                             </tr> 
                                           </tbody> 
                                         </table>
                                       </div>
                                     </td> 
                                   </tr> 
+                                    
                                   <tr> 
                                     <td height="${body_section4_btm_space}" style="line-height:1px;font-size:1px;">&nbsp; </td> 
                                   </tr> 
+                                    
                                 </tbody> 
-                              </table> </td> 
+                              </table> 
+                              </td> 
                           </tr> 
                         </tbody> 
                       </table>
+                        
                       <table bgcolor="${LightPurpleBgColor}" role="presentation" class="mktoModule" id="body_section5" cellpadding="0" cellspacing="0" align="center" border="0" width="100%" style="border-collapse: collapse; margin:0 auto;min-width:100%;" mktoname="2 Column - Img &amp; CTA"> 
                         <tbody> 
                           <tr> 
@@ -917,7 +929,7 @@
                             <td colspan="3"  valign="top" class="text body-copy" style="color: ${WhiteTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 22px; padding: 10px 15px 10px 15px;text-align: ${TxtAlignLeft};  vertical-align: top;"> 
                               <div class="mktoText" id="bodyCopyParagraphPurple" mktoname="Body Paragraph">
                                   <p style="font-size:14px;line-height:22px;"> Mus es eipcipit atisquis aliassimo maximpe venis ea eosae occulpari odit volum mo doloratur audition rem labo. Inverum endit est quiati diorerc hiliquam, sernatquibus sent re nait en dit is dolend anta proaser nat quibus sent, que sernatquibus sent, que poriorem sustet aut vol.
-                                <a class="text apple-link-white" href="#ADDLINK" style="color: #FFFFFF;">Need a link? Copy and paste me.</a> </p>
+                                <a class="text white-link" href="#ADDLINK" style="color: #FFFFFF;">Need a link? Copy and paste me.</a> </p>
                               </div> </td> 
                           </tr> 
                         </tbody> 
@@ -1088,11 +1100,11 @@
                         <tbody> 
                           <tr> 
                             <!--UW HOME FOOTER LINK--> 
-                            <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1.2; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerLeftLinkURL}" class="apple-link-white" style="color: #ffffff;">${footerLeftLinkText}</a> </th> 
+                            <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1.2; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerLeftLinkURL}" class="white-link" style="color: #ffffff;">${footerLeftLinkText}</a> </th> 
                             <!--DEPARTMENT HOME FOOTER LINK--> 
-                            <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerCenterLinkURL}" class="apple-link-white" target="_blank" style="color: #ffffff; ">${footerCenterLinkText}</a> </th> 
+                            <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerCenterLinkURL}" class="white-link" target="_blank" style="color: #ffffff; ">${footerCenterLinkText}</a> </th> 
                             <!--OPTIONAL FOOTER LINK--> 
-                            <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerRightLinkURL}" class="apple-link-white" style="color: #ffffff; ">${footerRightLinkText}</a> </th> 
+                            <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerRightLinkURL}" class="white-link" style="color: #ffffff; ">${footerRightLinkText}</a> </th> 
                           </tr> 
                         </tbody> 
                       </table>
@@ -1180,8 +1192,7 @@
                       <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row-purple purple-background mktoModule" id="footerAntiSpamRowP" mktoname="Anti-Spam Links - Purple" role="presentation"> 
                         <tbody> 
                           <tr> 
-                            <td align="center" valign="top" class="text" style="background-color: #4b2e83; padding: 5px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.5; text-align: center; text-transform: uppercase; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #ffffff;"> <a href="mailto:${contactUsEmail}" class="apple-link-white" style="color: #FFFFFF; ">Contact Us</a>  &nbsp;&nbsp;<span aria-hidden="true">|</span>&nbsp;&nbsp; <a href="http://www.washington.edu/online/privacy/" class="apple-link-white" style="color: #FFFFFF; 
-                                ">Privacy</a> &nbsp;&nbsp;<span aria-hidden="true">|</span>&nbsp;&nbsp;<a href="http://www.washington.edu/online/terms/" class="apple-link-white" style="color: #FFFFFF; ">Terms</a> 
+                            <td align="center" valign="top" class="text" style="background-color: #4b2e83; padding: 5px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.5; text-align: center; text-transform: uppercase; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #ffffff;"> <a href="mailto:${contactUsEmail}" class="white-link" style="color: #FFFFFF; ">Contact Us</a>  &nbsp;&nbsp;<span aria-hidden="true">|</span>&nbsp;&nbsp; <a href="http://www.washington.edu/online/privacy/" class="white-link" style="color: #FFFFFF;  ">Privacy</a> &nbsp;&nbsp;<span aria-hidden="true">|</span>&nbsp;&nbsp;<a href="http://www.washington.edu/online/terms/" class="white-link" style="color: #FFFFFF; ">Terms</a> 
                               <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]--> </td> 
                           </tr> 
                         </tbody> 
@@ -1189,7 +1200,7 @@
                       <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row-purple purple-background mktoModule" id="copyrightRowP" mktoname="Copyright &amp; Address - Purple" role="presentation"> 
                         <tbody> 
                           <tr> 
-                            <td align="center" valign="top" class="text apple-link-white" style=" background-color: #4b2e83; padding: 5px 15px 10px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.0; text-align: center; text-transform: none; color: #ffffff; -ms-text-size-adjust: none; -webkit-text-size-adjust: none;"> 
+                            <td align="center" valign="top" class="text white-link" style=" background-color: #4b2e83; padding: 5px 15px 10px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.0; text-align: center; text-transform: none; color: #ffffff; -ms-text-size-adjust: none; -webkit-text-size-adjust: none;"> 
                               <div class="mktoSnippet" id="uwFooterP" mktoName="UW Footer"  mktoDefaultSnippetId="171" style="display: inline;"></div>
                               <div class="mktoText" id="copyrightAndAddressP" mktoname="Copyright &amp; Address" style="display: inline;">
                                 Unit Name and address go here
@@ -1216,9 +1227,6 @@
                         </tr> 
                                         </tbody> 
                                       </table> 
-                                      </td> 
-          </tr> 
-        </tbody> 
-      </table> 
+                                      
   </body>
 </html>
