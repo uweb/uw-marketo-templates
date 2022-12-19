@@ -20,30 +20,30 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
         <meta class="mktoBoolean" id="showHide" mktoname="Show CTA?" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES" mktomodulescope="true" /> 
       <!-- Spacers -->
     
-    <meta class="mktoNumber" id="Top0pxSpacer" mktoName="Top Space" default="0" min="0" max="300" step="1" mktoModuleScope="true" />
+    <meta class="mktoNumber" id="Top0pxSpacer"  mktoName="Top Space" default="0" min="0" max="300" step="1" mktoModuleScope="true" />
     <meta class="mktoNumber" id="Top15pxSpacer" mktoName="Top Space" default="15" min="0" max="300" step="1" mktoModuleScope="true" />
     <meta class="mktoNumber" id="Top25pxSpacer" mktoName="Top Space" default="25" min="0" max="300" step="1" mktoModuleScope="true" />
     <meta class="mktoNumber" id="Top30pxSpacer" mktoName="Top Space" default="30" min="0" max="300" step="1" mktoModuleScope="true" />
     <meta class="mktoNumber" id="Top35pxSpacer" mktoName="Top Space" default="35" min="0" max="300" step="1" mktoModuleScope="true" />
     
-    <meta class="mktoNumber" id="Bot0pxSpacer" mktoName="Bottom Space" default="0" min="0" max="300" step="1" mktoModuleScope="true" />
+    <meta class="mktoNumber" id="Bot0pxSpacer"  mktoName="Bottom Space" default="0" min="0" max="300" step="1" mktoModuleScope="true" />
     <meta class="mktoNumber" id="Bot15pxSpacer" mktoName="Bottom Space" default="15" min="0" max="300" step="1" mktoModuleScope="true" />
     <meta class="mktoNumber" id="Bot25pxSpacer" mktoName="Bottom Space" default="25" min="0" max="300" step="1" mktoModuleScope="true" />
     <meta class="mktoNumber" id="Bot30pxSpacer" mktoName="Bottom Space" default="30" min="0" max="300" step="1" mktoModuleScope="true" />
     
-    <meta class="mktoNumber" id="Top50pxSpacer00" mktoName="Very Top/Bottom Space" default="30" min="0" max="300" step="1" mktoModuleScope="false" />
+    <meta class="mktoNumber" id="Top50pxSpacer00"  mktoName="Very Top/Bottom Space" default="30" min="0" max="300" step="1" mktoModuleScope="false" />
     <meta class="mktoNumber" id="Top50pxSpacerMob" mktoName="Mobile Hero Top Space" default="50" min="0" max="300" step="1" mktoModuleScope="false" />  
       
        <!-- Alignements -->
     
-    <meta class="mktoList" id="LogoAlignLeft" mktoName="Logo Align" values="left,center,right" default="left" mktoModuleScope="true" />
+    <meta class="mktoList" id="LogoAlignLeft"   mktoName="Logo Align" values="left,center,right" default="left" mktoModuleScope="true" />
     <meta class="mktoList" id="LogoAlignCenter" mktoName="Logo Align" values="left,center,right" default="center" mktoModuleScope="true" />
     
-    <meta class="mktoList" id="TitleAlignLeft" mktoName="Title Align" values="left,center,right" default="left" mktoModuleScope="true" />
+    <meta class="mktoList" id="TitleAlignLeft"  mktoName="Title Align" values="left,center,right" default="left" mktoModuleScope="true" />
     
     <meta class="mktoList" id="TxtAlignCenter" mktoName="Text Align" values="left,center,right" default="center" mktoModuleScope="true" />
-    <meta class="mktoList" id="TxtAlignLeft" mktoName="Text Align" values="left,center,right" default="left" mktoModuleScope="true" />
-    <meta class="mktoList" id="TxtAlignRight" mktoName="Text Align" values="left,center,right" default="right" mktoModuleScope="true" />
+    <meta class="mktoList" id="TxtAlignLeft"   mktoName="Text Align" values="left,center,right" default="left" mktoModuleScope="true" />
+    <meta class="mktoList" id="TxtAlignRight"  mktoName="Text Align" values="left,center,right" default="right" mktoModuleScope="true" />
     
     <meta class="mktoList" id="LinkAlignCenter" mktoName="Link Align" values="left,center,right" default="center" mktoModuleScope="true" />
     
@@ -130,7 +130,7 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                     text-indent: -1em; /* Normalise space between bullets and text */
                 }
             </style>
-        <![endif]--> 
+       <![endif]--> 
     <style>  
          /*import open sans from google fonts */  
            @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic);  
@@ -164,8 +164,8 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
         	-webkit-text-size-adjust:none; -ms-text-size-adjust:none;  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; margin:0!important; padding:0!important; width:100%; min-width:100%!important;
         }
             /* /\/\/\/\/\/\/ TYPOGRAPHIC STYLES /\/\/\/\/\/\/ */ 
-               p {margin:0; padding:0; margin-bottom:0;}
-        h1,h2,h3,h4,h5,h6,p {margin:0;padding:0;Margin:0;}
+               p {margin:0; Margin:0; padding:0; margin-bottom:0;}
+        h1,h2,h3,h4,h5,h6,p {margin:0;padding:0;Margin:0 !important; margin-top: 0 !important; margin-bottom: 0 !important;}
             table 
             {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;}
             a {
@@ -294,7 +294,7 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                 #bodyCell{padding:10px !important;}
             }
             
-            @media screen and (max-width:550px) {
+            @media screen and (max-width:590px) {
                 .image-column img {
                     width: 100% !important;
                 }
@@ -311,7 +311,7 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                 }
                
                  /* Added for Checkerboard */
-                .checkerboard_inner_table {width: 90% !important;}
+                .checkerboard_inner_table {width: 90% !important;text-align: center !important;margin: 0 auto !important;}
                 .checkerboard_center_align {text-align: center !important;}
                 .checkerboard_block2 {width: 100% !important; display:block !important; box-sizing:border-box;}
                 .top-pad {padding-top: 20px !important;}
@@ -372,7 +372,7 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
     <div style="display: none; font-size: 0px; line-height: 0px; max-height: 0px; max-width: 0px; width: 0px; opacity: 0; overflow: hidden"> 
     </div> 
     <!--BODY TABLE WRAPPER--> 
-    <table role="presentation" id="bodyTable" border="0" cellspacing="0" cellpadding="0" width="100%" valign="top" align="center"> 
+    <table role="presentation" id="bodyTable" border="0" cellspacing="0" cellpadding="0" width="100%" valign="top" align="center" style="background-color: #d2d2d2;" > 
       <tbody> 
         <tr> 
           <td> 
@@ -428,7 +428,7 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                 <tr> 
                                   <td align="center" valign="top" class="text newsletter-title" style="background-color: ${PurpleBgColor}; color:${WhiteHeadlineColor}; font-family:'Open Sans',Arial,sans-serif; font-size: 28px; font-weight: 400; line-height: 30px;  padding-top:${Top15pxSpacer}px; padding-bottom:${Bot15pxSpacer}px; padding-left: 15px; padding-right: 15px;"> 
                                     <div class="mktoText" id="newsTitle" mktoname="Title">
-                                        <h1 style="font-size: 28px; font-weight: 400; line-height:30px;">Newsletter Title</h1>
+                                        <h1 style="font-size: 28px; font-weight: 400; line-height:30px; margin:0;">Newsletter Title</h1>
                                     </div> 
                                   </td> 
                                 </tr> 
@@ -449,12 +449,12 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                 <tr> 
                                   <td class="text section-headline" style="background-color: ${WhiteBgColor};  color: ${PurpleHeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 26px;  padding-top:${Top15pxSpacer}px; padding-bottom:${Bot15pxSpacer}px; padding-left: 15px; padding-right: 15px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
                                     <div class="mktoText" id="sectionHeadline" mktoname="Section Headline" role="presentation" aria-level="2">
-                                        <h2 style="font-size: 24px; font-weight: 400; line-height: 26px; ">Headline for newsletter section</h2>
+                                        <h2 style="font-size: 24px; font-weight: 400; line-height: 26px;margin:0; ">Headline for newsletter section</h2>
                                     </div> </td> 
                                 </tr> 
                               </tbody> 
                             </table>
-                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="newsletterTwoColumn" mktoname="2 Column Block - Left Image"> 
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="newsletterTwoColumn" mktoname="2 Column - Left Image"> 
                               <tbody> 
                                 <tr> 
                                   <td style="padding-bottom:${Bot15pxSpacer}px;padding-top:${Top0pxSpacer}px;background-color: ${WhiteBgColor}; "> 
@@ -474,16 +474,16 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                               <tbody> 
                                                 <tr> 
-                                                  <td class="text item-head" style="color: ${PurpleHeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 22px; padding: 0 10px 3px 10px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
+                                                  <td class="text item-head" style="color: ${PurpleHeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 22px; padding: 0 15px 3px 15px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
                                                     <div class="mktoText" id="newsTwoColItemHead" mktoname="2 Column Heading" role="presentation" aria-level="2">
-                                                        <h3 style="font-size: 15px; font-weight: 700; line-height: 22px; ">Here's a two column wide text block</h3>
+                                                        <h3 style="font-size: 15px; font-weight: 700; line-height: 22px;margin:0; ">Here's a two column wide text block</h3>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td class="text body-copy item-paragraph" style="color: ${GreyTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 0 10px 3px 10px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
+                                                  <td class="text body-copy item-paragraph" style="color: ${GreyTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 0 15px 3px 15px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
                                                     <div class="mktoText" id="newsTwoColItemParagraph" mktoname="2 Column Paragraph">
-                                                      The image should be sized at 600 x 280. It will display as 300 x 140 in desktop, but full width in mobile devices 
-                                                     <a href="#ADDLINK" class="text" style="font-size: 10px; font-weight: 600; line-height: 1.5; text-transform: uppercase;">Descriptive link</a>
+                                                     <p style="font-size: 14px; line-height: 22px;margin:0;">  The image should be sized at 600 x 280. It will display as 300 x 140 in desktop, but full width in mobile devices 
+                                                         <a href="#ADDLINK" class="text" style="font-size: 10px; font-weight: 600; line-height: 1.5; text-transform: uppercase;">Descriptive link</a></p>
                                                     </div> </td> 
                                                 </tr> 
                                               </tbody> 
@@ -497,7 +497,7 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                 </tr> 
                               </tbody> 
                             </table>
-                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="newsletterTwoColumn2" mktoname="2 Column Block-Right Image"> 
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="newsletterTwoColumn2" mktoname="2 Column - Right Image"> 
                               <tbody> 
                                 <tr> 
                                   <td style="padding-bottom:${Bot15pxSpacer}px;padding-top:${Top0pxSpacer}px;background-color: ${WhiteBgColor}; "> 
@@ -511,17 +511,17 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                               <tbody> 
                                                 <tr> 
-                                                  <td class="text item-head" style="color: ${PurpleHeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 22px; padding: 0 10px 3px 10px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
+                                                  <td class="text item-head" style="color: ${PurpleHeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 22px; padding: 0 10px 3px 15px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
                                                     <div class="mktoText" id="newsTwoColItemHead1" mktoname="2 Column Heading" role="presentation" aria-level="2">
-                                                        <h3 style="font-size: 15px; font-weight: 700; line-height: 22px;">Here's a two column wide text block 2</h3>
+                                                        <h3 style="font-size: 15px; font-weight: 700; line-height: 22px;margin:0;">Here's a two column wide text block 2</h3>
                                                     </div> 
                                                   </td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td class="text body-copy item-paragraph" style="color: ${GreyTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 0 10px 3px 10px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
+                                                  <td class="text body-copy item-paragraph" style="color: ${GreyTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 0 15px 3px 15px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
                                                     <div class="mktoText" id="newsTwoColItemParagraph2" mktoname="2 Column Paragraph">
-                                                      The image should be sized at 600 x 280. It will display as 300 x 140 in desktop, but full width in mobile devices 
-                                                     <a href="#ADDLINK" class="text" style="font-size: 10px; font-weight: 600; line-height: 1.5; text-transform: uppercase;">Descriptive link</a>
+                                                      <p style="font-size: 14px; line-height: 22px;margin:0;"> The image should be sized at 600 x 280. It will display as 300 x 140 in desktop, but full width in mobile devices 
+                                                          <a href="#ADDLINK" class="text" style="font-size: 10px; font-weight: 600; line-height: 1.5; text-transform: uppercase;">Descriptive link</a></p>
                                                     </div> </td> 
                                                 </tr> 
                                               </tbody> 
@@ -544,33 +544,33 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="newsletterThreeCol" mktoname="3 Column Block"> 
                               <tbody> 
                                 <tr> 
-                                  <td style="padding: 10px 0 20px 0;background-color: ${WhiteBgColor}; "> 
+                                  <td style="padding: 0px 0 15px 0;background-color: ${WhiteBgColor}; "> 
                                     <!--3 COLUMN TABLE WRAPPER--> 
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
                                       <tbody> 
                                         <tr> 
                                           <!--COLUMN #1 WRAPPER--> 
-                                          <th align="center" class="text column-3 stack-column" style=" width: 33.33%; padding: 0; vertical-align: top;"> 
+                                          <th align="center" class="text column-3 stack-column" style=" width: 33.33%; padding-top: 0; padding-bottom: 0; padding-left: 15px; padding-right: 10px; vertical-align: top;"> 
                                             <!--COLUMN #1 CONTENT--> 
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                               <tbody> 
                                                 <tr> 
-                                                  <td align="center" style="padding-top:${Top15pxSpacer}px; padding-bottom:${Bot15pxSpacer}px; padding-left: 10px; padding-right: 10px;"> 
+                                                  <td align="center" style="padding-top:15px; padding-bottom:15px; "> 
                                                     <div class="mktoImg" id="threeColImgOne" mktoname="Column 1 - Image" mktolockimgstyle="true">
                                                       <img src="https://explore.uw.edu/rs/131-AQO-225/images/placeholder-500x500.jpg" alt="Enter a short text version of your image, for people who are unable to see it" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 1.2; text-align: left; vertical-align: middle;" />
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td align="center" class="text item-head" style="color: ${PurpleHeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 22px;  padding-top:${Top15pxSpacer}px; padding-bottom:${Bot15pxSpacer}px; padding-left: 10px; padding-right: 10px;text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
+                                                  <td align="center" class="text item-head" style="color: ${PurpleHeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 22px;  padding-top:0px; padding-bottom:15px;text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
                                                     <div class="mktoText" id="threeColHeaderOne" mktoname="Column 1 - Heading" role="presentation" aria-level="2">
                                                         <h3 style="font-size: 15px; font-weight: 700; line-height: 22px; margin: 0;">Mus es eicipit atisquis it andwugh</h3>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td align="center" class="text item-paragraph body-copy" style="color: ${GreyTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height:22px;  padding-top:${Top15pxSpacer}px; padding-bottom:${Bot15pxSpacer}px; padding-left: 10px; padding-right: 10px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
+                                                  <td align="center" class="text item-paragraph body-copy" style="color: ${GreyTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height:22px;  padding-top:10px; padding-bottom:${Bot15pxSpacer}px;  text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
                                                     <div class="mktoText" id="threeColParagraphOne" mktoname="Column 1 - Paragraph">
-                                                      The image should be sized at 500 x 500. Image displays at 175x175 on desktop but resizes in mobile view. 
-                                                     <a href="#ADDLINK" class="text" style="font-size: 10px; font-weight: 600; line-height: 1.5; text-transform: uppercase;">Descriptive link</a>
+                                                     <p style="font-size: 14px; line-height: 22px;margin:0;">  The image should be sized at 500 x 500. Image displays at 175x175 on desktop but resizes in mobile view. 
+                                                         <a href="#ADDLINK" class="text" style="font-size: 10px; font-weight: 600; line-height: 1.5; text-transform: uppercase;">Descriptive link</a></p>
                                                     </div> </td> 
                                                 </tr> 
                                               </tbody> 
@@ -578,28 +578,27 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                             <!--END COLUMN #1 CONTENT--> </th> 
                                           <!--END COLUMN #1 WRAPPER--> 
                                           <!--COLUMN #2 WRAPPER--> 
-                                          <th align="center" class="column-3 stack-column" style=" width: 33.33%; padding: 0px 0; vertical-align: top;"> 
+                                          <th align="center" class="column-3 stack-column" style=" width: 33.33%; padding-top: 0px; padding-bottom: 0;padding-left: 12px; padding-right: 13px; vertical-align: top;"> 
                                             <!--COLUMN #2 CONTENT--> 
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                               <tbody> 
                                                 <tr> 
-                                                  <td align="center" style="  padding-top:${Top15pxSpacer}px; padding-bottom:${Bot15pxSpacer}px; padding-left: 10px; padding-right: 10px;"> 
+                                                  <td align="center" style="padding-top:15px; padding-bottom:15px;"> 
                                                     <div class="mktoImg" id="threeColImgTwo" mktoname="Column 2 - Image" mktolockimgstyle="true">
-                                                      <img src="https://explore.uw.edu/rs/131-AQO-225/images/placeholder-500x500.png" alt="Enter a short text version of your image, for people who are unable to see it" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 1.2; text-align:${TxtAlignLeft}left; vertical-align: middle;" />
+                                                      <img src="https://explore.uw.edu/rs/131-AQO-225/images/placeholder-500x500.png" alt="Enter a short text version of your image, for people who are unable to see it" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 1.2; text-align:${TxtAlignLeft}; vertical-align: middle;" />
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td align="center" class="text item-head" style="color: ${PurpleHeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 22px;  padding-top:${Top15pxSpacer}px; padding-bottom:${Bot15pxSpacer}px; padding-left: 10px; padding-right: 10px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
-                                                    <div class="mktoText" id="threeColHeaderTwo" mktoname="Column 2 - Heading" role="presentation
-                                                                                                                                     " aria-level="2">
+                                                  <td align="center" class="text item-head" style="color: ${PurpleHeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 22px;  padding-top:0px; padding-bottom:15px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
+                                                    <div class="mktoText" id="threeColHeaderTwo" mktoname="Column 2 - Heading" role="presentation" aria-level="2">
                                                         <h3 style="font-size: 15px; font-weight: 700; line-height: 22px; margin: 0;">Mus es eicipit atisquis it andwugh</h3>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td align="center" class="text item-paragraph body-copy" style="color: ${GreyTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height:22px;  padding-top:${Top15pxSpacer}px; padding-bottom:${Bot15pxSpacer}px; padding-left: 10px; padding-right: 10px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
+                                                  <td align="center" class="text item-paragraph body-copy" style="color: ${GreyTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height:22px;  padding-top:10px; padding-bottom:${Bot15pxSpacer}px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
                                                     <div class="mktoText" id="threeColParagraphTwo" mktoname="Column 2 - Paragraph">
-                                                      The image should be sized at 500 x 500. Image displays at 175x175 on desktop but resizes in mobile view. 
-                                                     <a href="#ADDLINK" class="text" style="font-size: 10px; font-weight: 600; line-height: 1.5; text-transform: uppercase;">Descriptive link</a>
+                                                       <p style="font-size: 14px; line-height: 22px;margin:0;">The image should be sized at 500 x 500. Image displays at 175x175 on desktop but resizes in mobile view. 
+                                                           <a href="#ADDLINK" class="text" style="font-size: 10px; font-weight: 600; line-height: 1.5; text-transform: uppercase;">Descriptive link</a></p>
                                                     </div> </td> 
                                                 </tr> 
                                               </tbody> 
@@ -607,27 +606,27 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                             <!--END COLUMN #2 CONTENT--> </th> 
                                           <!--END COLUMN #2 WRAPPER--> 
                                           <!--COLUMN #3 WRAPPER--> 
-                                          <th align="center" class="column-3 stack-column" style=" width: 33.33%; padding: 0px 0; vertical-align: top;"> 
+                                          <th align="center" class="column-3 stack-column" style=" width: 33.33%; padding-top: 0px; padding-bottom: 0; padding-left: 10px; padding-right: 15px; vertical-align: top;"> 
                                             <!--COLUMN #3 CONTENT--> 
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                               <tbody> 
                                                 <tr> 
-                                                  <td align="center" style="  padding-top:${Top15pxSpacer}px; padding-bottom:${Bot15pxSpacer}px; padding-left: 10px; padding-right: 10px;"> 
+                                                  <td align="center" style="  padding-top:15px; padding-bottom:15px;"> 
                                                     <div class="mktoImg" id="threeColImgThree" mktoname="Column 3 - Image" mktolockimgstyle="true">
                                                       <img src="https://explore.uw.edu/rs/131-AQO-225/images/placeholder-500x500.jpg" alt="Enter a short text version of your image, for people who are unable to see it" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 1.2; text-align: left; vertical-align: middle;" />
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td align="center" class="text item-head" style="color: ${PurpleHeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 22px;  padding-top:${Top15pxSpacer}px; padding-bottom:${Bot15pxSpacer}px; padding-left: 10px; padding-right: 10px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
+                                                  <td align="center" class="text item-head" style="color: ${PurpleHeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 22px;  padding-top:0px; padding-bottom:15px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
                                                     <div class="mktoText" id="threeColHeaderThree" mktoname="Column 3 - Heading" role="presentation" aria-level="2">
                                                         <h3 style="font-size: 15px; font-weight: 700; line-height: 22px; margin: 0;">Mus es eicipit atisquis it andwugh</h3>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td align="center" class="text item-paragraph body-copy" style="color: ${GreyTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px;  padding-top:${Top15pxSpacer}px; padding-bottom:${Bot15pxSpacer}px; padding-left: 10px; padding-right: 10px; text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
+                                                  <td align="center" class="text item-paragraph body-copy" style="color: ${GreyTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px;  padding-top:10px; padding-bottom:${Bot15pxSpacer}px;text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
                                                     <div class="mktoText" id="threeColParagraphThree" mktoname="Column 3 - Paragraph">
-                                                      The image should be sized at 500 x 500. Image displays at 175x175 on desktop but resizes in mobile view. 
-                                                     <a href="#ADDLINK" class="text" style="font-size: 10px; font-weight: 600; line-height: 1.5; text-transform: uppercase;">Descriptive link</a>
+                                                       <p style="font-size: 14px; line-height: 22px;margin:0;">The image should be sized at 500 x 500. Image displays at 175x175 on desktop but resizes in mobile view. 
+                                                           <a href="#ADDLINK" class="text" style="font-size: 10px; font-weight: 600; line-height: 1.5; text-transform: uppercase;">Descriptive link</a></p>
                                                     </div> </td> 
                                                 </tr> 
                                               </tbody> 
@@ -645,7 +644,7 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                               <tbody> 
                                 <tr> 
                                   <!--CALL OUT HEAD--> 
-                                  <td class="text callout-head" style="background-color:${LightGoldBgColor}; color: ${PurpleHeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 20px; font-weight: 600; line-height: 22px;  padding-top:${Top15pxSpacer}px; padding-bottom:${Bot15pxSpacer}px; padding-left: 15px; padding-right: 15px; text-align: ${TxtAlignCenter}; text-transform: uppercase; vertical-align: middle;"> 
+                                  <td class="text callout-head" style="background-color:${LightGoldBgColor}; color: ${PurpleHeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 20px; font-weight: 600; line-height: 22px;  padding-top:${Top15pxSpacer}px; padding-bottom:15px; padding-left: 15px; padding-right: 15px; text-align: ${TxtAlignCenter}; text-transform: uppercase; vertical-align: middle;"> 
                                     <div class="mktoText" id="lightGoldHeader" mktoname="Header" role="presentation" aria-level="2">
                                         <h2 style="font-size: 20px; font-weight: 600; line-height: 22px; margin: 0;">Very Short Call Out Message</h2>
                                     </div> </td> 
@@ -653,9 +652,9 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                 </tr> 
                                 <tr> 
                                   <!--CALL OUT PARAGRAPH--> 
-                                  <td class="text callout-paragraph body-copy" style="background-color:${LightGoldBgColor}; color: ${GreyTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 0 25px 20px 15px; text-align: ${TxtAlignCenter}; vertical-align: middle;"> 
+                                  <td class="text callout-paragraph body-copy" style="background-color:${LightGoldBgColor}; color: ${GreyTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding-top: 0; padding-left: 15px; padding-right: 15px;padding-bottom:${Bot15pxSpacer}px;text-align: ${TxtAlignCenter}; vertical-align: middle;"> 
                                     <div class="mktoText" id="lightGoldParagraph" mktoname="Paragraph">
-                                      Venis ea eosae occulpari odit volum. Quiati diorerc hiliquam, sernatquibus sent, que poriorem sustet aut voluptas cium re nait en dit is doleng at thist ud anta proa.
+                                        <p style="font-size: 14px; line-height: 22px;margin:0;">Venis ea eosae occulpari odit volum. Quiati diorerc hiliquam, sernatquibus sent, que poriorem sustet aut voluptas cium re nait en dit is doleng at thist ud anta proa.</p>
                                     </div> </td> 
                                   <!--END CALL OUT PARAGRAPH--> 
                                 </tr> 
@@ -664,46 +663,46 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                             <table role="presentation" cellspacing=""border="0" cellpadding="0"  width="100%" class="mktoModule" id="newsletterFourColumnBlock" mktoname="4 Column Block"> 
                               <tbody> 
                                 <tr> 
-                                  <td style="background-color:${WhiteBgColor}; padding-top: 10px;"> 
+                                  <td style="background-color:${WhiteBgColor}; padding-top: 15px; padding-bottom: 15px; padding-left: 15px; padding-right: 15px;"> 
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
                                       <tbody> 
                                         <tr> 
                                           <!--ROW 1 - 4 COLUMN STACK WRAPPER--> 
-                                          <td align="center" class="column-2 stack-column" style=" width: 50%; vertical-align: top;"> 
+                                          <td align="center" class="column-2 stack-column" style=" width:50%; vertical-align: top;"> 
                                             <!--ROW 1 - 4 COLUMN WRAPPER--> 
                                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
                                               <tbody> 
                                                 <tr> 
                                                   <!--COLUMN #1 - 4 COLUMN--> 
-                                                  <td align="center" class="text column-4" style=" width: 25%; padding: 0 0 30px 0; vertical-align: top;"> 
+                                                  <td align="center" class="text column-4" style=" width: 25%; padding: 0 0p 0px 0px; vertical-align: top;"> 
                                                     <!--TABLE WRAPPER--> 
                                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                                       <tbody> 
                                                         <tr> 
-                                                          <td align="center" style="padding: 0 10px 0 10px;"> 
+                                                          <td align="center" style="padding: 0 0px 0 0px;"> 
                                                             <div class="mktoImg" id="fourColImgOne" mktoname="4 Column - Image 1" mktolockimgstyle="true" >
-                                                            <img src="http://explore.uw.edu/rs/131-AQO-225/images/ImagePlaceholder_130x150.jpg" alt="Enter a short text version of your image, for people who are unable to see it" width="130" style="display: block; background-color: #ffffff; max-width: 130px; height: auto; color: #444; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.2; text-align: left; vertical-align: middle;" /> 
+                                                            <img src="http://explore.uw.edu/rs/131-AQO-225/images/ImagePlaceholder_130x150.jpg" alt="Enter a short text version of your image, for people who are unable to see it" width="130" style="display: block; background-color: #ffffff; max-width: 130px; height: auto; color: #444; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; vertical-align: middle;" /> 
                                                            </div>   
                                                           </td>
                                                       </tr> 
                                                         <tr> 
                                                           <td align="center" class="text column-4-link body-copy" style="padding: 10px 10px 0 10px; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height:22px; color:${GreyTextColor};text-align: ${TxtAlignLeft}; vertical-align: middle;"> 
                                                             <div class="mktoText" id="fourColLinkOne" mktoname="4 Column - Link 1">
-                                                              Hello world 
+                                                             <p style="font-size: 14px; line-height: 22px;margin:0;">  Hello world 
                                                               <br /> 
-                                                              <a href="#ADDLINK" class="text">Atisquis maxime it andwugh</a>
+                                                                 <a href="#ADDLINK" class="text">Atisquis maxime it andwugh</a></p>
                                                               </div> </td> 
                                                         </tr> 
                                                       </tbody> 
                                                     </table> </td> 
                                                   <!--END COLUMN #1 - 4 COLUMN--> 
                                                   <!--COLUMN #2 - 4 COLUMN--> 
-                                                  <td align="center" class="text column-4" style=" width: 25%; padding: 0 0 30px 0; vertical-align: top;"> 
+                                                  <td align="center" class="text column-4" style=" width: 25%; padding: 0 0px 0px 0px; vertical-align: top;"> 
                                                     <!--TABLE WRAPPER--> 
                                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                                       <tbody> 
                                                         <tr> 
-                                                          <td align="center" style="padding: 0 10px 0 10px;"> 
+                                                          <td align="center" style="padding: 0 0px 0 0px;"> 
                                                             <div class="mktoImg" id="fourColImgTwo" mktoname="4 Column - Image 2" mktolockimgstyle="true">
                                                         
                                                             <img src="http://explore.uw.edu/rs/131-AQO-225/images/ImagePlaceholder_130x150.jpg" alt="Enter a short text version of your image, for people who are unable to see it" width="130" style="display: block; background-color: #ffffff; max-width: 130px; height: auto; color: #444; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.2; text-align: left; vertical-align: middle;" /> 
@@ -713,9 +712,9 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                                         <tr> 
                                                           <td align="center" class="text column-4-link body-copy" style="padding: 10px 10px 0 10px; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height:22px; text-align: ${TxtAlignLeft};color: ${GreyTextColor}; vertical-align: middle;"> 
                                                             <div class="mktoText" id="fourColLinkTwo" mktoname="4 Column - Link 2">
-                                                              Hello world 
+                                                             <p style="font-size: 14px; line-height: 22px;margin:0;">  Hello world 
                                                               <br /> 
-                                                              <a href="#ADDLINK" class="text">Atisquis maxime it andwugh</a>
+                                                                 <a href="#ADDLINK" class="text">Atisquis maxime it andwugh</a></p>
                                                             </div> </td> 
                                                         </tr> 
                                                       </tbody> 
@@ -733,34 +732,34 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                               <tbody> 
                                                 <tr> 
                                                   <!--COLUMN #3 - 4 COLUMN--> 
-                                                  <td align="center" class="text column-4" style=" width: 25%; padding: 0 0 30px 0; vertical-align: top;"> 
+                                                  <td align="center" class="text column-4" style=" width: 25%; padding: 0 0px 0px 0px; vertical-align: top;"> 
                                                     <!--TABLE WRAPPER--> 
                                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                                       <tbody> 
                                                         <tr> 
-                                                          <td align="center" style="padding: 0 10px 0 10px;"> 
+                                                          <td align="center" style="padding: 0 0px 0 0px;"> 
                                                              <div class="mktoImg" id="fourColImgThree" mktoname="4 Column - Image 3" mktolockimgstyle="true" >
-                                                            <img src="http://explore.uw.edu/rs/131-AQO-225/images/ImagePlaceholder_130x150.jpg" alt="Enter a short text version of your image, for people who are unable to see it" width="130" style="display: block; max-width: 130px; height: auto; color: #444444; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.2; text-align: left; vertical-align: middle;"/> 
+                                                            <img src="http://explore.uw.edu/rs/131-AQO-225/images/ImagePlaceholder_130x150.jpg" alt="Enter a short text version of your image, for people who are unable to see it" width="130" style="display: block; max-width: 130px; height: auto; color: #444444; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; vertical-align: middle;"/> 
                                                             </div>   </td> 
                                                         </tr> 
                                                         <tr> 
                                                           <td align="center" class="text column-4-link body-copy" style="padding: 10px 10px 0 10px; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: ${TxtAlignLeft};color:${GreyTextColor}; vertical-align: middle;"> 
                                                             <div class="mktoText" id="fourColLink3" mktoname="4 Column - Link 3">
-                                                              Hello world 
+                                                             <p style="font-size: 14px; line-height: 22px;margin:0;">  Hello world 
                                                               <br /> 
-                                                              <a href="#ADDLINK" class="text">Atisquis maxime it andwugh</a>
+                                                                 <a href="#ADDLINK" class="text">Atisquis maxime it andwugh</a></p>
                                                             </div> </td> 
                                                         </tr> 
                                                       </tbody> 
                                                     </table> </td> 
                                                   <!--END COLUMN #3 - 4 COLUMN--> 
                                                   <!--COLUMN #4 - 4 COLUMN--> 
-                                                  <td align="center" class="text column-4" style=" width: 25%; padding: 0 0 30px 0; vertical-align: top;"> 
+                                                  <td align="center" class="text column-4" style=" width: 25%; padding: 0 0px 0px 0; vertical-align: top;"> 
                                                     <!--TABLE WRAPPER--> 
                                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                                       <tbody> 
                                                         <tr> 
-                                                          <td align="center" style="padding: 0 10px 0 10px;"> 
+                                                          <td align="center" style="padding: 0 0px 0 0px;"> 
                                                             <div  class="mktoImg" id="fourColImgFour" mktoname="4 Column - Image 4" mktolockimgstyle="true">
                                                             <img src="http://explore.uw.edu/rs/131-AQO-225/images/ImagePlaceholder_130x150.jpg" alt="Enter a short text version of your image, for people who are unable to see it" width="130" style="display: block;  max-width: 130px; height: auto; color: #444; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.2; text-align: left; vertical-align: middle;" /> 
                                                             </div>
@@ -769,9 +768,9 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                                         <tr> 
                                                           <td align="center" class="text column-4-link body-copy" style="padding: 10px 10px 0 10px; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: ${TxtAlignLeft};color:${GreyTextColor}; vertical-align: middle;"> 
                                                             <div class="mktoText" id="fourColLinkFour" mktoname="4 Column - Link 4">
-                                                              Hello world 
+                                                              <p style="font-size: 14px; line-height: 22px;margin:0;"> Hello world 
                                                               <br /> 
-                                                              <a href="#ADDLINK" class="text">Atisquis maxime it andwugh</a>
+                                                                  <a href="#ADDLINK" class="text">Atisquis maxime it andwugh</a></p>
                                                             </div> </td> 
                                                         </tr> 
                                                       </tbody> 
@@ -819,7 +818,7 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                                 <tr> 
                                                   <td valign="top" class="text body-copy" style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: ${GreyTextColor}; font-weight: normal; text-align: ${TxtAlignLeft};"> 
                                                     <div class="mktoText" id="body4-text" mktoname="Text">
-                                                      The image should be sized at 500 x 500. Image displays at 160 x 160 on desktop but resizes in mobile view.
+                                                        <p style="font-size: 14px; line-height: 22px;margin:0;"> The image should be sized at 500 x 500. Image displays at 160 x 160 on desktop but resizes in mobile view.</p>
                                                     </div> </td> 
                                                 </tr> 
                                                      <tr> 
@@ -888,7 +887,7 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                                 <tr> 
                                                   <td valign="top" class="text body-copy" style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; color:${GreyTextColor}; font-weight: normal; text-align:${TxtAlignLeft};"> 
                                                     <div class="mktoText" id="body5-text" mktoname="Text">
-                                                      The image should be sized at 500 x 500. Image displays at 160 x 160 on desktop but resizes in mobile view.
+                                                        <p style="font-size: 14px; line-height: 22px;margin:0;">The image should be sized at 500 x 500. Image displays at 160 x 160 on desktop but resizes in mobile view.</p>
                                                     </div> </td> 
                                                 </tr> 
                                                   <tr> 
@@ -938,7 +937,7 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                 </tr> 
                               </tbody> 
                             </table>
-                            <table role="presentation"  border="0" cellspacing="0" cellpadding="0" width="100%" class="mktoModule" id="fullWidthImg" mktoname="Full Width Image" > 
+                            <table role="presentation"  border="0" cellspacing="0" cellpadding="0" width="100%" class="mktoModule" id="fullWidthImg" mktoname="Full Width Image - Max Width: 600px" > 
                               <tbody> 
                                 <tr> 
                                   <td align="center" valign="top" > 
@@ -965,8 +964,8 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                 <tr> 
                                   <td bgcolor="${WhiteBgColor}" colspan="3" class="text body-copy" style=" color: ${GreyTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: ${TxtAlignLeft}; vertical-align: top;  padding-top:${Top15pxSpacer}px; padding-bottom:${Bot15pxSpacer}px; padding-left: 15px; padding-right: 15px;"> 
                                     <div class="mktoText" id="bodyParagraph" mktoname="Paragraph">
-                                      <strong>Aliassimo maximpe venis</strong> aliassimo maximpe venis ea eosae occulpi qui archicid ut id ex etur as ex et fugiatio vereptatur, sus estius, suntiat perios doluptat ut quam eos naturiberia. 
-                                      <a class="text" href="#ADDLINK">Need a link? Copy and paste me.</a>
+                                      <p style="font-size: 14px; line-height: 22px;margin:0;"><strong>Aliassimo maximpe venis</strong> aliassimo maximpe venis ea eosae occulpi qui archicid ut id ex etur as ex et fugiatio vereptatur, sus estius, suntiat perios doluptat ut quam eos naturiberia. 
+                                          <a class="text" href="#ADDLINK">Need a link? Copy and paste me.</a></p>
                                     </div> 
                                     <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]--> </td> 
                                 </tr> 
@@ -993,7 +992,7 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="mktoModule" id="whitebkgCTAButton" mktoname="CTA Button"  > 
                               <tbody> 
                                 <tr> 
-                                  <td bgcolor="${WhiteBgColor}"   style=" padding: 20px 15px;" class="text" > 
+                                  <td bgcolor="${WhiteBgColor}"   style=" padding: 15px 15px;" class="text" > 
                                    
                                       <table  align="${BtnAlignCenter}" border="0" cellspacing="0" cellpadding="0" role="presentation"> 
                                         <tbody> 
@@ -1049,10 +1048,9 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                 <tr>
                     <td align="center" valign="top" class="text" style="font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 14px; line-height: 1.2; text-align: center; color: #3d3d3d; vertical-align: middle; padding: 10px 0 10px 0;">
                         <div class="mktoText" id="socialMediaIconsP" mktoName="Social Media Icons">
-							<a href="#ADDLINK" style="text-decoration: none;">
-								<img src="https://explore.uw.edu/rs/131-AQO-225/images/tiktok-WHITE.png" alt="tiktok" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
-							&nbsp;&nbsp;
                          <a href="#ADDLINK" style="text-decoration: none;">
+                            <img src="https://explore.uw.edu/rs/131-AQO-225/images/tiktok-WHITE.png" alt="tiktok" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
+                        &nbsp;&nbsp;<a href="#ADDLINK" style="text-decoration: none;">
                             <img src="https://explore.uw.edu/rs/131-AQO-225/images/facebook-WHITE.png" alt="Facebook" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
                         &nbsp;&nbsp;
                         <a href="#ADDLINK" style="text-decoration: none;">
@@ -1080,7 +1078,7 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                         
 
             <!--ANTI-SPAM FOOTER LINKS - PURPLE BACKGROUND-->
-            <table bgcolor="#4b2e83" border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row-purple purple-background mktoModule" id="footerAntiSpamRowP" mktoName="Required Contact &amp; Privacy Links" role="presentation">
+            <table bgcolor="#4b2e83" border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row-purple purple-background mktoModule" id="footerAntiSpamRowP" mktoName="Required Contact &amp; Privacy Links - Purple" role="presentation">
                 <tr>
                     <td align="center" valign="top" class="text" style="padding: 5px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.5; text-align: center; text-transform: uppercase; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #ffffff;">
                         <a href="mailto:${contactUsEmail}" class="mktNoTrack apple-link-white" style="color: #FFFFFF; ">Contact Us</a>
@@ -1103,11 +1101,9 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                      <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]-->
                 </tr>
             </table>
-                      
-                      
                         <!-- Start of Footer -->    
                         
-                        <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row purple-background mktoModule" id="managePreferencesLink1" mktoname="Opt-Out Footer" role="presentation"> 
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row purple-background mktoModule" id="managePreferencesLink1" mktoname="Opt-Out Footer - Purple" role="presentation"> 
                               <tbody> 
                                 <tr> 
                                   <td align="center" valign="top" class="text anti-span-row-purple" style="background-color: #4b2e83; padding: 0 15px 15px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 1.7; text-align: center; text-transform: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #ffffff;">
@@ -1135,7 +1131,7 @@ xmlns:w="urn:schemas-microsoft-com:office:word" >
                                 <tr> 
                                   <td align="center" valign="top" class="text" style="background-color: #ffffff; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 14px; line-height: 1.2; text-align: center; color: #3d3d3d; vertical-align: middle; padding: 10px 0 10px 0;"> 
                                     <div class="mktoText" id="socialMediaIcons" mktoname="Social Media Icons">
-										<a href="#ADDLINK" style="text-decoration: none;"><img src="https://explore.uw.edu/rs/131-AQO-225/images/tiktok-GREY.png" alt="tiktok" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>&nbsp;&nbsp;
+                                      <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/tiktok-GREY.png" alt="tiktok" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;" /></a> &nbsp;&nbsp; 
                                       <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/facebook-GREY.png" alt="Facebook" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;" /></a> &nbsp;&nbsp; 
                                       <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/twitter-GREY.png" alt="Twitter" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;" /></a> &nbsp;&nbsp; 
                                       <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/instagram-GREY.png" alt="Instagram" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;" /></a> &nbsp;&nbsp; 
