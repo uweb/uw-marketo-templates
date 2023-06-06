@@ -56,15 +56,17 @@
 		<meta mktoModuleScope="true" class="mktoNumber" id="Body8-top-space" mktoname="Top Space" default="40" step="1" min="0" max="100" />
 		<meta mktoModuleScope="true" class="mktoNumber" id="Body8-bottom-space" mktoname="Bottom Space" default="40" step="1" min="0" max="100" />
 		<!--Footer section -->
-		<meta class="mktoString" id="contactUsEmail" mktoName="Contact Us Email" default="ADD EMAIL" mktomodulescope="true">
+		<meta class="mktoString" id="contactUsEmail" mktoName="Contact Us Email" default="ADD EMAIL" mktomodulescope="true"/>
 		  <meta class="mktoString" id="purplebkgCTAButtonText" mktoName="Button Text" default="Add descriptive link" mktomodulescope="true">
-        <meta class="mktoString" id="purplebkgCTAButtonURL" mktoName="Button URL" default="#ADDLINK" mktomodulescope="true">
-        <meta class="mktoString" id="footerLeftLinkText" mktoName="Left Link Text" default="UW Home" mktomodulescope="true">
+        <meta class="mktoString" id="purplebkgCTAButtonURL" mktoName="Button URL" default="#ADDLINK" mktomodulescope="true"/>
+          <meta class="mktoString" id="whitebkgCTAButtonText" mktoName="Button Text" default="Add descriptive link" mktomodulescope="true">
+        <meta class="mktoString" id="whitebkgCTAButtonURL" mktoName="Button URL" default="#ADDLINK" mktomodulescope="true"/>
+        <meta class="mktoString" id="footerLeftLinkText" mktoName="Left Link Text" default="UW Home" mktomodulescope="true"/>
         <meta class="mktoString" id="footerLeftLinkURL" mktoName="Left Link URL" default="http://www.washington.edu/" mktomodulescope="true">
-        <meta class="mktoString" id="footerCenterLinkText" mktoname="Center Link Text" default="Unit Home" mktomodulescope="true">
-        <meta class="mktoString" id="footerCenterLinkURL" mktoname="Center Link URL" default="#ADDLINK" mktomodulescope="true">
-        <meta class="mktoString" id="footerRightLinkText" mktoname="Right Link Text" default="Optional Link" mktomodulescope="true">
-        <meta class="mktoString" id="footerRightLinkURL" mktoname="Right Link URL" default="#ADDLINK" mktomodulescope="true">
+        <meta class="mktoString" id="footerCenterLinkText" mktoname="Center Link Text" default="Unit Home" mktomodulescope="true"/>
+        <meta class="mktoString" id="footerCenterLinkURL" mktoname="Center Link URL" default="#ADDLINK" mktomodulescope="true"/>
+        <meta class="mktoString" id="footerRightLinkText" mktoname="Right Link Text" default="Optional Link" mktomodulescope="true"/>
+        <meta class="mktoString" id="footerRightLinkURL" mktoname="Right Link URL" default="#ADDLINK" mktomodulescope="true"/>
 		<!--Other Meta Tags--> 
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
@@ -729,7 +731,44 @@
 									</tr>
 								</table>
 								<!--Body 8 Ends-->
-								<!--Footer Begins-->
+								
+                                	<!--BODY COPY, FULL WIDTH, PURPLE BACKGROUND-->
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%" class="white-background mktoModule" id="bodyCopyWhite" mktoName="Body Paragraph - White" role="presentation">
+                            <tr>
+                                <td colspan="3" align="left" valign="top" class="body-copy text" style="background-color: #ffffff; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 20px; padding: 10px 15px 10px 15px;text-align: left;  vertical-align: top;">
+                                <div class="mktoText" id="bodyCopyParagraphwhite" mktoName="Body Paragraph">
+                                    <p style="font-size: 14px; line-height: 20px;">
+                                     Mus es eipcipit atisquis aliassimo maximpe venis ea eosae occulpari odit volum mo doloratur audition rem labo. Inverum endit est quiati diorerc hiliquam, sernatquibus sent re nait en dit is dolend anta proaser nat quibus sent, que sernatquibus sent, que poriorem sustet aut vol. 
+                                  <a href="#ADDLINK" >Add descriptive link.</a> 
+                                    </p>
+                                </div>    
+                                </td>
+                            </tr>
+                        </table>
+                        <!--END BODY COPY, FULL-WIDTH, PURPLE BACKGROUND-->
+
+                        <!--CTA BUTTON - WHITE BACKGROUND-->
+                        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="mktoModule" id="whitebkgCTAButton" mktoName="CTA Button - WHITE">
+                          <tr>
+                            <td bgcolor="#ffffff" style="padding: 20px 0;" class="text">
+                                <center>
+                              <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                <tr>
+                                  <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;"><a href="${whitebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${whitebkgCTAButtonText}</a>
+                                    </td>
+                                    <td align="center" style="display: inline-block;height:40px;">
+                                        <a href="${whitebkgCTAButtonURL}">
+                                            <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true"/>
+                                        </a>
+                                    </td>
+                                </tr>
+                              </table>
+                                </center>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--END CTA BUTTON - PURPLE BACKGROUND-->
+                                
 								<!--BODY COPY, FULL WIDTH, PURPLE BACKGROUND-->
                         <table border="0" cellspacing="0" cellpadding="0" width="100%" class="purple-background mktoModule" id="bodyCopyPurple" mktoName="Body Paragraph - Purple" role="presentation">
                             <tr>
@@ -756,7 +795,7 @@
                                     </td>
                                     <td align="center" style="display: inline-block;height:40px;">
                                         <a href="${purplebkgCTAButtonURL}">
-                                            <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true">
+                                            <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true"/>
                                         </a>
                                     </td>
                                 </tr>
@@ -1016,7 +1055,7 @@
             <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row white-background mktoModule" id="managePreferencesLink" mktoName="Opt-Out Footer" role="presentation">
                 <tr>
                     <td align="center" valign="top" class="text" style="background-color: #ffffff; padding: 0 15px 15px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 1.7; text-align: center; text-transform: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #3d3d3d;">
-                        This email was sent to <a href="mailto:{{lead.Email Address}}" class="apple-link-grey" style="color: #3d3d3d;">{{lead.Email Address}}</a><br>
+                        This email was sent to <a href="mailto:{{lead.Email Address}}" class="apple-link-grey" style="color: #3d3d3d;">{{lead.Email Address}}</a><br/>
                         <a href="https://subscribe.gifts.washington.edu/SubscriptionManagement/Email?SubscriberToken={{lead.SubscriberToken}}&ProgramID={{program.id}}" class="apple-link-grey" style="color: #3d3d3d;">Unsubscribe or change your email preferences</a>
                   <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]-->  
                   </td>
@@ -1129,7 +1168,7 @@
 						<tr>
 							  <td align="center" valign="top" class="text" style="padding: 0 15px 15px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 1.7; text-align: center; text-transform: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #ffffff;text-align:center;">
 									This email was sent to <a href="mailto:{{lead.Email Address}}" class="apple-link-white" style="color: #ffffff;">{{lead.Email Address}}</a>
-									<br>
+									<br/>
 									<a href="https://subscribe.gifts.washington.edu/SubscriptionManagement/Email?SubscriberToken={{lead.SubscriberToken}}&ProgramID={{program.id}}" class="apple-link-white" style="color: #ffffff;">Unsubscribe or change your email preferences</a>
 						   <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]-->	
                           </td>

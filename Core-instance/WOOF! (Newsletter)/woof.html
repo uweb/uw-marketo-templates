@@ -59,6 +59,8 @@
 		<meta class="mktoString" id="contactUsEmail" mktoName="Contact Us Email" default="ADD EMAIL" mktomodulescope="true" />
 		  <meta class="mktoString" id="purplebkgCTAButtonText" mktoName="Button Text" default="Call to Action" mktomodulescope="true" />
         <meta class="mktoString" id="purplebkgCTAButtonURL" mktoName="Button URL" default="#ADDLINK" mktomodulescope="true" />
+        <meta class="mktoString" id="whitebkgCTAButtonText" mktoName="Button Text" default="Call to Action" mktomodulescope="true" />
+        <meta class="mktoString" id="whitebkgCTAButtonURL" mktoName="Button URL" default="#ADDLINK" mktomodulescope="true" />
         <meta class="mktoString" id="footerLeftLinkText" mktoName="Left Link Text" default="UW Home" mktomodulescope="true" />
         <meta class="mktoString" id="footerLeftLinkURL" mktoName="Left Link URL" default="http://www.washington.edu/" mktomodulescope="true" />
         <meta class="mktoString" id="footerCenterLinkText" mktoname="Center Link Text" default="Unit Home" mktomodulescope="true" />
@@ -746,7 +748,50 @@
 									</tr>
 								</table>
 								<!--Body 8 Ends-->
-								<!--Footer Begins-->
+								
+                                
+                         <!--BODY COPY, FULL WIDTH, WHITE BACKGROUND-->
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%" class="white-background mktoModule" id="bodyCopyWhite" mktoName="Body Paragraph - White" role="presentation">
+                            <tr>
+                                <td colspan="3" align="left" valign="top" class="body-copy text" style="background-color: #ffffff; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px; padding: 10px 15px 10px 15px;text-align: left;  vertical-align: top;">
+                                <div class="mktoText" id="bodyCopyParagraphWhite" mktoName="Body Paragraph">
+                                    <p style="font-size: 14px; font-weight: normal; line-height: 22px;"> Mus es eipcipit atisquis aliassimo maximpe venis ea eosae occulpari odit volum mo doloratur audition rem labo. Inverum endit est quiati diorerc hiliquam, sernatquibus sent re nait en dit is dolend anta proaser nat quibus sent, que sernatquibus sent, que poriorem sustet aut vol. 
+                                        <a  href="#ADDLINK" >Need a link? Copy and paste me.</a> </p>
+                                </div>    
+                                </td>
+                            </tr>
+                        </table>
+                        <!--END BODY COPY, FULL-WIDTH, WHITE BACKGROUND-->
+                                
+                         <!--CTA BUTTON - WHITE BACKGROUND-->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mktoModule" id="whitebkgCTAButton" mktoName="CTA Button - White">
+                          <tr>
+                            <td bgcolor="#ffffff" style="padding: 20px;" class="text">
+                              
+                                  <div class="mktoText" mktoName="CTA - White Background" id="cta3">
+                                  <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                    <tr>
+                                      <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
+                                        <a href="${whitebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">
+                                          ${whitebkgCTAButtonText}
+                                        </a>
+                                        </td>
+                                        <td align="center" style="display: inline-block;height:40px;">
+                                            <a href="${whitebkgCTAButtonURL}">
+                                                <img style="display: block;" src="http://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                  </table>
+                                  </div>
+                              
+                            </td>
+                          </tr>
+                        </table>
+                        <!--END CTA BUTTON - WHITE BACKGROUND-->
+                                
+                                
+                                
 								<!--BODY COPY, FULL WIDTH, PURPLE BACKGROUND-->
                         <table border="0" cellspacing="0" cellpadding="0" width="100%" class="purple-background mktoModule" id="bodyCopyPurple" mktoName="Body Paragraph - Purple" role="presentation">
                             <tr>
@@ -765,7 +810,7 @@
                           <tr>
                             <td bgcolor="#4b2e83" style="padding: 20px;" class="text">
                               
-                                  <div class="mktoText" mktoName="CTA - Purple Background" id="cta3">
+                                  <div class="mktoText" mktoName="CTA - Purple Background" id="cta-white">
                                   <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                                     <tr>
                                       <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
