@@ -36,6 +36,8 @@
     <meta mktomodulescope="true" class="mktoNumber" id="body_section2_btm_space" mktoname="Bottom Space" default="30" step="1" min="0" max="60" /> 
     <meta mktomodulescope="true" class="mktoString" mktoname="Button URL" id="body_section2button_url" default="#" /> 
     <meta mktomodulescope="true" class="mktoString" mktoname="Button Text" id="body_section2button_Text" default="Read More" /> 
+    <meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="false" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
+
     <!--Body1 Variables--> 
     <meta mktomodulescope="true" class="mktoNumber" id="Body1-left-top-space" mktoname="Left Top Space" default="20" step="1" min="0" max="50" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="Body1-left-bottom-space" mktoname="Left Bottom Space" default="20" step="1" min="0" max="50" /> 
@@ -766,8 +768,8 @@
                                                         <tbody> 
                                                           <tr> 
                                                             <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 14px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; line-height: 14px;max-width: 300px; padding: 0 15px;"> 
-                                                              <a href="#ADDLINK" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">Call to Action</a> </td> 
-                                                            <td align="center" style="display: inline-block; height: 40px;"> <a href="{body_section2button_url}"> 
+                                                              <a href="#ADDLINK" target="_blank" class="${noTrack}" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">Call to Action</a> </td> 
+                                                            <td align="center" style="display: inline-block; height: 40px;"> <a class="${noTrack}" href="{body_section2button_url}"> 
                                                               <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/ArrowCap-gold.png" alt="" aria-hidden="true" /> </a> </td> 
                                                           </tr> 
                                                         </tbody> 

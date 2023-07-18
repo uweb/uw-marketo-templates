@@ -44,6 +44,8 @@
 		<meta mktoModuleScope="true" class="mktoString" mktoName="Col-2 Button Text" id="body_section3_col2_text_btn" default="RSVP">
 		<meta mktoModuleScope="true" class="mktoString" mktoName="Col-3 Button URL" id="body_section3_col3_URL_btn" default="#">
 		<meta mktoModuleScope="true" class="mktoString" mktoName="Col-3 Button Text" id="body_section3_col3_text_btn" default="RSVP">
+      		<meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="false" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
+
 		<!--body section4 -->
 		<meta mktoModuleScope="true" class="mktoNumber" id="body_section4_top_space" mktoname="Top Space" default="20" step="1" min="0" max="60" />
 		<meta mktoModuleScope="true" class="mktoNumber" id="body_section4_btm_space" mktoname="Bottom Space" default="30" step="1" min="0" max="60" />
@@ -450,10 +452,10 @@
 																									<tbody>
 																										<tr>
 																											<td bgcolor="#4b2e83" style="background-color:#4b2e83; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 10px;height: 40px;line-height:20px;color:#ffffff;" valign="middle">
-																												<a aria-label="Presentation Column1 Button" style="text-decoration:none;color:#ffffff; outline:none;" href="${body_section3_col1_URL_btn}">Click to Change</a>
+																												<a class="${noTrack}" aria-label="Presentation Column1 Button" style="text-decoration:none;color:#ffffff; outline:none;" href="${body_section3_col1_URL_btn}">Click to Change</a>
 																											</td>
                                                                                                            <td align="center" style="display:inline-block; height: 40px;">
-                                                                                                             <a href="${body_section3_col1_URL_btn}"> 
+                                                                                                             <a  class="${noTrack}" href="${body_section3_col1_URL_btn}"> 
                                                                                                                <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/ArrowCap-purple.png" alt="" aria-hidden="true"> </a> </td>
 																										</tr>
 																									</tbody>
@@ -512,10 +514,10 @@
 																									<tbody>
 																										<tr>
 																											<td bgcolor="#4b2e83" style="background-color:#4b2e83; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 10px;height: 40px;line-height:20px;color:#ffffff" valign="middle">
-																												<a aria-label="Presentation Column2 Button" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${body_section3_col2_URL_btn}">Click to Change</a>
+																												<a class="${noTrack}" aria-label="Presentation Column2 Button" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${body_section3_col2_URL_btn}">Click to Change</a>
 																											</td>
                                                                                                           <td align="center" style="display:inline-block; height: 40px;"> 
-                                                                                                            <a href="${body_section3_col2_URL_btn}"> 
+                                                                                                            <a class="${noTrack}" href="${body_section3_col2_URL_btn}"> 
                                                                                                               <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/ArrowCap-purple.png" alt="" aria-hidden="true"> </a> </td>
 																										</tr>
 																									</tbody>
@@ -574,10 +576,10 @@
 																									<tbody>
 																										<tr>
 																											<td bgcolor="#4b2e83" style="background-color:#4b2e83; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 10px;line-height:20px;height: 40px;color:#ffffff" valign="middle">
-                                                                                                                  <a aria-label="Presentation Column3 Button" style="color:#ffffff; outline:none;text-decoration:none;" href="${body_section3_col3_URL_btn}">Click to Change</a>
+                                                                                                                  <a class="${noTrack}" aria-label="Presentation Column3 Button" style="color:#ffffff; outline:none;text-decoration:none;" href="${body_section3_col3_URL_btn}">Click to Change</a>
 																											</td>
                                                                                                           <td align="center" style="display:inline-block; height: 40px;"> 
-                                                                                                            <a href="${body_section3_col3_URL_btn}">
+                                                                                                            <a class="${noTrack}" href="${body_section3_col3_URL_btn}">
                                                                                                               <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/ArrowCap-purple.png" alt="" aria-hidden="true"> </a> </td>
 																										</tr>
 																									</tbody>

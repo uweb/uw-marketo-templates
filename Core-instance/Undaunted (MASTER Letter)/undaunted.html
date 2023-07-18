@@ -4,6 +4,8 @@
     <head>
         <title>University of Washington</title>
         <!--START OF MARKETO VARIABLES-->
+		<meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="false" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
+
         <meta class="mktoString" id="whitebkgCTAButtonText" mktoName="Button Text" default="Call to Action" mktomodulescope="true"/>
         <meta class="mktoString" id="whitebkgCTAButtonURL" mktoName="Button URL" default="#ADDLINK" mktomodulescope="true"/>
         <meta class="mktoString" id="purplebkgCTAButtonText" mktoName="Button Text" default="Call to Action" mktomodulescope="true"/>
@@ -464,10 +466,10 @@
                               <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                                 <tr>
                                   <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: bold; height: 40px; max-width: 300px; padding: 0 15px;">
-                                    <a href="${whitebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${whitebkgCTAButtonText}</a>
+                                    <a class="${mktNoTrack}" href="${whitebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${whitebkgCTAButtonText}</a>
                                     </td>
                                     <td align="center">
-                                        <a href="${whitebkgCTAButtonURL}">
+                                        <a class="${mktNoTrack}" href="${whitebkgCTAButtonURL}">
                                             <img style="display: block;" src="http://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true"/>
                                         </a>
                                     </td>
@@ -499,10 +501,10 @@
                               <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                                 <tr>
                                   <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: bold; height: 40px; max-width: 300px; padding: 0 15px;">
-                                    <a href="${purplebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${purplebkgCTAButtonText}</a>
+                                    <a class="${mktNoTrack}" href="${purplebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${purplebkgCTAButtonText}</a>
                                     </td>
                                     <td align="center">
-                                        <a href="${purplebkgCTAButtonURL}">
+                                        <a class="${mktNoTrack}" href="${purplebkgCTAButtonURL}">
                                            <img style="display: block;" src="http://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true"/>
                                         </a>
                                     </td>

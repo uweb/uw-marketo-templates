@@ -25,6 +25,8 @@ xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:offic
     <meta class="mktoString" id="BtnLabel" mktoName="Button Label" default="CTA BUTTON" mktoModuleScope="true" />
      <meta class="mktoList" id="BtnAlignLeft" mktoName="Button Align " values="left,center,right" default="left" mktoModuleScope="true" />
     <meta class="mktoList" id="BtnAlignCenter" mktoName="Button Align" values="left,center,right" default="center" mktoModuleScope="true" />
+  	<meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="false" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
+
     
     
     <!--spacers -->
@@ -311,9 +313,9 @@ xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:offic
 																<tbody>
 																	<tr>
 																		<td bgcolor="${BtnColor}" style="text-align: center; font-size: 14px; font-family:'Open Sans', Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;height:40px;font-weight:bold;line-height:20px;" valign="middle">
-																			<a aria-label="Banner2 Button" style="text-decoration: none; outline:none;color:${WhiteBtnLabelColor}" href="${body_section10_URL}">${body_section10_text}</a>
+																			<a class="${noTrack}" aria-label="Banner2 Button" style="text-decoration: none; outline:none;color:${WhiteBtnLabelColor}" href="${body_section10_URL}">${body_section10_text}</a>
 																		</td>
-                                                                      <td style="display: inline-block; height: 40px;" align="center"> <a href="${body_section10_URL}"> 
+                                                                      <td style="display: inline-block; height: 40px;" align="center"> <a class="${noTrack}" href="${body_section10_URL}"> 
                                                                         <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true"> </a> 
                                                                       </td>
 																	</tr>
@@ -383,10 +385,10 @@ xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:offic
 																											<tbody>
 																												<tr>
 																													<td bgcolor="${BtnColor}" style=" text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,  sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;line-height:20px;" valign="middle">
-																														<a aria-label="Presentation" style="text-decoration: none; outline:none;color:${WhiteBtnLabelColor};" href="${body_section4_URL}">${body_section4_text}</a>
+																														<a class="${noTrack}" aria-label="Presentation" style="text-decoration: none; outline:none;color:${WhiteBtnLabelColor};" href="${body_section4_URL}">${body_section4_text}</a>
 																													</td>
                                                                                                                   <td style="display: inline-block; height: 40px;" align="center"> 
-                                                                                                                    <a href="${body_section4_URL}">
+                                                                                                                    <a class="${noTrack}" href="${body_section4_URL}">
                                                                                                                       <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true"> </a> </td>
 																												</tr>
 																											</tbody>
@@ -540,11 +542,11 @@ xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:offic
 																											<tbody>
 																												<tr>
 																													<td bgcolor="${BtnColor}" style="text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,  sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;line-height:20px;" valign="middle">
-																														<a aria-label="Product Presentation Button1" style="text-decoration: none;  outline:none;color:${WhiteBtnLabelColor};" href="${body_section7_URL}">${body_section7_text}
+																														<a class="${noTrack}" aria-label="Product Presentation Button1" style="text-decoration: none;  outline:none;color:${WhiteBtnLabelColor};" href="${body_section7_URL}">${body_section7_text}
                                                                                                                       </a>
 																													</td>
                                                                                                                   <td style="display: inline-block; height: 40px;" align="center">
-                                                                                                                    <a href="${body_section7_URL}"> 
+                                                                                                                    <a class="${noTrack}" href="${body_section7_URL}"> 
                                                                                                                       <img style="display: block;"  src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true"> 
                                                                                                                     </a> 
                                                                                                                   </td>

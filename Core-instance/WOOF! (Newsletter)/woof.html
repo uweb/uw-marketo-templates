@@ -16,7 +16,8 @@
       	<meta class="mktoList" id="overlayHeadColor" mktoname="HeadlineColor" values="#ffffff,#4b2e83,#b7a57a,#85754d,#e8e3d3" mktomodulescope="true" /> 
         <meta class="mktoList" id="overlayTextColor" mktoname="Text Color" values="#ffffff,#4b2e83,#b7a57a,#85754d,#e8e3d3" mktomodulescope="true" /> 
         <meta class="mktoList" id="overlayBarColor" mktoname="Bar Color" values="#ffffff,#4b2e83,#b7a57a,#85754d,#e8e3d3" mktomodulescope="true" />
-      
+		<meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="false" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
+
        <meta class="mktoList" id="leftImgBg" mktoname="Left Image Background Color" values="#4b2e83,#ffffff,#b7a57a,#85754d,#e8e3d3" mktomodulescope="true" />
        <meta class="mktoList" id="rightImgBg" mktoname="Bar Color" values="#4b2e83,#ffffff,#b7a57a,#85754d,#e8e3d3" mktomodulescope="true" />
       
@@ -311,9 +312,9 @@
 																							<tbody>
 																								<tr>
 																									<td style="background-color:${btnPurpleColor}; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; mso-line-height-rule: exactly; line-height: 14px; text-align: center; vertical-align: middle;  font-weight:bold;padding:10px 20px; text-transform:uppercase;text-decoration: none;" valign="middle">
-																										<a aria-label="Banner Button Link" style="text-decoration: none; color: ${btnWhiteTextColor}; font-family:'Open Sans', Arial, Helvetica, sans-serif; outline: none;" href="${BannerbtnUrl}">${Banner-btntext}</a>
+																										<a class="${noTrack}" aria-label="Banner Button Link" style="text-decoration: none; color: ${btnWhiteTextColor}; font-family:'Open Sans', Arial, Helvetica, sans-serif; outline: none;" href="${BannerbtnUrl}">${Banner-btntext}</a>
 																									</td>
-                                                                                                  <td align="center"> <a href="${BannerbtnUrl}"> 
+                                                                                                  <td align="center"> <a class="${noTrack}"  href="${BannerbtnUrl}"> 
                                                                                                     <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td> 
 																								</tr>
 																							</tbody>
@@ -725,11 +726,12 @@
 																<tbody>
 																	<tr>
                                                                         <td style="background-color:${btnPurpleColor}; color: ${btnWhiteTextColor};font-family:'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; mso-line-height-rule: exactly; line-height: 14px; text-align: center; vertical-align: middle;  padding:0 20px;font-weight:bold;text-transform:uppercase;" valign="middle">
-																			<a aria-label="Presentation Button" style="text-decoration: none; color: ${btnWhiteTextColor};font-family:'Open Sans', Arial, Helvetica, sans-serif; outline: none;" href="${Body8btnUrl}">
+																			<a  class="${noTrack}"  aria-label="Presentation Button" style="text-decoration: none; color: ${btnWhiteTextColor};font-family:'Open Sans', Arial, Helvetica, sans-serif; outline: none;" href="${Body8btnUrl}">
                                                                               ${Body8-btntext}
                                                                           </a>
 																		</td>
-                                                                         <td align="center" style="display: inline-block;height: 40px; text-decoration: none;"> <a href="${Body8btnUrl}"> 
+                                                                         <td align="center" style="display: inline-block;height: 40px; text-decoration: none;"> 
+																			<a  class="${noTrack}" href="${Body8btnUrl}"> 
                                                                            <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> 
                                                                            </a> 
                                                                       </td> 
