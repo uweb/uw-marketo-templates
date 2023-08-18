@@ -7,6 +7,16 @@
 		<!--[if !mso]><!-->
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet" type="text/css" /> 
         <!--<![endif]-->
+        <meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="false" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
+
+           <!-- cta section -->
+        <meta class="mktoList" id="BtnBgColor" mktoname="Background Color" values="#ffffff,#4b2e83,#e8e3d3,#d9d9d9" default="#4b2e83" mktomodulescope="true" /> 
+ <meta class="mktoList" id="BtnAlignCenter" mktoName="Text Align" values="left,center,right" default="center" mktoModuleScope="true" />
+    <meta class="mktoList" id="ctaArrow" mktoname="Arrow Color" values="purple,tan,gold" default="gold" mktomodulescope="true" /> 
+    <meta class="mktoList" id="BtnColor" mktoname="Button Color" values="#4b2e83,#ffffff,#b7a57a,#e8e3d3" default="#e8e3d3" mktomodulescope="true" /> 
+    <meta class="mktoString" id="BtnLabel" mktoname="Button Label" default="Descriptive Link" mktomodulescope="true" /> 
+    <meta class="mktoList" id="BtnLabelColor" mktoname="Button Label Color" values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3d3d3d" default="#3d3d3d" mktomodulescope="true" /> 
+    <meta class="mktoString" id="BtnLink" mktoname="Button Link" default="#" mktomodulescope="true" />    
         <!--body section1-->
 		<meta mktoModuleScope="true" class="mktoString" id="body_section1_bg_image" mktoname="Background Image" default="https://explore.uw.edu/rs/131-AQO-225/images/Marketo-Template-images600x500-px.png"  />
 		<meta mktoModuleScope="true" class="mktoNumber" id="body_section1_top_space" mktoname="Top Space" default="50" step="1" min="0" max="400" />
@@ -21,12 +31,12 @@
 		<!--body section3 -->
 		<meta mktoModuleScope="true" class="mktoNumber" id="body_section3_top_space" mktoname="Top Space" default="30" step="1" min="0" max="60" />
 		<meta mktoModuleScope="true" class="mktoNumber" id="body_section3_btm_space" mktoname="Bottom Space" default="20" step="1" min="0" max="60" />
-		<meta mktoModuleScope="true" class="mktoString" mktoName="Col-1 Button URL" id="body_section3_col1_URL_btn" default="#">
-		<meta mktoModuleScope="true" class="mktoString" mktoName="Col-1 Button Text" id="body_section3_col1_text_btn" default="Add descriptive link">
+		<meta mktoModuleScope="true" class="mktoString" mktoName="Col-1 Button URL" id="body_section3_col1_URL_btn" default="#"/>
+		<meta mktoModuleScope="true" class="mktoString" mktoName="Col-1 Button Text" id="body_section3_col1_text_btn" default="Add descriptive link"/>
 		<meta mktoModuleScope="true" class="mktoString" mktoName="Col-2 Button URL" id="body_section3_col2_URL_btn" default="#">
-		<meta mktoModuleScope="true" class="mktoString" mktoName="Col-2 Button Text" id="body_section3_col2_text_btn" default="Add descriptive link">
+		<meta mktoModuleScope="true" class="mktoString" mktoName="Col-2 Button Text" id="body_section3_col2_text_btn" default="Add descriptive link"/>
 		<meta mktoModuleScope="true" class="mktoString" mktoName="Col-3 Button URL" id="body_section3_col3_URL_btn" default="#">
-		<meta mktoModuleScope="true" class="mktoString" mktoName="Col-3 Button Text" id="body_section3_col3_text_btn" default="Add descriptive link">
+		<meta mktoModuleScope="true" class="mktoString" mktoName="Col-3 Button Text" id="body_section3_col3_text_btn" default="Add descriptive link"/>
 		<!--body section4 -->
 		<meta mktoModuleScope="true" class="mktoNumber" id="body_section4_top_space" mktoname="Top Space" default="20" step="1" min="0" max="60" />
 		<meta mktoModuleScope="true" class="mktoNumber" id="body_section4_btm_space" mktoname="Bottom Space" default="30" step="1" min="0" max="60" />
@@ -265,9 +275,9 @@
 																					<tbody>
 																						<tr>
 																						 <td bgcolor="#4b2e83" style="background-color:#4b2e83; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica, sans-serif;text-decoration: none; border-radius:0px;padding:0 15px;font-weight:bold;line-height:14px;color:#ffffff;" valign="middle">
-                                                                                           <a aria-label="Banner Button Link" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${hero_button_url}">${hero_button_text}</a></td>
-                                                                                          <td align="center" style="display:inline-block; height: 40px;"> <a href="${hero_button_url}">
-                                                                                            <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true"> </a> </td>
+                                                                                           <a  class="${noTrack}" aria-label="Banner Button Link" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${hero_button_url}">${hero_button_text}</a></td>
+                                                                                          <td align="center" style="display:inline-block; height: 40px;"> <a  class="${noTrack}" href="${hero_button_url}">
+                                                                                            <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true"/> </a> </td>
 																						</tr>
 																					</tbody>
 																				</table>
@@ -346,7 +356,7 @@
                                                                                               </td>
                                                                                               <td align="center" style="display:inline-block; height: 40px;"> 
                                                                                                 <a href="${body_section2button_url}">
-                                                                                                  <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-gold.png" alt="" aria-hidden="true"> </a> </td>
+                                                                                                  <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-gold.png" alt="" aria-hidden="true"/> </a> </td>
 																							</tr>
 																						</tbody>
 																					</table>
@@ -425,10 +435,10 @@
 																									<tbody>
 																										<tr>
 																											<td bgcolor="#4b2e83" style="background-color:#4b2e83; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;height: 40px;font-weight:bold;line-height:20px;color:#ffffff;" valign="middle">
-																												<a aria-label="Presentation Column1 Button" style="text-decoration:none;color:#ffffff; outline:none;" href="${body_section3_col1_URL_btn}">Descriptive link</a>
+																												<a  class="${noTrack}" aria-label="Presentation Column1 Button" style="text-decoration:none;color:#ffffff; outline:none;" href="${body_section3_col1_URL_btn}">Descriptive link</a>
 																											</td>
                                                                                                            <td align="center" style="display:inline-block; height: 40px;">
-                                                                                                             <a href="${body_section3_col1_URL_btn}"> <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true"> </a> </td>
+                                                                                                             <a  class="${noTrack}" href="${body_section3_col1_URL_btn}"> <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true"/> </a> </td>
 																										</tr>
 																									</tbody>
 																								</table>
@@ -486,9 +496,9 @@
 																									<tbody>
 																										<tr>
 																											<td bgcolor="#4b2e83" style="background-color:#4b2e83; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;height: 40px;font-weight:bold;line-height:20px;color:#ffffff" valign="middle">
-																												<a aria-label="Presentation Column2 Button" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${body_section3_col2_URL_btn}">Descriptive link</a>
+																												<a class="${noTrack}"  aria-label="Presentation Column2 Button" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${body_section3_col2_URL_btn}">Descriptive link</a>
 																											</td>
-                                                                                                          <td align="center" style="display:inline-block; height: 40px;"> <a href="${body_section3_col2_URL_btn}"> <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true"> </a> </td>
+                                                                                                          <td align="center" style="display:inline-block; height: 40px;"> <a  class="${noTrack}" href="${body_section3_col2_URL_btn}"> <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true"/> </a> </td>
 																										</tr>
 																									</tbody>
 																								</table>
@@ -546,11 +556,11 @@
 																									<tbody>
 																										<tr>
 																											<td bgcolor="#4b2e83" style="background-color:#4b2e83; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;line-height:20px;height: 40px;color:#ffffff" valign="middle">
-                                                                                                                  <a aria-label="Presentation Column3 Button" style="color:#ffffff; outline:none;text-decoration:none;" href="${body_section3_col3_URL_btn}">Descriptive link</a>
+                                                                                                                  <a  class="${noTrack}" aria-label="Presentation Column3 Button" style="color:#ffffff; outline:none;text-decoration:none;" href="${body_section3_col3_URL_btn}">Descriptive link</a>
 																											</td>
                                                                                                           <td align="center" style="display:inline-block; height: 40px;"> 
-                                                                                                            <a href="${body_section3_col3_URL_btn}">
-                                                                                                              <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true"> </a> </td>
+                                                                                                            <a  class="${noTrack}" href="${body_section3_col3_URL_btn}">
+                                                                                                              <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true"/> </a> </td>
 																										</tr>
 																									</tbody>
 																								</table>
@@ -610,7 +620,7 @@
 												<tr>
 													<td>
 														<div class="mktoImg" id="body_section4_image" mktoname="Image">
-															<img align="absbottom" class="full-width" src="https://we.explore.uw.edu/rs/527-AHR-265/images/denny-hall-600x320.jpeg" alt=" Banner Image"  width="600" border="0">
+															<img align="absbottom" class="full-width" src="https://we.explore.uw.edu/rs/527-AHR-265/images/denny-hall-600x320.jpeg" alt=" Banner Image"  width="600" border="0"/>
 														</div>
 													</td>
 												</tr>
@@ -620,65 +630,7 @@
 									</tr>
 								</table>
 								<!--body section5 ends here-->
-								<!--body section6 starts here-->
-								<table role="presentation" class="mktoModule" id="body_section6" cellpadding="0" cellspacing="0" align="center" border="0" width="100%" style="border-collapse: collapse; margin:0 auto;min-width:100%;" mktoname="Text - Centered - Grey">
-									<tr>
-										<td bgcolor="#efeef4" style="background-color:#efeef4;">
-											<table role="presentation" align="center" style="margin:0 auto;width:560px;" class="inner_table" width="560" cellpadding="0" cellspacing="0" >
-												<tr>
-													<td height="${body_section6_top_space}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-												</tr>
-												<tr>
-													<td valign="top" style="font-family:'Open Sans',arial,sans-serif,helvetica;font-size:14px;font-weight:normal;line-height:20px;color:#3d3d3d;vertical-align:top;text-align:center;text-transform:normal;">
-														<div class="mktoText" id="body_section6_content" mktoname="Text">
-															<p style="font-size:14px;font-weight:normal;line-height:20px;">The research raises the hope that someday it may be</p>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td height="${body_section6_btm_space}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-								<!--body section6 ends here-->
-								<!--body section7 starts here-->
-								<table role="presentation" class="mktoModule" id="body_section7" cellpadding="0" cellspacing="0" align="center" border="0" width="100%" style="border-collapse: collapse; margin:0 auto;min-width:100%;" mktoname="CTA Button - Grey">
-									<tbody>
-										<tr>
-											<td bgcolor="#efeef4" style="background-color:#efeef4;">
-												<table role="presentation" align="center" style="margin:0 auto;width:560px;" class="inner_table" width="560" cellpadding="0" cellspacing="0">
-													<tbody>
-														<tr>
-															<td height="${body_section7_top_space}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-														</tr>
-														<tr>
-															<td align="center" valign="top">
-																<div class="mktoText" id="body_section7_btn" mktoname="CTA Button">
-																	<table role="presentation" cellpadding="0" cellspacing="0" border="0">
-																		<tbody>
-																			<tr>
-																				<td bgcolor="#4b2e83" style="background-color:#4b2e83;text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;height: 40px;padding:0px 20px;font-weight:bold;line-height:20px;" valign="middle">
-																					<a aria-label="Research Button Link" style="text-decoration: none; color:#FFFFFF; outline:none;text-decoration:none;" href="${body_section2button_url}">${body_section2button_Text}</a>
-																				</td>
-                                                                              <td align="center" style="display:inline-block; height: 40px;"> <a href="${body_section2button_url}"> <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true"> </a> </td>
-																			</tr>
-																		</tbody>
-																	</table>
-																</div>
-															</td>
-														</tr>
-														<tr>
-															<td height="${body_section7_btm_space}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-														</tr>
-													</tbody>
-												</table>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-								<!--body section7 ends here-->
+							
 								<!--body section8 starts here-->
 								<table role="presentation" class="mktoModule" id="body_section8" cellpadding="0" cellspacing="0" align="center" border="0" width="100%" style="border-collapse: collapse; margin:0 auto;min-width:100%;" mktoname="Section Heading">
 									<tbody>
@@ -723,7 +675,7 @@
 																		<tr>
 																			<td class="res center_align" valign="top" width="265" style="width:265px;vertical-align:top;line-height:1px;">
 																				<div class="mktoImg" id="body_section9_left_image" mktoname="Left Image - 265x380">
-																					<img  src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images265x380-px.png" alt="Gallery Image1"  width="265" border="0">
+																					<img  src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images265x380-px.png" alt="Gallery Image1"  width="265" border="0"/>
 																				</div>
 																			</td>
 																			<td width="30" class="res iphoneSpace" style="line-height:1px;font-size:1px;">&nbsp;</td>
@@ -733,7 +685,7 @@
 																						<tr>
 																							<td class="center_align" valign="top" style="vertical-align:top;line-height:1px;">
 																								<div class="mktoImg" id="body_section9_right_image1" mktoname="Top Right Image - 265x180">
-																									<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images265x180-px.png" alt="Gallery Image2"  width="265" border="0">
+																									<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images265x180-px.png" alt="Gallery Image2"  width="265" border="0"/>
 																								</div>
 																							</td>
 																						</tr>
@@ -743,7 +695,7 @@
 																						<tr>
 																							<td class="center_align" valign="top" style="vertical-align:top;line-height:1px;">
 																								<div class="mktoImg" id="body_section9_right_image2" mktoname="Bottom Right Image - 265x180">
-																									<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images265x180-px.png" alt="Gallery Image3"  width="265" border="0">
+																									<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images265x180-px.png" alt="Gallery Image3"  width="265" border="0"/>
 																								</div>
 																							</td>
 																						</tr>
@@ -864,25 +816,25 @@
 																		<tr>
 																			<td valign="top" width="125" class="res center_align" style="width:125px;vertical-align:top;">
 																				<div class="mktoImg" id="body_section11_image1" mktoname="Image 1">
-																					<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images125x100-px_1.png" alt="Sponsor Image1" border="0" width="125">
+																					<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images125x100-px_1.png" alt="Sponsor Image1" border="0" width="125"/>
 																				</div>
 																			</td>
 																			<td class="res phne_height" width="20" style="line-height:1px;font-size:1px;">&nbsp;</td>
 																			<td valign="top" width="125" class="res center_align" style="width:125px;vertical-align:top;">
 																				<div class="mktoImg" id="body_section11_image2" mktoname="Image 2">
-																					<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images125x100-px_1.png" alt="Sponsor Image2" border="0" width="125">
+																					<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images125x100-px_1.png" alt="Sponsor Image2" border="0" width="125"/>
 																				</div>
 																			</td>
 																			<td class="res phne_height" width="20" style="line-height:1px;font-size:1px;">&nbsp;</td>
 																			<td valign="top" width="125" class="res center_align" style="width:125px;vertical-align:top;">
 																				<div class="mktoImg" id="body_section11_image3" mktoname="Image 3">
-																					<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images125x100-px_1.png" alt="Sponsor Image3" border="0" width="125">
+																					<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images125x100-px_1.png" alt="Sponsor Image3" border="0" width="125"/>
 																				</div>
 																			</td>
 																			<td class="res phne_height" width="20" style="line-height:1px;font-size:1px;">&nbsp;</td>
 																			<td valign="top" width="125" class="res center_align" style="width:125px;vertical-align:top;">
 																				<div class="mktoImg" id="body_section11_image4" mktoname="Image 4">
-																					<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images125x100-px_1.png" alt="Sponsor Image4" border="0" width="125">
+																					<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Marketo-Template-images125x100-px_1.png" alt="Sponsor Image4" border="0" width="125"/>
 																				</div>
 																			</td>
 																		</tr>
@@ -917,28 +869,20 @@
                         <!--END BODY COPY, FULL-WIDTH, PURPLE BACKGROUND-->
 
                         <!--CTA BUTTON - PURPLE BACKGROUND-->
-                        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="mktoModule" id="purplebkgCTAButton" mktoName="CTA Button - Purple">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mktoModule" id="purplebkgCTAButton" mktoName="CTA Button - Purple">
                           <tr>
-                            <td bgcolor="#4b2e83" style="padding: 20px 0;" class="text">
-                                <center>
-                              <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                <tr>
-                                  <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
-                                    <a href="${purplebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block;">${purplebkgCTAButtonText}</a>
-                                    </td>
-                                    <td align="center">
-                                        <a href="${purplebkgCTAButtonURL}">
-                                            <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true">
-                                        </a>
-                                    </td>
-                                </tr>
-                              </table>
-                                </center>
-                            </td>
+                    <td bgcolor="${BtnBgColor}" style=" padding: 15px 15px;" class="text"> 
+                                    <table align="${BtnAlignCenter}" border="0" cellspacing="0" cellpadding="0" role="presentation"> 
+                                      <tbody> 
+                                        <tr> 
+                                          <td bgcolor="${BtnColor}" class="outlook-font button" align="center" valign="middle" height="40" style="height:40px; padding-left:20px; padding-right:20px; font-family:'Open Sans', sans-serif; font-size:14px; line-height:14px; color:${BtnLabelColor}; mso-line-height-rule:exactly; font-weight:bold; text-decoration:none; text-align:center; text-transform:uppercase;"> <a  class="${noTrack}" href="${BtnLink}" style="color:${BtnLabelColor}; text-decoration:none;"> <span style="color:${BtnLabelColor}; text-decoration:none;">${BtnLabel}</span></a> </td> 
+                                          <td bgcolor="${BtnColor}" height="40" width="43" align="center" style="width:43px; height:40px;"> <a  class="${noTrack}" href="${BtnLink}"> <img alt="" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" aria-hidden="true" width="43" height="40" border="0" style="width:43px; height:40px; display:inline-block; border:none; outline:none; text-decoration:none; vertical-align:middle;" /> </a> </td> 
+                                        </tr> 
+                                      </tbody> 
+                                    </table> </td> 
                           </tr>
                         </table>
                         <!--END CTA BUTTON - PURPLE BACKGROUND-->
- 
                         <!--FOOTER LINK ROW GREY BAR WRAPPER-->
                         <table border="0" cellspacing="0" cellpadding="0" width="100%" class="cool-grey-background grey-bar-footer mktoModule" id="footerLinkRow" mktoName="Link Row" role="presentation">
                             <tr>
@@ -1037,7 +981,7 @@
             <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row white-background mktoModule" id="managePreferencesLink" mktoName="Opt-Out Footer" role="presentation">
                 <tr>
                     <td align="center" valign="top" class="text" style="background-color: #ffffff; padding: 0 15px 15px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 1.7; text-align: center; text-transform: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #3d3d3d;">
-                        This email was sent to <a href="mailto:{{lead.Email Address}}" class="apple-link-grey" style="color: #3d3d3d;">{{lead.Email Address}}</a><br>
+                        This email was sent to <a href="mailto:{{lead.Email Address}}" class="apple-link-grey" style="color: #3d3d3d;">{{lead.Email Address}}</a><br/>
                         <a href="https://subscribe.gifts.washington.edu/SubscriptionManagement/Email?SubscriberToken={{lead.SubscriberToken}}&ProgramID={{program.id}}" class="apple-link-grey" style="color: #3d3d3d;">Unsubscribe or change your email preferences</a>
                   	  
                   </td>
@@ -1123,7 +1067,7 @@
                 <tr>
                     <td align="center" valign="top" class="text" style="background-color: #4b2e83; padding: 0 15px 15px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 1.7; text-align: center; text-transform: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #ffffff;">
                         This email was sent to <a href="mailto:{{lead.Email Address}}" class="apple-link-white" style="color: #ffffff;">{{lead.Email Address}}</a>
-                        <br>
+                        <br/>
                         <a href="https://subscribe.gifts.washington.edu/SubscriptionManagement/Email?SubscriberToken={{lead.SubscriberToken}}&ProgramID={{program.id}}" class="apple-link-white" style="color: #ffffff;">Unsubscribe or change your email preferences</a>
                   		 <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]-->  
                     </td>

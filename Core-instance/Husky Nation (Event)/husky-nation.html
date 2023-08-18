@@ -23,6 +23,14 @@
     <meta class="mktoList" id="TxtAlignCenter" mktoName="Text Align" values="left,center,right" default="center" mktoModuleScope="true" />
     <meta class="mktoList" id="TxtAlignLeft" mktoName="Text Align" values="left,center,right" default="left" mktoModuleScope="true" />
     <meta class="mktoList" id="TxtAlignRight" mktoName="Text Align" values="left,center,right" default="right" mktoModuleScope="true" />
+        <!-- cta section -->
+        <meta class="mktoList" id="BtnBgColor" mktoname="Background Color" values="#ffffff,#4b2e83,#e8e3d3,#d9d9d9" default="#4b2e83" mktomodulescope="true" /> 
+ <meta class="mktoList" id="BtnAlignCenter" mktoName="Text Align" values="left,center,right" default="center" mktoModuleScope="true" />
+    <meta class="mktoList" id="ctaArrow" mktoname="Arrow Color" values="purple,tan,gold" default="gold" mktomodulescope="true" /> 
+    <meta class="mktoList" id="BtnColor" mktoname="Button Color" values="#4b2e83,#ffffff,#b7a57a,#e8e3d3" default="#e8e3d3" mktomodulescope="true" /> 
+    <meta class="mktoString" id="BtnLabel" mktoname="Button Label" default="Descriptive Link" mktomodulescope="true" /> 
+    <meta class="mktoList" id="BtnLabelColor" mktoname="Button Label Color" values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3d3d3d" default="#3d3d3d" mktomodulescope="true" /> 
+    <meta class="mktoString" id="BtnLink" mktoname="Button Link" default="#" mktomodulescope="true" />    
       
         <!--body section1-->
 		<meta mktoModuleScope="true" class="mktoString" id="body_section1_bg_image" mktoname="Background Image" default="https://explore.uw.edu/rs/131-AQO-225/images/Marketo-Template-images600x500-px.png"  />
@@ -683,88 +691,18 @@
 
                      <!-- Start of Full Width paragraph -->   
 
-                        
-
                         <table bgcolor="#ffffff" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" class="mktoModule tableCollapse" id="WhiteBannerModule01" mktoName="Paragraph" mktoAddByDefault="true" mktoActive="true" style="margin:0px auto; width:100%!important; min-width:100%!important;">
-
                             <tr>
-
                                 <td class="mktEditable w25" id="Copy10" mktoName="Banner Copy" style="padding-left:20px; padding-right:20px; padding-top:${Top25pxSpacer}px; font-family:'Open Sans', sans-serif; font-size:14px; line-height:22px; color:#3d3d3d; text-align:${TitleAlignLeft}; font-weight:normal;">
-
-
                                         <p style="font-size:14px; line-height:22px;"><strong>Aliassimo maximpe venis</strong> aliassimo maximpe venis ea eosae fugiatio vereptatur, sus estius, suntiat perios doluptat ut quam eos naturiberia. <a href="#" target="_blank" style="color:#00619e; text-decoration:underline;"><span style="color:#00619e; text-decoration:underline;">Need a link?</span></a> Copy and paste me.</p>
-
-
                                 </td>
-
                             </tr>
-
                         </table>
-
-                       
 
                        <!-- End of Full Width Paragraph -->
                               
-								<!--body section6 starts here-->
-								<table role="presentation" class="mktoModule" id="body_section6" cellpadding="0" cellspacing="0" align="center" border="0" width="100%" style="border-collapse: collapse; margin:0 auto;min-width:100%;" mktoname="Text - Centered - Grey">
-									<tr>
-										<td bgcolor="#efeef4" style="background-color:#efeef4;">
-											<table role="presentation" align="center" style="margin:0 auto;width:560px;" class="inner_table" width="560" cellpadding="0" cellspacing="0" >
-												<tr>
-													<td height="${body_section6_top_space}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-												</tr>
-												<tr>
-													<td valign="top" style="font-family:'Open Sans',arial,sans-serif,helvetica;font-size:14px;font-weight:normal;line-height:18px;color:#3d3d3d;vertical-align:top;text-align:center;text-transform:normal;">
-														<div class="mktoText" id="body_section6_content" mktoname="Text">
-															<p style="font-size:14px;font-weight:normal;line-height:18px;color:#3d3d3d;vertical-align:top;text-align:center;text-transform:normal;margin:0px;padding:0px;">The research raises the hope that someday it may be</p>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td height="${body_section6_btm_space}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-								<!--body section6 ends here-->
-								<!--body section7 starts here-->
-								<table role="presentation"  class="mktoModule" id="body_section7" cellpadding="0" cellspacing="0" align="center" border="0" width="100%" style="border-collapse: collapse; margin:0 auto;min-width:100%;" mktoname="CTA Button - Grey">
-									<tbody>
-										<tr>
-											<td bgcolor="#efeef4" style="background-color:#efeef4;">
-												<table role="presentation"  align="center" style="margin:0 auto;width:560px;" class="inner_table" width="560" cellpadding="0" cellspacing="0">
-													<tbody>
-														<tr>
-															<td height="${body_section7_top_space}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-														</tr>
-														<tr>
-															<td align="center" valign="top">
-																<div class="mktoText" id="body_section7_btn" mktoname="CTA Button">
-																	<table role="presentation" cellpadding="0" cellspacing="0" border="0">
-																		<tbody>
-																			<tr>
-																				<td bgcolor="#4b2e83" style="background-color:#4b2e83;text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;height: 40px;padding:0px 20px;font-weight:bold;line-height:20px;" valign="middle">
-																					<a aria-label="Research Button Link" style="text-decoration: none; color:#FFFFFF; outline:none;text-decoration:none;" href="${body_section2button_url}">${body_section2button_Text}</a>
-																				</td>
-                                                                              <td align="center" style="display:inline-block; height: 40px;"> <a href="${body_section2button_url}"> 
-                                                                                <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/ArrowCap-purple.png" alt="" aria-hidden="true"> </a> </td>
-																			</tr>
-																		</tbody>
-																	</table>
-																</div>
-															</td>
-														</tr>
-														<tr>
-															<td height="${body_section7_btm_space}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-														</tr>
-													</tbody>
-												</table>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-								<!--body section7 ends here-->
+							
+							
 								<!--body section8 starts here-->
 								<table role="presentation"  class="mktoModule" id="body_section8" cellpadding="0" cellspacing="0" align="center" border="0" width="100%" style="border-collapse: collapse; margin:0 auto;min-width:100%;" mktoname="Section Heading - White">
 									<tbody>
@@ -1002,22 +940,16 @@
                         <!--CTA BUTTON - PURPLE BACKGROUND-->
                         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mktoModule" id="purplebkgCTAButton" mktoName="CTA Button - Purple">
                           <tr>
-                            <td bgcolor="#4b2e83" style="padding: 20px 0;" class="text">
-                                <center>
-                              <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                <tr>
-                                  <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
-                                    <a href="${purplebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block;">${purplebkgCTAButtonText}</a>
-                                    </td>
-                                    <td align="center">
-                                        <a href="${purplebkgCTAButtonURL}">
-                                            <img style="display: block;" src="http://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true">
-                                        </a>
-                                    </td>
-                                </tr>
-                              </table>
-                                </center>
-                            </td>
+                    <td bgcolor="${BtnBgColor}" style=" padding: 15px 15px;" class="text"> 
+                                    <table align="${BtnAlignCenter}" border="0" cellspacing="0" cellpadding="0" role="presentation"> 
+                                      <tbody> 
+                                        <tr> 
+                                          <td bgcolor="${BtnColor}" class="outlook-font button" align="center" valign="middle" height="40" style="height:40px; padding-left:20px; padding-right:20px; font-family:'Open Sans', sans-serif; font-size:14px; line-height:14px; color:${BtnLabelColor}; mso-line-height-rule:exactly; font-weight:bold; text-decoration:none; text-align:center; text-transform:uppercase;"> 
+                                            <a class="${noTrack}" href="${BtnLink}" style="color:${BtnLabelColor}; text-decoration:none;"> <span style="color:${BtnLabelColor}; text-decoration:none;">${BtnLabel}</span></a> </td> 
+                                          <td bgcolor="${BtnColor}" height="40" width="43" align="center" style="width:43px; height:40px;"> <a  class="${noTrack}" href="${BtnLink}"> <img alt="" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" aria-hidden="true" width="43" height="40" border="0" style="width:43px; height:40px; display:inline-block; border:none; outline:none; text-decoration:none; vertical-align:middle;" /> </a> </td> 
+                                        </tr> 
+                                      </tbody> 
+                                    </table> </td> 
                           </tr>
                         </table>
                         <!--END CTA BUTTON - PURPLE BACKGROUND-->
