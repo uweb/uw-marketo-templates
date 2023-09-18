@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" style="width: 100%;">
   <head> 
     <!--START OF MARKETO VARIABLES--> 
-    <meta class="mktoBoolean" id="showHide" mktoname="Show CTA?" default="true" false_value="none" true_value="block" false_value_name="NO" true_value_name="YES" mktomodulescope="true" /> 
-    
+ <meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="false" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
+
        <!-- Spacers -->
     
     <meta class="mktoNumber" id="Top0pxSpacer" mktoName="Top Space" default="0" min="0" max="300" step="1" mktoModuleScope="true" />
@@ -835,12 +835,12 @@
                                                       <tbody> 
                                                         <tr> 
                                                           <td bgcolor="${BtnColor}" height="40" style="height:40px; padding-left:20px; padding-right:20px; font-family:'Open Sans', sans-serif; font-size:14px; line-height:14px; color:${BtnLabelColor}; mso-line-height-rule:exactly; font-weight:bold; text-decoration:none; text-align:center; text-transform:uppercase;"> 
-                                                            <a href="${BtnLink}" style="color:${BtnLabelColor}; text-decoration:none;"> 
+                                                            <a class="${noTrack}" href="${BtnLink}" style="color:${BtnLabelColor}; text-decoration:none;"> 
                                                               <span style="color:${BtnLabelColor}; text-decoration:none;">${BtnLabel}</span> 
                                                             </a> 
                                                           </td> 
                                                           <td bgcolor="${BtnColor}" height="40" width="43" align="center" style="width:43px; height:40px;"> 
-                                                            <a href="${BtnLink}"> 
+                                                            <a class="${noTrack}" href="${BtnLink}"> 
                                                             <img alt="" src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" aria-hidden="true" width="43" height="40" border="0" style="width:43px; height:40px; display:inline-block; border:none; outline:none; text-decoration:none; vertical-align:middle;" /> 
                                                             </a> 
                                                           </td> 
@@ -906,12 +906,12 @@
                                                       <tbody> 
                                                         <tr> 
                                                           <td bgcolor="${BtnColor}" height="40" style="height:40px; padding-left:20px; padding-right:20px;font-family:'Open Sans', sans-serif; font-size:14px; line-height:14px; color:${BtnLabelColor}; mso-line-height-rule:exactly; font-weight:bold; text-decoration:none; text-align:center; text-transform:uppercase;"> 
-                                                            <a href="${BtnLink}" style="color:${BtnLabelColor}; text-decoration:none;"> 
+                                                            <a class="${noTrack}" href="${BtnLink}" style="color:${BtnLabelColor}; text-decoration:none;"> 
                                                               <span style="color:${BtnLabelColor}; text-decoration:none;">${BtnLabel}</span> 
                                                             </a> 
                                                           </td> 
                                                           <td bgcolor="${BtnColor}" height="40" width="43" align="center" style="width:43px; height:40px;"> 
-                                                            <a href="${BtnLink}"> 
+                                                            <a class="${noTrack}" href="${BtnLink}"> 
                                                             <img alt="" src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" aria-hidden="true" width="43" height="40" border="0" style="width:43px; height:40px; display:inline-block; border:none; outline:none; text-decoration:none; vertical-align:middle;" /> 
                                                             </a> 
                                                           </td> 
@@ -1006,8 +1006,8 @@
                                         <tbody> 
                                           <tr> 
                                             <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; line-height: 22px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
-                                              <a href="${whitebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${whitebkgCTAButtonText}</a> </td> 
-                                            <td align="center"> <a href="${whitebkgCTAButtonURL}"> <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true" /> </a> </td> 
+                                              <a class="${noTrack}" href="${whitebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${whitebkgCTAButtonText}</a> </td> 
+                                            <td align="center"> <a class="${noTrack}" href="${whitebkgCTAButtonURL}"> <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true" /> </a> </td> 
                                           </tr> 
                                         </tbody> 
                                       </table> 
@@ -1037,8 +1037,8 @@
                                         <tbody> 
                                           <tr> 
                                             <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px;line-height: 22px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
-                                              <a href="${purplebkgCTAButtonURL}" target="_blank" style="color: #515050; display: inline-block; text-transform: uppercase; text-decoration: none;">${purplebkgCTAButtonText}</a> </td> 
-                                            <td align="center"> <a href="${purplebkgCTAButtonURL}"> <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true" /> </a> </td> 
+                                              <a class="${noTrack}" href="${purplebkgCTAButtonURL}" target="_blank" style="color: #515050; display: inline-block; text-transform: uppercase; text-decoration: none;">${purplebkgCTAButtonText}</a> </td> 
+                                            <td align="center"> <a class="${noTrack}" href="${purplebkgCTAButtonURL}"> <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true" /> </a> </td> 
                                           </tr> 
                                         </tbody> 
                                       </table> 

@@ -10,6 +10,8 @@
 		<meta name="robots" content="noindex,nofollow" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<!--Banner section Starts here-->
+        <meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="false" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
+
 		<meta mktoModuleScope="true" class="mktoString" id="body_section1_bg_image" mktoname="Background Image" default="https://explore.uw.edu/rs/131-AQO-225/images/Marketo-Template-images600x300-px.png"  />
 		<meta mktoModuleScope="true" class="mktoString" id="Banner-btntext" mktoname="Button Text" default="Add descriptive link" />
 		<meta mktoModuleScope="true" class="mktoString" id="BannerbtnUrl" mktoName="Button URL" default="#" />
@@ -227,10 +229,10 @@
 																		<tbody>
 																			<tr>
 																				<td style="background-color:#4b2e83; font-family: 'Open Sans',Arial, Helvetica, sans-serif; font-size: 14px; mso-line-height-rule: exactly; line-height: 14px; text-align: center; vertical-align: middle; color: #ffffff;  padding:0 20px;text-transform:uppercase;font-weight:bold;" valign="middle">
-																					<a aria-label="Banner Button link" style="text-decoration: none;color: #ffffff; font-family:'Open Sans', Arial, Helvetica, sans-serif;outline: none;" href="${BannerbtnUrl}">${Banner-btntext}</a>
+																					<a  class="${noTrack}"  style="text-decoration: none;color: #ffffff; font-family:'Open Sans', Arial, Helvetica, sans-serif;outline: none;" href="${BannerbtnUrl}">${Banner-btntext}</a>
 																				</td>
                                                                                <td class="text" align="center" style="display: inline-block; height: 40px;font-family: Arial, sans-serif;">
-                                                                                 <a href="${BannerbtnUrl}"> 
+                                                                                 <a  class="${noTrack}"  href="${BannerbtnUrl}"> 
                                                                                    <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true" /> </a> 
                                                                               </td> 
 																			</tr>
@@ -332,10 +334,10 @@
 																							<tbody>
 																								<tr>
 																									<td style="background-color:#4b2e83; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; mso-line-height-rule: exactly; line-height: 14px; text-align: center; vertical-align: middle; color: #ffffff;padding:0 20px;font-weight:bold;text-transform:uppercase;" valign="middle">
-																										<a aria-label="Event Date Button1" style="text-decoration: none;color: #ffffff; font-family: Arial, Helvetica, sans-serif;outline: none;" href="${Section1btn1Url}"> descriptive link</a>
+																										<a  class="${noTrack}"  style="text-decoration: none;color: #ffffff; font-family: Arial, Helvetica, sans-serif;outline: none;" href="${Section1btn1Url}"> descriptive link</a>
 																									</td>
                                                                                                    <td class="text" align="center" style="display: inline-block; height: 40px;font-family: Arial, sans-serif;"> 
-                                                                                                     <a href="${Section1btn1Url}"> 
+                                                                                                     <a  class="${noTrack}"  href="${Section1btn1Url}"> 
                                                                                                        <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true" /> </a> </td> 
 																								</tr>
 																							</tbody>
@@ -349,10 +351,10 @@
 																							<tbody>
 																								<tr>
 																									<td style="background-color:#4b2e83; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; mso-line-height-rule: exactly; line-height: 14px; text-align: center; vertical-align: middle; color: #ffffff; padding:0 20px;font-weight:bold;text-transform:uppercase;" valign="middle">
-																										<a aria-label="Event Date Button2" style="text-decoration: none;color: #ffffff; font-family: Arial, Helvetica, sans-serif;outline: none;" href="${Section1btn2Url}"> descriptive link</a>
+																										<a class="${noTrack}" style="text-decoration: none;color: #ffffff; font-family: Arial, Helvetica, sans-serif;outline: none;" href="${Section1btn2Url}"> descriptive link</a>
 																									</td>
                                                                                                    <td class="text" align="center" style="display: inline-block; height: 40px;font-family: Arial, sans-serif;"> 
-                                                                                                     <a href="${Section1btn2Url}"> 
+                                                                                                     <a  class="${noTrack}" href="${Section1btn2Url}"> 
                                                                                                      <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true" /> </a>
                                                                                                   </td> 
 																								</tr>
@@ -420,9 +422,9 @@
 																				<tbody>
 																					<tr>
 																						<td style="background-color:#4b2e83; font-family: 'Open Sans',Arial, Helvetica, sans-serif; font-size: 14px; mso-line-height-rule: exactly; line-height: 14px; text-align: center; vertical-align: middle; color: #ffffff; padding: 0 20px;font-weight:bold;text-transform:uppercase;" valign="middle">
-																							<a aria-label="Event Agenda Button1" style="text-decoration: none;color: #ffffff; font-family: 'Open Sans',Arial, Helvetica, sans-serif;outline: none;" href="${Section2btnUrl}">${Section2-btntext}</a>
+																							<a  class="${noTrack}"  style="text-decoration: none;color: #ffffff; font-family: 'Open Sans',Arial, Helvetica, sans-serif;outline: none;" href="${Section2btnUrl}">${Section2-btntext}</a>
 																						</td>
-                                                                                      <td class="text" align="center" style="display: inline-block; height: 40px;font-family: Arial, sans-serif;"> <a href="${Section2btnUrl}"> 
+                                                                                      <td class="text" align="center" style="display: inline-block; height: 40px;font-family: Arial, sans-serif;"> <a  class="${noTrack}" href="${Section2btnUrl}"> 
                                                                                         <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true" /> </a> </td>
 																					</tr>
 																				</tbody>
@@ -483,9 +485,9 @@
 																				<tbody>
 																					<tr>
 																						<td style="background-color:#4b2e83; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; mso-line-height-rule: exactly;line-height: 14px; text-align: center; vertical-align: middle;color: #ffffff;padding: 0 20px;text-transform:uppercase;font-weight:bold;" valign="middle">
-																							<a aria-label="Event Agenda Button2" style="text-decoration: none;color: #ffffff; font-family: Arial, Helvetica, sans-serif;outline: none;" href="${Section3btnUrl}">${Section3-btntext}</a>
+																							<a  class="${noTrack}"  style="text-decoration: none;color: #ffffff; font-family: Arial, Helvetica, sans-serif;outline: none;" href="${Section3btnUrl}">${Section3-btntext}</a>
 																						</td>
-                                                                             		    <td class="text" align="center" style="display: inline-block; height: 40px;font-family: Arial, sans-serif;"> <a href="${Section3btnUrl}"> 
+                                                                             		    <td class="text" align="center" style="display: inline-block; height: 40px;font-family: Arial, sans-serif;"> <a  class="${noTrack}" href="${Section3btnUrl}"> 
                                                                                           <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true" /> </a> </td>
 
 																					</tr>
@@ -589,9 +591,9 @@
 																	<tbody>
 																		<tr>
 																			<td style="background-color:#4b2e83; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; mso-line-height-rule: exactly; line-height: 14px; text-align: center; vertical-align: middle; color: #ffffff;padding:0 20px;font-weight:bold;" valign="middle">
-																				<a aria-label="Reminder Button"   style="text-decoration: none;color: #ffffff; font-family:'Open Sans', Arial, Helvetica, sans-serif;outline: none;font-weight:bold;text-transform:uppercase;" href="${Section5btnUrl}">${Section5-btntext}</a>
+																				<a class="${noTrack}"  style="text-decoration: none;color: #ffffff; font-family:'Open Sans', Arial, Helvetica, sans-serif;outline: none;font-weight:bold;text-transform:uppercase;" href="${Section5btnUrl}">${Section5-btntext}</a>
 																			</td>
-                                                                              <td class="text" align="center" style="display: inline-block; height: 40px;font-family: 'Open Sans', Arial, sans-serif;"> <a href="${Section5btnUrl}"> 
+                                                                              <td class="text" align="center" style="display: inline-block; height: 40px;font-family: 'Open Sans', Arial, sans-serif;"> <a  class="${noTrack}" href="${Section5btnUrl}"> 
                                                                                 <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-purple.png" alt="" aria-hidden="true" /> </a> </td>
 
 																		</tr>
@@ -777,10 +779,10 @@
                               <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                                 <tr>
                                   <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
-                                    <a href="${purplebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${purplebkgCTAButtonText}</a>
+                                    <a  class="${noTrack}" href="${purplebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${purplebkgCTAButtonText}</a>
                                     </td>
                                     <td align="center">
-                                        <a href="${purplebkgCTAButtonURL}">
+                                        <a class="${noTrack}"  href="${purplebkgCTAButtonURL}">
                                             <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true">
                                         </a>
                                     </td>

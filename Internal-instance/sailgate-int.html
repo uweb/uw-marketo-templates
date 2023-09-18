@@ -69,6 +69,8 @@
     <meta class="mktoString" id="footerCenterLinkURL" mktoname="Center Link URL" default="#ADDLINK" mktomodulescope="true" /> 
     <meta class="mktoString" id="footerRightLinkText" mktoname="Right Link Text" default="Optional Link" mktomodulescope="true" /> 
     <meta class="mktoString" id="footerRightLinkURL" mktoname="Right Link URL" default="#ADDLINK" mktomodulescope="true" /> 
+    <meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="false" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
+
     <!-- Other Meta Tags --> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" /> 
@@ -284,9 +286,9 @@
                                                   <tbody> 
                                                     <tr> 
                                                       <td bgcolor="${btnColor}" style="background-color:${btnColor}; text-align: center; font-size:14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none;padding:0 20px;font-weight:bold;color:${btnTextColor};text-transform:uppercase;line-height:14px;height:40px;" valign="middle">
-                                                        <a aria-label="Learn More about university of washington" style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section1_URL}">${body_section1_text}</a>
+                                                        <a class="${noTrack}" style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section1_URL}">${body_section1_text}</a>
                                                       </td> 
-                                                      <td bgcolor="${btnColor}" align="center" style="display: inline-block; height: 40px;"> <a href="${body_section1_URL}"> <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> 
+                                                      <td bgcolor="${btnColor}" align="center" style="display: inline-block; height: 40px;"> <a class="${noTrack}"  href="${body_section1_URL}"> <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> 
                                                       </td> 
                                                     </tr> 
                                                   </tbody> 
@@ -378,9 +380,9 @@
                                                   <tbody> 
                                                     <tr> 
                                                       <td bgcolor="${btnColor}" style="background-color:${btnColor}; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;color:${btnTextColor};text-transform:uppercase;line-height:14px;height: 40px; " valign="middle"> 
-                                                        <a aria-label="Learn More about university of washington" style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section_URL}">${body_section_text}</a>
+                                                        <a  class="${noTrack}"  style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section_URL}">${body_section_text}</a>
                                                       </td> 
-                                                      <td align="center" style="display: inline-block; height: 40px;"> <a href="${body_section_URL}">
+                                                      <td align="center" style="display: inline-block; height: 40px;"> <a class="${noTrack}"  href="${body_section_URL}">
                                                         <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td> 
                                                     </tr> 
                                                   </tbody> 
@@ -478,12 +480,12 @@
                                           <tbody> 
                                             <tr> 
                                               <td bgcolor="${btnColor}" style="background-color:${btnColor};text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;color:${btnTextColor};line-height: 14px;height:40px; " valign="middle"> 
-                                                <a aria-label="RSVP Button Link" style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section4_URL}">
+                                                <a  class="${noTrack}"  style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section4_URL}">
                                                   ${body_section4_text}
                                                 </a>
                                               </td> 
                                               <td style="display: inline-block; height: 40px;" align="center"> 
-                                                <a href="${body_section4_URL}"> 
+                                                <a  class="${noTrack}"  href="${body_section4_URL}"> 
                                                 <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td> 
                                             </tr> 
                                           </tbody> 
@@ -563,9 +565,9 @@
                                                                   <tbody> 
                                                                     <tr> 
                                                                       <td bgcolor="${btnColor}" style="background-color:${btnColor}; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;color:${btnTextColor};line-height: 14px;height: 40px; " valign="middle"> 
-                                                                        <a aria-label="Presentation Button" style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section5_URL1}">${col1-btn-text}</a></td> 
+                                                                        <a a class="${noTrack}"  style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section5_URL1}">${col1-btn-text}</a></td> 
                                                                       <td  style="display: inline-block; height: 40px;" align="center"> 
-                                                                        <a href="${body_section5_URL1}"> <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td> 
+                                                                        <a  class="${noTrack}"  href="${body_section5_URL1}"> <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td> 
                                                                     </tr> 
                                                                   </tbody> 
                                                                 </table> </td> 
@@ -628,8 +630,8 @@
                                                                   <tbody> 
                                                                     <tr> 
                                                                       <td bgcolor="${btnColor}" style="background-color:${btnColor}; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;color:${btnTextColor};line-height: 14px;height: 40px;" valign="middle"> 
-                                                                        <a aria-label="Presentation2 Button Link" style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section5_URL2}">${col2-btn-text}</a></td> 
-                                                                      <td style="display: inline-block; height: 40px;" align="center"> <a href="${body_section5_URL2}"> <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td> 
+                                                                        <a  class="${noTrack}"   style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section5_URL2}">${col2-btn-text}</a></td> 
+                                                                      <td style="display: inline-block; height: 40px;" align="center"> <a class="${noTrack}"  href="${body_section5_URL2}"> <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td> 
                                                                     </tr> 
                                                                   </tbody> 
                                                                 </table> </td> 
@@ -708,8 +710,8 @@
                                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left"> 
                                           <tbody> 
                                             <tr> 
-                                              <td bgcolor="${btnColor}" style="background-color:${btnColor}; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;color:${btnTextColor};line-height: 14px;height: 40px;" valign="middle"> <a aria-label="Presentation3 Button Link" style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section7_URL}">${body_section7_text}</a></td> 
-                                              <td style="display: inline-block; height: 40px;" align="center"> <a href="${body_section7_URL}"> <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td> 
+                                              <td bgcolor="${btnColor}" style="background-color:${btnColor}; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;color:${btnTextColor};line-height: 14px;height: 40px;" valign="middle"> <a  class="${noTrack}"  style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="${body_section7_URL}">${body_section7_text}</a></td> 
+                                              <td style="display: inline-block; height: 40px;" align="center"> <a class="${noTrack}"  href="${body_section7_URL}"> <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td> 
                                             </tr> 
                                           </tbody> 
                                         </table>
@@ -932,8 +934,8 @@
                                   <tbody> 
                                     <tr> 
                                       <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 14px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; line-height: 14px;max-width: 300px; padding: 0 15px;">
-                                        <a href="${purplebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none;  display: inline-block; text-transform: uppercase;">${purplebkgCTAButtonText}</a> </td> 
-                                      <td style="display: inline-block; height: 40px;" align="center"> <a href="${purplebkgCTAButtonURL}"> 
+                                        <a  class="${noTrack}"  href="${purplebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none;  display: inline-block; text-transform: uppercase;">${purplebkgCTAButtonText}</a> </td> 
+                                      <td style="display: inline-block; height: 40px;" align="center"> <a class="${noTrack}"  href="${purplebkgCTAButtonURL}"> 
                                         <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-gold.png" alt="" aria-hidden="true" /> </a> </td> 
                                     </tr> 
                                   </tbody> 

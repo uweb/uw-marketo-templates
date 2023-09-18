@@ -83,8 +83,11 @@
     <meta class="mktoString" id="footerCenterLinkText" mktoname="Center Link Text" default="Unit Home" mktomodulescope="true" /> 
     <meta class="mktoString" id="footerCenterLinkURL" mktoname="Center Link URL" default="#ADDLINK" mktomodulescope="true" /> 
     <meta class="mktoString" id="footerRightLinkText" mktoname="Right Link Text" default="Optional Link" mktomodulescope="true" /> 
-    <meta class="mktoString" id="footerRightLinkURL" mktoname="Right Link URL" default="#ADDLINK" mktomodulescope="true" /> 
-    <!-- Other Meta Tags --> 
+	<meta class="mktoString" id="footerRightLinkURL" mktoname="Right Link URL" default="#ADDLINK" mktomodulescope="true" /> 
+	   <meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
+
+
+	<!-- Other Meta Tags --> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" /> 
     <meta name="robots" content="noindex,nofollow" /> 
@@ -318,9 +321,9 @@
                                                               <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right"> 
                                                                 <tbody> 
                                                                   <tr> 
-                                                                    <td bgcolor="#4b2e83" style="background-color:#4b2e83;text-align:center;font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;text-transform:uppercase;color:#ffffff;line-height:14px;" valign="middle">
-                                                                      <a aria-label="Agenda-event button" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${body_section4_URL}"> ${body_section4_text} </a> </td> 
-                                                                    <td align="center" style="display:inline-block; height: 40px;"> <a href="${body_section4_URL}"> 
+                                                                    <td bgcolor="#4b2e83" style="background-color:#4b2e83;text-align:center;font-size: 14px; line-height: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;text-transform:uppercase;color:#ffffff;line-height:14px;" valign="middle">
+                                                                      <a class="${noTrack}" aria-label="Agenda-event button" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${body_section4_URL}"> ${body_section4_text} </a> </td> 
+                                                                    <td align="center" style="display:inline-block; height: 40px;"> <a class="${noTrack}" href="${body_section4_URL}"> 
                                                                       <img src="https://explore.uw.edu/rs/131-AQO-225/images/ArrowCap-purple.png" alt="" /> </a>
                                                                     </td> 
                                                                   </tr> 
@@ -417,8 +420,8 @@
                                                       <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right"> 
                                                         <tbody> 
                                                           <tr> 
-                                                            <td bgcolor="#4b2e83" style="background-color:#4b2e83;text-align:center;font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;text-transform:uppercase;color:#ffffff;line-height:14px;height:40px;" valign="middle"> <a aria-label="Agenda-event button" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${body_section5_URL}"> ${body_section5_text} </a> </td> 
-                                                            <td align="center" style="display: inline-block; height: 40px;"> <a href="${body_section5_URL}"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/ArrowCap-purple.png" alt="" aria-hidden="true" /> </a> </td> 
+                                                            <td bgcolor="#4b2e83" style="background-color:#4b2e83;text-align:center;font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;text-transform:uppercase;color:#ffffff;line-height:14px;height:40px;" valign="middle"> <a  class="${noTrack}" aria-label="Agenda-event button" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${body_section5_URL}"> ${body_section5_text} </a> </td> 
+                                                            <td align="center" style="display: inline-block; height: 40px;"> <a class="${noTrack}" href="${body_section5_URL}"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/ArrowCap-purple.png" alt="" aria-hidden="true" /> </a> </td> 
                                                           </tr> 
                                                         </tbody> 
                                                       </table>
@@ -477,9 +480,9 @@
                                                       <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right"> 
                                                         <tbody> 
                                                           <tr> 
-                                                            <td bgcolor="#4b2e83" style="background-color:#4b2e83;text-align:center;font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;text-transform:uppercase;color:#ffffff;line-height:14px;height:40px;" valign="middle"> <a aria-label="Agenda-event button" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${body_section6_URL}"> ${body_section6_text} </a> </td> 
+                                                            <td bgcolor="#4b2e83" style="background-color:#4b2e83;text-align:center;font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;text-transform:uppercase;color:#ffffff;line-height:14px;height:40px;" valign="middle"> <a  class="${noTrack}" aria-label="Agenda-event button" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${body_section6_URL}"> ${body_section6_text} </a> </td> 
                                                             <td align="center" style="display:inline-block; height: 40px;"> 
-                                                              <a href="${body_section6_URL}"> 
+                                                              <a  class="${noTrack}"  href="${body_section6_URL}"> 
                                                                 <img src="https://explore.uw.edu/rs/131-AQO-225/images/ArrowCap-purple.png" alt="" aria-hidden="true" /> </a> </td> 
                                                           </tr> 
                                                         </tbody> 
@@ -610,8 +613,8 @@
                                                       <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right"> 
                                                         <tbody> 
                                                           <tr> 
-                                                            <td bgcolor="#4b2e83" style="background-color:#4b2e83; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;line-height:20px;color:#ffffff;max-width: 300px;" valign="middle"> <a aria-label="Product Presentation Button1" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${body_section4_URL}"> ${body_section4_text} </a> </td> 
-                                                            <td align="center" style="display:inline-block; height: 40px;"> <a href="${body_section4_URL}"> 
+                                                            <td bgcolor="#4b2e83" style="background-color:#4b2e83; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;line-height:20px;color:#ffffff;max-width: 300px;" valign="middle"> <a  class="${noTrack}" aria-label="Product Presentation Button1" style="text-decoration: none; color:#ffffff; outline:none;text-decoration:none;" href="${body_section4_URL}"> ${body_section4_text} </a> </td> 
+                                                            <td align="center" style="display:inline-block; height: 40px;"> <a class="${noTrack}" href="${body_section4_URL}"> 
                                                               <img src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-purple.png" alt="" aria-hidden="true" /> </a> </td> 
                                                           </tr> 
                                                         </tbody> 
@@ -682,8 +685,8 @@
                                                         <tbody> 
                                                           <tr> 
                                                             <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 14px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; line-height: 14px;max-width: 300px; padding: 0 15px;"> 
-                                                              <a href="#ADDLINK" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">Add descriptive link</a> </td> 
-                                                            <td align="center" style="display: inline-block; height: 40px;"> <a href="{body_section2button_url}"> 
+                                                              <a  class="${noTrack}" href="#ADDLINK" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">Add descriptive link</a> </td> 
+                                                            <td align="center" style="display: inline-block; height: 40px;"> <a class="${noTrack}" href="{body_section2button_url}"> 
                                                               <img src="https://explore.uw.edu/rs/131-AQO-225/images/ArrowCap-gold.png" alt="" aria-hidden="true" /> 
                                                               </a> </td> 
                                                           </tr> 
