@@ -303,6 +303,9 @@
                     font-size: 13px !important;
                     line-height: 2 !important;
                 }
+                .mobile-hide{
+                    display: none;	
+                }
             }
         </style> 
   </head> 
@@ -351,6 +354,17 @@
                                 </tr> 
                               </tbody> 
                             </table>
+                                <table border="0" cellspacing="0" cellpadding="0" width="100%" class="white-background mktoModule" id="unitLogo" mktoName="Unit Logo" mktoAddByDefault="false" role="presentation"> 
+                            <tr>
+                                <td valign="top" class="unit-logo" style="background-color: #fff; padding: 10px 15px;" align="right">
+                                    
+                                    <div class="mktoImg" id="unitLogoImg" mktoName="Unit Logo" mktoImgLink="#" mktoLockImgSize="false" mktoLockImgStyle="true">
+                                        <img src="http://explore.uw.edu/rs/131-AQO-225/images/SampleLogo_CEI.jpg" alt="Replace with the text content of your logo" style="color: #444444; display: block; font-family: 'Open Sans', arial, sans-serif; font-size: 18px; font-weight: 800; text-align: right; text-transform: uppercase; vertical-align: middle; max-width: 300px; line-height: 1.2;"/>
+                                    </div>
+                                   
+                                </td>
+                            </tr>
+                        </table>
                             <table border="0" cellspacing="0" cellpadding="0" width="100%" height="3px" bgcolor="#a7a9ab" class="mktoModule" id="threePXSpacer" mktoname="Separator" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
@@ -361,7 +375,7 @@
                             <table border="0" cellspacing="0" cellpadding="0" width="100%" class="cool-grey-background mktoModule" id="darkGreyHeadline" mktoname="Headline" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td align="center" valign="top" class="text" style="background-color: #6f7376; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 26px; padding: 24px 15px; vertical-align: middle; "> 
+                                  <td  valign="top" class="text" style="background-color: #6f7376; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 26px; padding: 24px 15px; vertical-align: middle; "> 
                                     <div class="mktoText" id="headline" mktoname="Main Headline" role="heading" aria-level="1">
                                         <h1 style="font-size: 24px; font-weight: normal; line-height: 26px;">Main headline or title of event goes here</h1>
                                     </div> 
@@ -372,7 +386,7 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule" id="headlineWithThumbnail" mktoname="Headline w/ Thumbnail Image" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td class="text main-headline" style="background-color: #6f7376; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; line-height: 28px; text-align: center; width: 500px; padding: 4px 15px; "> 
+                                  <td class="text main-headline" style="background-color: #6f7376; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; line-height: 28px;  width: 500px; padding: 4px 15px; "> 
                                     <div class="mktoText" id="thumbnailHeadline" mktoname="Headline" role="heading" aria-level="2">
                                         <h2 style="font-size: 24px; line-height: 28px;">Alternate headline module</h2>
                                     </div> 
@@ -394,18 +408,18 @@
                                   </th> 
                                   <!--END IMAGE COLUMN--> 
                                   <!--HEADLINE, PURPLE BACKGROUND COLUMN--> 
-                                  <th class="text column-2 stack-column purple-background" style="width: 50%; background-color: #4b2e84;"> 
+                                  <td class=" column-2 stack-column purple-background" style="width: 50%; background-color: #4b2e84;"> 
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                  
                                         <tr> 
-                                          <td class="text main-headline purple-background" style="vertical-align: middle; text-align: center; line-height:30px; font-size: 24px; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; padding: 24px 15px 24px 15px; background-color: #4b2e84;"> 
-                                            <div class="mktoText" id="halfSizeHeadline" mktoname="Half Size Headline" role="heading" aria-level="2">
+                                          <td class=" main-headline purple-background" style="vertical-align: middle; line-height:30px; font-size: 24px; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; padding: 24px 15px 24px 15px; background-color: #4b2e84;"> 
+                                            <div class="mktoText" id="halfSizeHeadline" mktoname="Half Size Headline" role="heading" >
                                                 <h2 style="line-height:30px; font-size: 24px;">Alternate headline module</h2>
                                             </div> 
                                           </td> 
                                         </tr> 
                                      
-                                    </table> </th> 
+                                    </table> </td> 
                                   <!--END HEADLINE, PURPLE BACKGROUND COLUMN--> 
                                 </tr> 
                               </tbody> 
@@ -413,7 +427,7 @@
                             <table border="0" cellspacing="0" cellpadding="0" width="100%" class="subhead dark-gold-background-background mktoModule" id="goldSubhead" mktoname="Subhead" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td align="center" valign="top" class="text" style="background-color: #85754d; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; padding: 12px 15px; text-align: center; vertical-align: middle;"> 
+                                  <td valign="top" class="text" style="background-color: #85754d; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; padding: 12px 15px; vertical-align: middle;"> 
                                     <div class="mktoText" id="goldshead" mktoname="Gold Subhead" role="heading" aria-level="2">
                                         <h2 style="font-size: 16px;  line-height: 22px; ">Optional subhead goes here. Or it could be the date, or the date and location. Area will expand in case it is long.</h2>
                                     </div> 
@@ -482,7 +496,7 @@
                                       <table border="0" cellspacing="0" cellpadding="0" role="presentation"> 
                                         <tbody> 
                                           <tr> 
-                                            <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
+                                            <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px;line-height:16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
                                               <a class="${noTrack}" href="${whitebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${whitebkgCTAButtonText}</a> </td> 
                                             <td align="center"> <a class="${noTrack}" href="${whitebkgCTAButtonURL}"> <img style="display: block;" src="http://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true" /> </a> </td> 
                                           </tr> 
@@ -513,7 +527,7 @@
                                       <table border="0" cellspacing="0" cellpadding="0" role="presentation"> 
                                         <tbody> 
                                           <tr> 
-                                            <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
+                                            <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; line-height: 16px;font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
                                               <a  class="${noTrack}" href="${purplebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${purplebkgCTAButtonText}</a> </td> 
                                             <td align="center"> <a class="${noTrack}"  href="${purplebkgCTAButtonURL}"> <img style="display: block;" src="http://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true" /> </a> </td> 
                                           </tr> 
@@ -524,6 +538,44 @@
                                 </tr> 
                               </tbody> 
                             </table>
+                                  
+                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="white-background mktoModule" id="OneColSig" mktoname="1 Column Signature Block" style="width:100%!important; min-width:100%!important;"> 
+                              <tbody> 
+                                <tr> 
+                                  <td style="background-color: #ffffff; padding: 10px 0 20px 0;"> 
+                                    <!--TABLE WRAPPER--> 
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
+                                      <tbody> 
+                                        <tr> 
+                                          <!--COLUMN #1 WRAPPER--> 
+                                          <td align="center" class=" stack-column" style="background-color: #ffffff; width: 50%; padding: 0 ; vertical-align: top;"> 
+                                            <!--COLUMN #1 CONTENT--> 
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
+                                              <tbody> 
+                                                <tr> 
+                                                  <td width="300" align="left" style="background-color: #ffffff; padding: 0 15px;"> 
+                                                    <div class="mktoImg" id="oneColImgOne" mktoname="Column 1 - Signature Image" mktolockimgsize="true" mktolockimgstyle="true">
+                                                      <img alt="signature" src="https://explore.uw.edu/rs/131-AQO-225/images/Ana-Mari-Signature.png" width="270" style="display: block; background-color: #ffffff; width: 270px !important; height: auto; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; text-align: left; vertical-align: middle;" />
+                                                    </div> </td>
+                                                   
+                                                </tr> 
+                                                <tr> 
+                                                  <td width="300" align="left" class="text item-paragraph" style="color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px; padding: 0 15px 5px 15px; text-align: left; vertical-align: middle;"> 
+                                                    <div class="mktoText" id="oneColParagraphOne" mktoname="Column 1 - Paragraph">
+                                                        <p style="font-size: 14px;  line-height: 18px; "> Signature image should be 300px wide. Add title here</p>
+                                                    </div> </td> 
+                                                    <td>&nbsp;</td>
+                                                </tr> 
+                                              </tbody> 
+                                            </table> 
+                                            <!--END COLUMN #1 CONTENT--> </td> 
+                                          <!--END COLUMN #1 WRAPPER--> 
+                                           <td width="50%" class=" mobile-hide" style="background-color: #ffffff; padding: 10px 0 20px 0;" >&nbsp;</td>
+                                </tr> 
+                              </tbody> 
+                            </table>
+                              
+                                  </tr></tbody></table>
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="white-background mktoModule" id="TwoColSig" mktoname="2 Column Signature Block" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
