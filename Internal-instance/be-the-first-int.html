@@ -26,11 +26,11 @@
         <meta class="mktoString" id="footerRightLinkURL" mktoname="Right Link URL" default="#ADDLINK" mktomodulescope="true"/>
        	<meta class="mktoString" id="contactUsEmail" mktoName="Contact Us Email" default="ADD EMAIL" mktomodulescope="true"/>
         
-		<meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
-		   <!--END OF MARKETO VARIABLES--> 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+         <meta class="mktoBoolean" id="noTrack" mktoname="mktNoTrack on/off" default="false" true_value="mktNoTrack" false_value="" true_value_name="OFF" false_value_name="ON" mktomodulescope="true" /> 
+        <!--END OF MARKETO VARIABLES--> 
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>        
         <!--[if !mso]-->
       <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet" type="text/css" /> 
      <![endif]-->
@@ -323,7 +323,7 @@
                             <tr>
                                 <td valign="top" class="unit-logo" style="background-color: #ffffff; padding: 10px 15px;" align="right">
                                     
-                                    <div class="mktoImg" id="unitLogoImg" mktoName="Unit Logo" mktoImgLink="#" mktoLockImgSize="false" mktoLockImgStyle="true">
+                                    <div class="mktoImg" id="unitLogoImg" mktoName="Unit Logo" mktoImgLink="#ADDLINK" mktoLockImgSize="false" mktoLockImgStyle="true">
                                         <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Clean Energy Institute Placeholder Image.jpg" alt="Unit Logo" style="color: #444444; display: block; font-family: 'Open Sans', arial, sans-serif; font-size: 18px; font-weight: 800; text-align: right; text-transform: uppercase; vertical-align: middle; max-width: 300px; line-height: 1.2;"/>
                                     </div>
                                    
@@ -548,7 +548,7 @@
                                     </td>
                                     <td align="center">
                                         <a  class="${noTrack}" href="${whitebkgCTAButtonURL}">
-                                            <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true">
+                                            <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true"/>
                                         </a>
                                     </td>
                                 </tr>
@@ -584,7 +584,7 @@
                                     </td>
                                     <td align="center">
                                         <a class="${noTrack}" href="${purplebkgCTAButtonURL}">
-                                            <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true">
+                                            <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true"/>
                                         </a>
                                     </td>
                                 </tr>
@@ -637,22 +637,22 @@
                 <tr>
                     <td align="center" valign="top" class="text" style="background-color: #ffffff; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 13px; line-height: 1.2; text-align: center; color: #3d3d3d; vertical-align: middle; padding: 10px 0 10px 0;">
                         <div class="mktoText" id="socialMediaIcons" mktoName="Social Media Icons">
-                          <a href="#" style="text-decoration: none;">
+                          <a href="#ADDLINK" style="text-decoration: none;">
                         	<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/tiktok-GREY.png" alt="tiktok" style=" display:inline-block; color: #FFFFFF;  font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/>
                         </a>&nbsp;&nbsp;
-                        <a href="#" style="text-decoration: none;">
+                        <a href="#ADDLINK" style="text-decoration: none;">
                             <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/facebook-GREY.png" alt="Facebook" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
                         &nbsp;&nbsp;
-                        <a href="#" style="text-decoration: none;">
+                        <a href="#ADDLINK" style="text-decoration: none;">
                             <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/twitter-GREY.png" alt="Twitter" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
                         &nbsp;&nbsp;
-                        <a href="#" style="text-decoration: none;">
+                        <a href="#ADDLINK" style="text-decoration: none;">
                             <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/instagram-GREY.png" alt="Instagram" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
                         &nbsp;&nbsp;
-                        <a href="#" style="text-decoration: none;">
+                        <a href="#ADDLINK" style="text-decoration: none;">
                             <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/youtube-GREY.png" alt="YouTube" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
                         &nbsp;&nbsp;
-                        <a href="#" style="text-decoration: none;">
+                        <a href="#ADDLINK" style="text-decoration: none;">
                             <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/linkedin-GREY.png" alt="LinkedIn" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
                        </div>
                       <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]-->
@@ -687,7 +687,7 @@
             <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row white-background mktoModule" id="managePreferencesLink" mktoName="Opt-Out Footer" role="presentation">
                 <tr>
                     <td align="center" valign="top" class="text" style="background-color: #ffffff; padding: 0 15px 15px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 1.7; text-align: center; text-transform: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #3d3d3d;">
-                        This email was sent to <a href="mailto:{{lead.Email Address}}" class="apple-link-grey" style="color: #3d3d3d;">{{lead.Email Address}}</a><br>
+                        This email was sent to <a href="mailto:{{lead.Email Address}}" class="apple-link-grey" style="color: #3d3d3d;">{{lead.Email Address}}</a><br/>
                         <a href="https://subscribe.gifts.washington.edu/SubscriptionManagement/Email?SubscriberToken={{lead.SubscriberToken}}&ProgramID={{program.id}}" class="apple-link-grey" style="color: #3d3d3d;">Unsubscribe or change your email preferences</a>
                     </td>
                 </tr>
@@ -714,22 +714,22 @@
                 <tr>
                     <td align="center" valign="top" class="text" style="background-color: #4b2e83; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 13px; line-height: 1.2; text-align: center; color: #3d3d3d; vertical-align: middle; padding: 10px 0 10px 0;">
                         <div class="mktoText" id="socialMediaIconsP" mktoName="Social Media Icons">
-                        <a href="#" style="text-decoration: none;">
+                        <a href="#ADDLINK" style="text-decoration: none;">
                         	<img src="https://we.explore.uw.edu/rs/527-AHR-265/images/tiktok-WHITE.png" alt="tiktok" style=" display:inline-block; color: #FFFFFF;  font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/>
                         </a>&nbsp;&nbsp;
-                         <a href="#" style="text-decoration: none;">
+                         <a href="#ADDLINK" style="text-decoration: none;">
                             <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/facebook-WHITE.png" alt="Facebook" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
                         &nbsp;&nbsp;
-                        <a href="#" style="text-decoration: none;">
+                        <a href="#ADDLINK" style="text-decoration: none;">
                             <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/twitter-WHITE.png" alt="Twitter" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
                         &nbsp;&nbsp;
-                        <a href="" style="text-decoration: none;">
+                        <a href="#ADDLINK" style="text-decoration: none;">
                             <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/instagram-WHITE.png" alt="Instagram" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
                         &nbsp;&nbsp;
-                        <a href="#" style="text-decoration: none;">
+                        <a href="#ADDLINK" style="text-decoration: none;">
                             <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/youtube-WHITE.png" alt="YouTube" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
                         &nbsp;&nbsp;
-                        <a href="#" style="text-decoration: none;">
+                        <a href="#ADDLINK" style="text-decoration: none;">
                             <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/linkedin-WHITE.png" alt="LinkedIn" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
                         </div>
                       <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]-->
@@ -770,7 +770,7 @@
                 <tr>
                     <td align="center" valign="top" class="text" style="background-color: #4b2e83; padding: 0 15px 15px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 1.7; text-align: center; text-transform: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #ffffff;">
                         This email was sent to <a href="mailto:{{lead.Email Address}}" class="apple-link-white" style="color: #ffffff;">{{lead.Email Address}}</a>
-                        <br>
+                        <br/>
                         <a href="https://subscribe.gifts.washington.edu/SubscriptionManagement/Email?SubscriberToken={{lead.SubscriberToken}}&ProgramID={{program.id}}" class="apple-link-white" style="color: #ffffff;">Unsubscribe or change your email preferences</a>
                   	   <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]-->  
                   </td>
