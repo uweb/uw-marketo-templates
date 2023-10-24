@@ -18,11 +18,11 @@
         <meta class="mktoList" id="overlayBarColor" mktoname="Bar Color" values="#ffffff,#4b2e83,#b7a57a,#85754d,#e8e3d3" mktomodulescope="true" />
 		<meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
 
-       <meta class="mktoList" id="leftImgBg" mktoname="Left Image Background Color" values="#4b2e83,#ffffff,#b7a57a,#85754d,#e8e3d3" mktomodulescope="true" />
-       <meta class="mktoList" id="rightImgBg" mktoname="Bar Color" values="#4b2e83,#ffffff,#b7a57a,#85754d,#e8e3d3" mktomodulescope="true" />
+        <meta class="mktoList" id="leftImgBg" mktoname="Left Image Background Color" values="#4b2e83,#ffffff,#b7a57a,#85754d,#e8e3d3" mktomodulescope="true" />
+        <meta class="mktoList" id="rightImgBg" mktoname="Bar Color" values="#4b2e83,#ffffff,#b7a57a,#85754d,#e8e3d3" mktomodulescope="true" />
       
         <meta class="mktoList" id="bgColor-1" mktoname="Background Color" values="#ffffff,#ece9e2" mktomodulescope="true" />
-       <meta class="mktoList" id="bgColor-2" mktoname="Background Color" values="#ece9e2,#ffffff" mktomodulescope="true" />
+        <meta class="mktoList" id="bgColor-2" mktoname="Background Color" values="#ece9e2,#ffffff" mktomodulescope="true" />
       
 		<!--Banner Section Variables-->
 		<meta mktoModuleScope="true" class="mktoString" id="banner-bg-image" mktoname="Background Image" default="https://explore.uw.edu/rs/131-AQO-225/images/Marketo-Template-images600x500-px.png" />
@@ -88,6 +88,17 @@
 		</o:OfficeDocumentSettings>
 	</xml>
 	<![endif]-->
+	 <!--[if mso]>
+            <style type="text/css">
+                *, p, h1, h2, h3, li, .text {
+                    font-family:  Arial, sans-serif !important;
+				}
+                a:visited{color: inherit !important; text-decoration: underline !important;}
+                a.apple-link-grey:visited{color: #inherit !important; text-decoration: underline !important;}
+                a.apple-link-white:visited{color: #ffffff !important; text-decoration:underline !important;}
+                
+            </style>
+        <![endif]--> 
       
 		<style>
 			/* CLIENT-SPECIFIC STYLES */
@@ -98,15 +109,7 @@
 			.ReadMsgBody {
 			width: 100%;
 			}
-          /* Prevent Outlooks ugly visited link */
-           span.MsoHyperlink {
-              mso-style-priority:99;
-              color:inherit;
-          }
-          span.MsoHyperlinkFollowed {
-              mso-style-priority:99;
-              color:inherit;
-          }
+          
 			.ExternalClass {
 			width: 100%;
 			}
@@ -138,13 +141,40 @@
 			
 			a[x-apple-data-detectors] {
 			color: inherit !important;
-			text-decoration: none !important;
 			font-size: inherit !important;
 			font-family: inherit !important;
 			font-weight: inherit !important;
 			line-height: inherit !important;
 			}
-		
+          	a {
+      			color: #00619e;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            a:hover {
+                color: #716441;
+            }
+           
+            *:focus {
+                  border: 1px solid #78aed9 !important;
+                  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6) !important;
+                  outline: 0 none !important;
+            } 
+             /* Forces link color to be white, instead of Apple's default blue */
+            .apple-link-white {
+                color: #ffffff !important;
+            }
+            
+            /* Forces link color to be grey, instead of Apple's default blue */
+            .apple-link-grey {
+                color: #3d3d3d !important;
+            }
+		    .anti-spam-row-purple a {
+                color: #ffffff !important;
+            }
+            .anti-spam-row a {
+                color: #3d3d3d !important;
+            }
 			@media only screen and (max-width: 640px) {
             .body-copy {font-size: 14px !important; line-height: 22px !important;}
              .main {width:100% !important;min-width:100% !important;}
@@ -159,7 +189,7 @@
              .top-pad {padding-top: 20px !important;}
              .center_align {text-align: center !important;}
               
-           .head {display:table-header-group!important; width:100%!important;}
+            .head {display:table-header-group!important; width:100%!important;}
 	        .foot {display:table-footer-group!important; width:100%!important;}
    			}
          @media only screen and (max-width: 480px) {
@@ -181,14 +211,7 @@
 		</style>
 	</head>
 	<body style="margin-bottom: 0; -webkit-text-size-adjust: 100%; padding-bottom: 0;  margin-top: 0; margin-right: 0; -ms-text-size-adjust: 100%; margin-left: 0; padding-top: 0; padding-right: 0; padding-left: 0; width: 100%;">
-	<!--[if mso]>
-    <style type="text/css">
-    	body,table,td,p,h1,h2,h3,h4,h5,a {font-family: Arial, Helvetica, sans-serif !important;}
-    .text{
-        font-family: Arial, Helvetica, sans-serif !important;
-    }
-    </style>
-    <![endif]-->	
+	
       <!-- Outer table START -->
 		<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;  border-spacing: 0; border-collapse: collapse;margin:0 auto;">
 			<tr>
@@ -257,6 +280,14 @@
 									</tr>
 								</table>
 								<!--header 3 ends here-->
+
+								<!-- 3PX SEPARATOR -->
+								<table border="0" cellspacing="0" cellpadding="0" width="100%" height="3" bgcolor="#a7a9ab" class="mktoModule" id="threePXSpacer" mktoName="Separator">
+									<tr>
+										<td height="3" bgcolor="#a7a9ab" style="font-size: 3px; line-height: 3px;">&nbsp;</td>
+									</tr>
+								</table>
+								<!-- END 3PX SEPARATOR -->
 								<!--Banner section Begins-->
 								<table role="presentation" class="mktoModule" id="Banner-sec" cellpadding="0" cellspacing="0" align="center" border="0" width="100%" style="border-collapse: collapse; margin:0 auto; min-width:100%;" mktoname="Image w/ Text & CTA">
 									<tr>
@@ -311,7 +342,7 @@
 																						<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
 																							<tbody>
 																								<tr>
-																									<td style="background-color:${btnPurpleColor}; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; mso-line-height-rule: exactly; line-height: 14px; text-align: center; vertical-align: middle;  font-weight:bold;padding:10px 20px; text-transform:uppercase;text-decoration: none;" valign="middle">
+																									<td style="background-color:${btnPurpleColor}; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; mso-line-height-rule: exactly; height: 40px; line-height: 14px; text-align: center; vertical-align: middle;  font-weight:bold;padding:0 20px; text-transform:uppercase;text-decoration: none;" valign="middle">
 																										<a class="${noTrack}" aria-label="Banner Button Link" style="text-decoration: none; color: ${btnWhiteTextColor}; font-family:'Open Sans', Arial, Helvetica, sans-serif; outline: none;" href="${BannerbtnUrl}">${Banner-btntext}</a>
 																									</td>
                                                                                                   <td align="center"> <a class="${noTrack}"  href="${BannerbtnUrl}"> 
@@ -1020,7 +1051,7 @@
                         <div class="mktoText" id="socialMediaIcons" mktoName="Social Media Icons">
                          	  <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/tiktok-GREY.png" alt="tiktok" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;" /></a> &nbsp;&nbsp; 
                          	  <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/facebook-GREY.png" alt="Facebook" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;" /></a> &nbsp;&nbsp; 
-                              <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/twitter-GREY.png" alt="Twitter" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;" /></a> &nbsp;&nbsp; 
+                              <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/twitter-GREY.png" alt="X" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;" /></a> &nbsp;&nbsp; 
                               <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/instagram-GREY.png" alt="Instagram" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a> &nbsp;&nbsp; 
                               <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/youtube-GREY.png" alt="YouTube" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a> &nbsp;&nbsp; 
                               <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/linkedin-GREY.png" alt="LinkedIn" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a> &nbsp;&nbsp; 
@@ -1099,7 +1130,7 @@
                         <div class="mktoText" id="socialMediaIconsP" mktoName="Social Media Icons">
                          	  <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/tiktok-WHITE.png" alt="tiktok" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a> &nbsp;&nbsp; 
                          	  <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/facebook-WHITE.png" alt="Facebook" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a> &nbsp;&nbsp; 
-                              <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/twitter-WHITE.png" alt="Twitter" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a> &nbsp;&nbsp; 
+                              <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/twitter-WHITE.png" alt="X" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a> &nbsp;&nbsp; 
                               <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/instagram-WHITE.png" alt="Instagram" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a> &nbsp;&nbsp; 
                               <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/youtube-WHITE.png" alt="YouTube" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a> &nbsp;&nbsp; 
                               <a href="#ADDLINK" style="text-decoration: none;"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/linkedin-WHITE.png" alt="LinkedIn" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a> &nbsp;&nbsp; 
