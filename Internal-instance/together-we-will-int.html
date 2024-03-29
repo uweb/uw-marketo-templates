@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" style="width: 100%;">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" style="width: 100%;">
   <head> 
     <!--START OF MARKETO VARIABLES--> 
  <meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="false" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
@@ -356,7 +356,7 @@
                 <tr> 
                   <td align="center" valign="top"> 
                     <!--[if gte mso 9]>
-            <table align="center" cellpadding="0" cellspacing="0" width="600" class="border">
+            <table role="presentation" align="center" cellpadding="0" cellspacing="0" width="600" class="border">
             <tr>
             <td>
             <![endif]--> 
@@ -643,7 +643,7 @@
                               <tbody> 
                                 <tr> 
                                   <!--CALL OUT HEAD--> 
-                                  <td class="text callout-head" style="background-color: #e8e3d3; color: #4b2e84; font-family: 'Open Sans', arial, sans-serif; font-size: 20px; font-weight: 600; line-height: 1.2; padding: 15px 15px 5px 15px; text-align: center; text-transform: uppercase; vertical-align: middle;"> 
+                                  <td class="text callout-head" style="background-color: #e8e3d3; color: #4b2e84; font-family: 'Open Sans', arial, sans-serif; font-size: 20px; font-weight: 600; line-height: 1.2; padding: 15px 15px 5px 15px; text-transform: uppercase; vertical-align: middle;"> 
                                     <div class="mktoText" id="lightGoldHeader" mktoname="Header" role="heading" aria-level="2">
                                         <h2 style="font-size: 20px; line-height: 1.2;margin:0;">
                                           Very Short Call Out Message
@@ -653,7 +653,7 @@
                                 </tr> 
                                 <tr> 
                                   <!--CALL OUT PARAGRAPH--> 
-                                  <td class="text callout-paragraph body-copy" style="background-color: #e8e3d3; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 0 15px 20px 15px; text-align: center; vertical-align: middle;"> 
+                                  <td class="text callout-paragraph body-copy" style="background-color: #e8e3d3; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 0 15px 20px 15px; vertical-align: middle;"> 
                                     <div class="mktoText" id="lightGoldParagraph" mktoname="Paragraph">
                                         <p style="font-size: 14px; line-height: 22px;margin:0;">
                                            Venis ea eosae occulpari odit volum. Quiati diorerc hiliquam, sernatquibus sent, que poriorem sustet aut voluptas cium re nait en dit is doleng at thist ud anta proa.
@@ -836,7 +836,7 @@
                                                             </a> 
                                                           </td> 
                                                           <td bgcolor="${BtnColor}" height="40" width="43" align="center" style="width:43px; height:40px;"> 
-                                                            <a class="${noTrack}" href="${BtnLink}"> 
+                                                            <a  tabindex="-1" aria-hidden="true" class="${noTrack}" href="${BtnLink}"> 
                                                             <img alt="" src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" aria-hidden="true" width="43" height="40" border="0" style="width:43px; height:40px; display:inline-block; border:none; outline:none; text-decoration:none; vertical-align:middle;" /> 
                                                             </a> 
                                                           </td> 
@@ -907,7 +907,7 @@
                                                             </a> 
                                                           </td> 
                                                           <td bgcolor="${BtnColor}" height="40" width="43" align="center" style="width:43px; height:40px;"> 
-                                                            <a class="${noTrack}" href="${BtnLink}"> 
+                                                            <a  tabindex="-1" aria-hidden="true" class="${noTrack}" href="${BtnLink}"> 
                                                             <img alt="" src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" aria-hidden="true" width="43" height="40" border="0" style="width:43px; height:40px; display:inline-block; border:none; outline:none; text-decoration:none; vertical-align:middle;" /> 
                                                             </a> 
                                                           </td> 
@@ -1003,7 +1003,9 @@
                                           <tr> 
                                             <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; line-height: 22px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
                                               <a class="${noTrack}" href="${whitebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${whitebkgCTAButtonText}</a> </td> 
-                                            <td align="center"> <a class="${noTrack}" href="${whitebkgCTAButtonURL}"> <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true" /> </a> </td> 
+                                            <td align="center"> 
+												<a  tabindex="-1" aria-hidden="true" class="${noTrack}" href="${whitebkgCTAButtonURL}"> 
+												<img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true" /> </a> </td> 
                                           </tr> 
                                         </tbody> 
                                       </table> 
@@ -1034,7 +1036,9 @@
                                           <tr> 
                                             <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px;line-height: 22px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
                                               <a class="${noTrack}" href="${purplebkgCTAButtonURL}" target="_blank" style="color: #515050; display: inline-block; text-transform: uppercase; text-decoration: none;">${purplebkgCTAButtonText}</a> </td> 
-                                            <td align="center"> <a class="${noTrack}" href="${purplebkgCTAButtonURL}"> <img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true" /> </a> </td> 
+                                            <td align="center"> 
+												<a  tabindex="-1" aria-hidden="true" class="${noTrack}" href="${purplebkgCTAButtonURL}"> 
+												<img src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true" /> </a> </td> 
                                           </tr> 
                                         </tbody> 
                                       </table> 
@@ -1080,12 +1084,12 @@
                               
                                   </tr></tbody></table>
                               
-                              <table border="0" cellpadding="0" cellspacing="0" width="100%" class="white-background mktoModule" id="TwoColSig" mktoname="2 Column Signature Block" style="width:100%!important; min-width:100%!important;"> 
+                              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="white-background mktoModule" id="TwoColSig" mktoname="2 Column Signature Block" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
                                   <td style="background-color: #ffffff; padding: 10px 0 20px 0;"> 
                                     <!--2 COLUMN TABLE WRAPPER--> 
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
                                       <tbody> 
                                         <tr> 
                                           <!--COLUMN #1 WRAPPER--> 
