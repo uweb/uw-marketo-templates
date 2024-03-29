@@ -33,10 +33,10 @@
 
     <meta class="mktoList" id="BtnColor" mktoName="Button BG Color" values="#4b2e83,#ffffff,#b7a57a,#e8e3d3,#85754d" default="#4b2e83" mktoModuleScope="true" />
     <meta class="mktoList" id="BtnWhiteColor" mktoName="Button BG Color" values="#4b2e83,#ffffff,#b7a57a,#e8e3d3,#efeef4,#85754d" default="#ffffff" mktoModuleScope="true" />
-         <meta class="mktoList" id="BtnLtGoldColor" mktoName="Button BG Color" values="#4b2e83,#ffffff,#b7a57a,#e8e3d3,#85754d" default="#ffffff" mktoModuleScope="true" />
+     <meta class="mktoList" id="BtnLtGoldColor" mktoName="Button BG Color" values="#4b2e83,#ffffff,#b7a57a,#e8e3d3,#85754d" default="#ffffff" mktoModuleScope="true" />
     <meta class="mktoString" id="BtnLabel" mktoName="Button Text" default="CTA BUTTON" mktoModuleScope="true" />
     <meta class="mktoList" id="BtnLabelColor" mktoName="Button Text Color" values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3d3d3d" default="#ffffff" mktoModuleScope="true" />
-         <meta class="mktoList" id="BtnLabelColorGrey" mktoName="Button Text Color" values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3d3d3d" default="#3d3d3d" mktoModuleScope="true" />
+    <meta class="mktoList" id="BtnLabelColorGrey" mktoName="Button Text Color" values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3d3d3d" default="#3d3d3d" mktoModuleScope="true" />
 
     <meta class="mktoList" id="BtnLabelColorPurple" mktoName="Button Text Color " values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3d3d3d" default="#4b2e83" mktoModuleScope="true" />
     <meta class="mktoString" id="BtnLink" mktoName="Button Link - URL" default="#" mktoModuleScope="true" />
@@ -194,7 +194,7 @@
 								<table role="presentation" class="mktoModule" id="header_section2" cellpadding="0" cellspacing="0" align="center" border="0" width="100%" style="border-collapse: collapse; margin:0 auto;min-width:100%;" mktoname="Unit Name">
 									<tr>
 										<td style="background-color:${WhiteBgColor}">
-											<table style="margin: 0 auto; width: 560px;" class="inner_table" width="560" cellspacing="0" cellpadding="0" align="center">
+											<table role="presentation" style="margin: 0 auto; width: 560px;" class="inner_table" width="560" cellspacing="0" cellpadding="0" align="center">
 												<tbody>
 													<tr>
 														<td style="line-height: 1px; font-size: 1px;" height="12">&nbsp;</td>
@@ -216,7 +216,7 @@
 								</table>
 								<!--header 2 ends here-->
 								<!-- 3PX SEPARATOR -->
-								<table border="0" cellspacing="0" cellpadding="0" width="100%" height="3" bgcolor="#a7a9ab" class="mktoModule" id="threePXSpacer" mktoName="Separator">
+								<table  role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%" height="3" bgcolor="#a7a9ab" class="mktoModule" id="threePXSpacer" mktoName="Separator">
 									<tr>
 										<td height="3" bgcolor="#a7a9ab" style="font-size: 3px; line-height: 3px;">&nbsp;</td>
 									</tr>
@@ -226,7 +226,7 @@
 								<table role="presentation"  mktoAddByDefault="false" class="mktoModule" id="header_section3" cellpadding="0" cellspacing="0" align="center" border="0" width="100%" style="border-collapse: collapse; margin:0 auto;min-width:100%;" mktoname="Unit Logo">
 									<tr>
 									<td style="background-color:${WhiteBgColor}">
-											<table style="margin: 0 auto; width: 560px;" class="inner_table" width="560" cellspacing="0" cellpadding="0" align="center">
+											<table role="presentation" style="margin: 0 auto; width: 560px;" class="inner_table" width="560" cellspacing="0" cellpadding="0" align="center">
 												<tbody>
 													<tr>
 														<td style="line-height: 1px; font-size: 1px;" height="10">&nbsp;</td>
@@ -284,7 +284,7 @@
                                                                                       ${Banner-btntext}</a>
 																				</td>
                                                                                <td class="text" align="center" style="display: inline-block; height: 40px;font-family: Arial, sans-serif;">
-                                                                                 <a class="${noTrack}" href="${BannerbtnUrl}"> <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> 
+                                                                                 <a  tabindex="-1" aria-hidden="true" tabindex="-1" aria-hidden="true" class="${noTrack}" href="${BannerbtnUrl}"> <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> 
                                                                               </td> 
 																			</tr>
 																		</tbody>
@@ -389,7 +389,7 @@
                                                                                                       </a>
 																									</td>
                                                                                            <td class="text" align="center" style="display: inline-block; height: 40px;font-family: Arial, sans-serif;"> 
-                                                                                                     <a class="${noTrack}"  href="${Section1btn1Url}"> 
+                                                                                                     <a  tabindex="-1" aria-hidden="true" class="${noTrack}"  href="${Section1btn1Url}"> 
                                                                                                        <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> 
                                                                                                      </a> 
                                                                                                   </td> 
@@ -410,7 +410,7 @@
                                                                                                     
 																									</td>
                                                                                                    <td class="text" align="center" style="display: inline-block; height: 40px;font-family: Arial, sans-serif;"> 
-                                                                                                     <a class="${noTrack}"  href="${Section1btn2Url}"> 
+                                                                                                     <a  tabindex="-1" aria-hidden="true" class="${noTrack}"  href="${Section1btn2Url}"> 
                                                                                                      <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> 
                                                                                                      </a>
                                                                                                   </td> 
@@ -440,7 +440,7 @@
                               <!-- Start of Full Width Image -->
                       
 
-                        <table bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="mktoModule tableCollapse" id="BannerModule01" mktoName="Full Width Image - Max Width:600px" mktoAddByDefault="true" mktoActive="true" style="margin:0px auto; width:100%!important; min-width:100%!important;">
+                        <table  role="presentation" bgcolor="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="mktoModule tableCollapse" id="BannerModule01" mktoName="Full Width Image - Max Width:600px" mktoAddByDefault="true" mktoActive="true" style="margin:0px auto; width:100%!important; min-width:100%!important;">
                             <tr>
                                 <td valign="top"  style="padding-top:${Top0pxSpacer}px; padding-bottom:${Bot0pxSpacer}px; line-height:1px;">
                                     <div style="display:inline-block" class="mktoImg" id="Img08" mktoname="Full width image - Max Width:600px" mktolockimgsize="false" mktoImgLinkTarget="_blank" mktoLockImgStyle="false">
@@ -452,7 +452,7 @@
                         <!-- End of Full Width Image -->
                                 
                         <!-- Start of Headline -->   
-                        <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" class="mktoModule tableCollapse" id="HeadlineModule01" mktoName="Headline" mktoAddByDefault="true" mktoActive="true" style="margin:0px auto; width:100%!important; min-width:100%!important;">
+                        <table  role="presentation" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" class="mktoModule tableCollapse" id="HeadlineModule01" mktoName="Headline" mktoAddByDefault="true" mktoActive="true" style="margin:0px auto; width:100%!important; min-width:100%!important;">
                             <tr>
                                 <td class="mktEditable mobLeft w25" id="Headline01" mktoName="Headline" style="background-color:${WhiteBgColor};padding-left:20px; padding-right:20px; padding-top:${Top25pxSpacer}px; padding-bottom:${Bot0pxSpacer}px; font-family:'Open Sans', sans-serif; font-size:24px; line-height:26px; color:${headlineColor};text-align:${TitleAlignLeft};">
                                     <h2 style="font-size:24px;line-height:26px;">
@@ -469,7 +469,7 @@
 
                         
 
-                        <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" class="mktoModule tableCollapse" id="WhiteBannerModule01" mktoName="Paragraph" mktoAddByDefault="true" mktoActive="true" style="margin:0px auto; width:100%!important; min-width:100%!important;">
+                        <table  role="presentation" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" class="mktoModule tableCollapse" id="WhiteBannerModule01" mktoName="Paragraph" mktoAddByDefault="true" mktoActive="true" style="margin:0px auto; width:100%!important; min-width:100%!important;">
                             <tr>
                                 <td class="mktEditable w25" id="Copy10" mktoName="Banner Copy" style="background-color:${WhiteBgColor};padding-left:20px; padding-right:20px; padding-top:${Top25pxSpacer}px; font-family:'Open Sans', sans-serif; font-size:14px; line-height:22px; color:${GreyText}; text-align:${TxtAlignLeft}; font-weight:normal;">
                                     <p style="font-size:14px; line-height:22px; ">
@@ -489,7 +489,7 @@
                               
                               
 								<!--section2 Starts here-->
-								<table role=" presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;" class="deviceWidth mktoModule"  mktoName="2 Column - Left Image" id="BodySection2">
+								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;" class="deviceWidth mktoModule"  mktoName="2 Column - Left Image" id="BodySection2">
 									<tr>
 										<td style="background-color:${LightPurpleBgColor}">
 											<table role="presentation" class="deviceWidth1" style="width: 600px; margin: 0 auto; border-collapse: collapse;" align="center" cellpadding="0" cellspacing="0" width="600">
@@ -535,7 +535,7 @@
 																							<a class="${noTrack}"  aria-label="Event Agenda Button1" style="text-decoration: none;color: ${BtnLabelColor}; font-family: 'Open Sans',Arial, Helvetica, sans-serif;outline: none;" href="${Section2btnUrl}">${Section2-btntext}</a>
 																						</td>
                                                                                       <td class="text" align="center" style="display: inline-block; height: 40px;font-family: Arial, sans-serif;"> 
-                                                                                        <a class="${noTrack}"  href="${Section2btnUrl}"> <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td>
+                                                                                        <a  tabindex="-1" aria-hidden="true" class="${noTrack}"  href="${Section2btnUrl}"> <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td>
 																					</tr>
 																				</tbody>
 																			</table>
@@ -599,7 +599,7 @@
 																						<td style="background-color:${BtnColor}; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; mso-line-height-rule: exactly;line-height: 14px; text-align: center; vertical-align: middle;color:${BtnLabelColor};padding: 0 20px;text-transform:uppercase;font-weight:bold;" valign="middle">
 																							<a class="${noTrack}"  aria-label="Event Agenda Button2" style="text-decoration: none;color: ${BtnLabelColor}; font-family: Arial, Helvetica, sans-serif;outline: none;" href="${Section3btnUrl}">${Section3-btntext}</a>
 																						</td>
-                                                                             		    <td class="text" align="center" style="display: inline-block; height: 40px;font-family: Arial, sans-serif;"> <a class="${noTrack}"  href="${Section3btnUrl}"> 
+                                                                             		    <td class="text" align="center" style="display: inline-block; height: 40px;font-family: Arial, sans-serif;"> <a tabindex="-1" aria-hidden="true" class="${noTrack}"  href="${Section3btnUrl}"> 
                                                                                           <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td>
 
 																					</tr>
@@ -706,7 +706,7 @@
 																			<td style="background-color:${BtnColor}; font-family:'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; mso-line-height-rule: exactly; line-height: 14px; text-align: center; vertical-align: middle; color: ${BtnLabelColor};padding:0 20px;font-weight:bold;" valign="middle">
 																				<a class="${noTrack}"  aria-label="Reminder Button"   style="text-decoration: none;color: ${BtnLabelColor}; font-family:'Open Sans', Arial, Helvetica, sans-serif;outline: none;font-weight:bold;text-transform:uppercase;" href="${Section5btnUrl}">${Section5-btntext}</a>
 																			</td>
-                                                                              <td class="text" align="center" style="display: inline-block; height: 40px;font-family: 'Open Sans', Arial, sans-serif;"> <a class="${noTrack}"  href="${Section5btnUrl}"> 
+                                                                              <td class="text" align="center" style="display: inline-block; height: 40px;font-family: 'Open Sans', Arial, sans-serif;"> <a tabindex="-1" aria-hidden="true" class="${noTrack}"  href="${Section5btnUrl}"> 
                                                                                 <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td>
 
 																		</tr>
@@ -728,7 +728,7 @@
 								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;" class="deviceWidth mktoModule" mktoName="Image Gallery" id="BodySection6">
 									<tr>
 										<td style="background-color:${WhiteBgColor}">
-											<table role="Presentation" class="deviceWidth1" style="width: 560px; margin: 0 auto; border-collapse: collapse;" align="center" cellpadding="0" cellspacing="0" width="560">
+											<table role="presentation" class="deviceWidth1" style="width: 560px; margin: 0 auto; border-collapse: collapse;" align="center" cellpadding="0" cellspacing="0" width="560">
 												<tbody>
 													<tr>
 														<td colspan="3" class="extra-space1" style="line-height: 1px; font-size: 1px;" height="${body6-top-space}">&nbsp;</td>
@@ -883,7 +883,7 @@
                                     <a class="${noTrack}"  href="${purplebkgCTAButtonURL}" target="_blank" style="color: ${BtnLabelColor}; text-decoration: none; display: inline-block; text-transform: uppercase;">${purplebkgCTAButtonText}</a>
                                     </td>
                                     <td align="center">
-                                        <a class="${noTrack}"  href="${purplebkgCTAButtonURL}">
+                                        <a  tabindex="-1" aria-hidden="true" class="${noTrack}"  href="${purplebkgCTAButtonURL}">
                                             <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true"/>
                                         </a>
                                     </td>

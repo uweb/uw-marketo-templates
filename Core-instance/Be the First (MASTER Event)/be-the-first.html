@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
  xmlns:v="urn:schemas-microsoft-com:vml"
  xmlns:o="urn:schemas-microsoft-com:office:office"
  xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -349,11 +349,11 @@
     <div style="display: none; font-size: 0px; line-height: 0px; max-height: 0px; max-width: 0px; width: 0px; opacity: 0; overflow: hidden">
     </div>
     <!--BODY TABLE WRAPPER-->
-    <table id="bodyTable" border="0" cellspacing="0" cellpadding="0" width="100%" valign="top" align="center">
+    <table role="presentation" id="bodyTable" border="0" cellspacing="0" cellpadding="0" width="100%" valign="top" align="center">
         <tr>
             <td>
             <!--BEGIN TEMPLATE WRAPPER-->
-            <table align="center" cellpadding="0" cellspacing="0"  width="100%" class="border" style="max-width:600px !important; font-size: 0px !important; line-height: 0px !important;">
+            <table  role="presentation" align="center" cellpadding="0" cellspacing="0"  width="100%" class="border" style="max-width:600px !important; font-size: 0px !important; line-height: 0px !important;">
             <tr>
             <td align="center" valign="top">
             <!--[if gte mso 9]>
@@ -361,7 +361,7 @@
             <tr>
             <td>
             <![endif]-->
-             <table align="center" border="0" cellspacing="0" width="100%">
+             <table role="presentation"  align="center" border="0" cellspacing="0" width="100%">
                  <tr>
                      <td class="mktoContainer" id="marketoContainer">
                      
@@ -402,7 +402,7 @@
                          <!--END UNIT LOGO-->
                          
                           <!-- 3PX SEPARATOR -->
-                        <table border="0" cellspacing="0" cellpadding="0" width="100%" height="3" bgcolor="#a7a9ab" class="mktoModule" id="threePXSpacer" mktoName="Separator">
+                        <table role="presentation"  border="0" cellspacing="0" cellpadding="0" width="100%" height="3" bgcolor="#a7a9ab" class="mktoModule" id="threePXSpacer" mktoName="Separator">
                             <tr>
                                 <td height="3" bgcolor="#a7a9ab" style="font-size: 3px; line-height: 3px;">&nbsp;</td>
                             </tr>
@@ -461,7 +461,7 @@
                 <!--PURPLE CALLOUT-->
                          
                 <!--SINGLE-EVENT, TWO COLUMN LAYOUT, CTA - WHITE BACKGROUND-->
-                <table  bgcolor="${WhiteBG}"  border="0" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="twoColumnWhiteBackgroundCTA" mktoName="2 Column Block">
+                <table   role="presentation" bgcolor="${WhiteBG}"  border="0" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="twoColumnWhiteBackgroundCTA" mktoName="2 Column Block">
                     <tr>
                         <!--IMAGE COLUMN-->
                         <th valign="top" align="center" class="stack-column image-column" style="width:50%;">
@@ -541,11 +541,11 @@
                                
                               <table align="${BtnAlignCenter}" border="0" cellspacing="0" cellpadding="0" role="presentation">
                                 <tr>
-                                  <td bgcolor="${BtnColorBeige}" class="text" style="font-size: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;color:${BtnLabelColorGrey};">
-                                    <a class="${noTrack}" href="${whitebkgCTAButtonURL}" style="color:${BtnLabelColorGrey}; text-decoration: none; display: inline-block; text-transform: uppercase;line-height:16px;">${whitebkgCTAButtonText}</a>
+                                    <td bgcolor="${BtnColorBeige}" class="text" style="font-size: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;color:${BtnLabelColorGrey};">
+                                         <a class="${noTrack}" href="${whitebkgCTAButtonURL}" style="color:${BtnLabelColorGrey}; text-decoration: none; display: inline-block; text-transform: uppercase;line-height:16px;">${whitebkgCTAButtonText}</a>
                                     </td>
                                     <td >
-                                        <a class="${noTrack}" href="${whitebkgCTAButtonURL}">
+                                        <a tabindex="-1" aria-hidden="true" class="${noTrack}" href="${whitebkgCTAButtonURL}">
                                             <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true"/>
                                         </a>
                                     </td>
