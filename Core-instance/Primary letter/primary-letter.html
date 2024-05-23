@@ -3,6 +3,15 @@
      <title>University of Washington message</title>
   <head> 
     <!--START OF MARKETO VARIABLES--> 
+    <meta class="mktoList" id="BgColor" mktoName="Background Color" values="#ffffff,#4b2e83,#e8e3d3, #efeef4" default="#ffffff" mktoModuleScope="true" />
+    <meta class="mktoList" id="btnTextColor" mktoname="Button Text Color"  default="#3D3D3D" values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3D3D3D" mktomodulescope="true" /> 
+    <meta class="mktoList" id="btnColor" mktoname="Button Color" values="#4b2e83,#ffffff,#b7a57a,#e8e3d3" default="#e8e3d3" mktomodulescope="true" /> 
+    <meta class="mktoList" id="ctaArrow" mktoname="Arrow Color" values="purple,tan,gold" default="gold" mktomodulescope="true" /> 
+    <meta class="mktoList" id="BtnAlign" mktoName="Button Align" values="left,center,right" default="left" mktoModuleScope="true" />
+      
+    <meta mktomodulescope="true" class="mktoNumber" id="top_space" mktoname="Top Space" default="10" step="1" min="0" max="60" /> 
+    <meta mktomodulescope="true" class="mktoNumber" id="btm_space" mktoname="Bottom Space" default="30" step="1" min="0" max="60" /> 
+    
     <meta class="mktoString" id="whitebkgCTAButtonText" mktoname="Button Text" default="Call to Action" mktomodulescope="true" /> 
     <meta class="mktoString" id="whitebkgCTAButtonURL" mktoname="Button URL" default="#ADDLINK" mktomodulescope="true" />
     <meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
@@ -481,6 +490,46 @@
                                 </tr> 
                               </tbody> 
                             </table>
+                             <table bgcolor="${BgColor}" role="presentation" class="mktoModule" id="body_section4" cellpadding="0" cellspacing="0" align="center" border="0" width="100%" style="border-collapse: collapse; margin:0 auto;min-width:100%;" mktoname="CTA Button " mktoAddByDefault="false" mktoActive="true"> 
+                        <tbody> 
+                          <tr> 
+                            <td> 
+                              <table role="presentation" align="center" style="margin:0 auto;width:560px;" class="inner_table" width="560" cellpadding="0" cellspacing="0"> 
+                                <tbody> 
+                                  <tr> 
+                                    <td height="${top_space}" style="line-height:1px;font-size:1px;">&nbsp; </td> 
+                                  </tr> 
+                                  <tr> 
+                                    <td valign="top"> 
+                                      <div class="mktoText" id="rsvp" mktoname="RSVP Button">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="${BtnAlign}"> 
+                                          <tbody> 
+                                            <tr> 
+                                              <td bgcolor="${btnColor}" style="background-color:${btnColor};text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;color:${btnTextColor};line-height: 14px;height:40px; " valign="middle"> 
+                                                  <a class="${noTrack}" aria-label="RSVP Button Link" style="text-decoration: none; color:${btnTextColor}; outline:none;text-decoration:none;" href="$whitebkgCTAButtonURL}">${whitebkgCTAButtonText}</a>
+                                              </td> 
+                                              <td style="display: inline-block; height: 40px;" align="center"> 
+                                                <a tabindex="-1" aria-hidden="true" class="${noTrack}"  href="${whitebkgCTAButtonURL}"> 
+                                                <img style="display: block;" src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> 
+                                                </a> 
+                                              </td> 
+                                            </tr> 
+                                          </tbody> 
+                                        </table>
+                                      </div>
+                                    </td> 
+                                  </tr> 
+                                    
+                                  <tr> 
+                                    <td height="${btm_space}" style="line-height:1px;font-size:1px;">&nbsp; </td> 
+                                  </tr> 
+                                    
+                                </tbody> 
+                              </table> 
+                              </td> 
+                          </tr> 
+                        </tbody> 
+                      </table>
                             <table  role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="mktoModule"  style="width:100%!important; min-width:100%!important;" id="whitebkgCTAButton" mktoname="CTA Button - White"> 
                               <tbody> 
                                 <tr> 
@@ -721,14 +770,18 @@
                             
                             <table border="0" cellspacing="0" cellpadding="0" width="100%" class="cool-grey-background grey-bar-footer mktoModule" id="footerLinkRow" mktoname="Link Row" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
-                                <tr> 
+                                <tr> <td > 
+<!--3 COLUMN TABLE WRAPPER--> 
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
+<tbody>
+
                                   <!--UW HOME FOOTER LINK--> 
                                   <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerLeftLinkURL}" class="apple-link-white" style="color: #ffffff; ">${footerLeftLinkText}</a> </th> 
                                   <!--DEPARTMENT HOME FOOTER LINK--> 
                                   <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerCenterLinkURL}" class="apple-link-white" target="_blank" style="color: #ffffff;">${footerCenterLinkText}</a> </th> 
                                   <!--OPTIONAL FOOTER LINK--> 
                                   <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerRightLinkURL}" class="apple-link-white" style="color: #ffffff;">${footerRightLinkText}</a> </th> 
-                                </tr> 
+  </tbody></table></td>  </tr> 
                               </tbody> 
                             </table>
                             <table border="0" cellspacing="0" cellpadding="0" width="100%" class="white-background mktoModule" id="campaignTagline" mktoname="Campaign Tagline" role="presentation" style="width:100%!important; min-width:100%!important;"> 
