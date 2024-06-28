@@ -76,7 +76,7 @@
     mktomodulescope="true" />
     
   <!-- Images and icos -->
-  <meta class="mktoList" id="quoteColor" mktoname="Quote Color" default="purple" values="white, purple" />
+  <meta class="mktoList" id="quoteColor" mktoname="Quote Color" default="purple" values="white,purple" />
   <meta class="mktoList" id="boundlessLogoColor" mktoname="Boundless Logo Color" default="purple"
     values="white,purple" />
   <meta class="mktoList" id="socialIconsColor" mktoname="Social Icons  Color" default="GREY" values="GREY,WHITE" />
@@ -442,7 +442,7 @@
                     style="border-collapse: collapse; margin:0 auto;min-width:100%;"
                     mktoname="Image + Text Box Overlay">
                     <tr>
-                      <td align="absbottom" background="${BgImg}" bgcolor="#ebebeb" width="600" border="0"
+                      <td background="${BgImg}" bgcolor="#ebebeb" width="600" 
                         style="background:url('${BgImg}');background-repeat:no-repeat;background-position:center center;background-size:cover; font-size:1px;line-height:1px;">
                         <!--[if gte mso 9]>
 											<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
@@ -511,7 +511,7 @@ txtColor}" />
                                                       <td bgcolor="${BtnColor}"
                                                         style=" text-align: center; font-size: 14px; font-family:'Open Sans',Arial,Helvetica,  sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;line-height:20px;"
                                                         valign="middle">
-                                                        <a class="${noTrack}" aria-label="Presentation"
+                                                        <a class="${noTrack}" 
                                                           style="text-decoration: none; outline:none;color:${BtnLabelColor};"
                                                           href="${BtnLink}">${BtnLabel}</a>
                                                       </td>
@@ -519,7 +519,7 @@ txtColor}" />
                                                         <a tabindex="-1" aria-hidden="true" class="${noTrack}"
                                                           href="${BtnLink}">
                                                           <img style="display: block;"
-                                                            src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" .>
+                                                            src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" />
                                                         </a>
                                                       </td>
                                                     </tr>
@@ -692,7 +692,7 @@ txtColor}" />
                                               <tr>
                                                 <td valign="top" style="vertical-align:top;">
                                                   <div class="mktoImg" id="body_section5_image1" mktoname="Col-1 Image">
-                                                    <img align="absbottom" class="full-width"
+                                                    <img class="full-width"
                                                       src="https://explore.uw.edu/rs/131-AQO-225/images/rowers-560x380.jpg"
                                                       alt="Presentation Image1" border="0" width="280" />
                                                   </div>
@@ -796,7 +796,7 @@ txtColor}" />
                                               <tr>
                                                 <td valign="top" style="vertical-align:top;">
                                                   <div class="mktoImg" id="body_section5_image2" mktoname="Col-2 Image">
-                                                    <img align="absbottom" class="full-width"
+                                                    <img  class="full-width"
                                                       src="https://explore.uw.edu/rs/131-AQO-225/images/rowers-560x380.jpg"
                                                       alt="Presentation2 Image" border="0" width="280" />
                                                   </div>
@@ -935,7 +935,7 @@ txtColor}" />
                       <tr>
                         <td class="text item-paragraph"
                           style="background-color: ${BgColor}; color:${HeadlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 20px; line-height: 22px; font-weight: 600;  padding-top:${TopSpacer}px; padding-bottom:${BtmSpacer}px; padding-left: 15px; padding-right: 15px;">
-                          <div class="mktoText" id="bodyPurpleSubhead" mktoname=" Subhead" role="presentation">
+                          <div class="mktoText" id="bodyPurpleSubhead" mktoname=" Subhead" >
                             <h2 style="font-size: 20px; font-weight: 600; line-height: 22px; margin: 0;">Headline ( H2 )
                             </h2>
                           </div>
@@ -1058,8 +1058,7 @@ txtColor}" />
                                               </tr>
                                               <tr>
                                                 <td bgcolor="${ColBgColor}" style="background-color:${ColBgColor}">
-                                                  <div class="mktoText" id="body_section8_content1"
-                                                    mktoname="Col-1 Content">
+                                                
                                                     <table role="presentation" width="90%" align="center"
                                                       cellpadding="0" cellspacing="0" border="0"
                                                       style="width:90%;margin:0 auto;">
@@ -1071,9 +1070,10 @@ txtColor}" />
                                                         <tr>
                                                           <td valign="top"
                                                             style="font-family:'Open Sans',arial,sans-serif;font-size:18px;font-weight:bold;line-height:21px;color:${TxtColor};vertical-align:top;">
-                                                            <h2
+                                                            <div class="mktoText" id="body_section8_content1"
+                                                    mktoname="Col-1 Headline">  <h2
                                                               style="font-size:18px;font-weight:bold;line-height:24px;">
-                                                              Service1</h2>
+                                                                Service1</h2></div>
                                                           </td>
                                                         </tr>
                                                         <tr>
@@ -1083,11 +1083,12 @@ txtColor}" />
                                                         <tr>
                                                           <td class="body-copy" valign="top"
                                                             style="font-family:'Open Sans',arial,sans-serif;font-size:14px;font-weight:normal;line-height:22px;color:${TxtColor};vertical-align:top;">
-                                                            <p
+                                                           <div class="mktoText" id="body_section8_content11"
+                                                    mktoname="Col-1 Content">   <p
                                                               style="font-size:14px;font-weight:normal;line-height:22px;">
                                                               Add short description here. Image above should be sized at
                                                               600px x 470px. It will be 167 x 130 is desktop view but
-                                                              stretch to full-width on mobile view.</p>
+                                                               stretch to full-width on mobile view.</p></div>
                                                           </td>
                                                         </tr>
                                                         <tr>
@@ -1096,7 +1097,7 @@ txtColor}" />
                                                         </tr>
                                                       </tbody>
                                                     </table>
-                                                  </div>
+                                               
                                                 </td>
                                               </tr>
                                             </tbody>
@@ -1122,8 +1123,7 @@ txtColor}" />
                                               </tr>
                                               <tr>
                                                 <td bgcolor="${ColBgColor}" style="background-color:${ColBgColor}">
-                                                  <div class="mktoText" id="body_section8_content2"
-                                                    mktoname="Col-2 Content">
+                                                  
                                                     <table role="presentation " width="90%" align="center"
                                                       cellpadding="0" cellspacing="0" border="0"
                                                       style="width:90%;margin:0 auto;">
@@ -1135,9 +1135,10 @@ txtColor}" />
                                                         <tr>
                                                           <td valign="top"
                                                             style="font-family:'Open Sans',arial,sans-serif;font-size:18px;font-weight:bold;line-height:21px;color:${TxtColor};vertical-align:top;">
-                                                            <h2
+                                                          <div class="mktoText" id="body_section8_content2"
+                                                    mktoname="Col-2 Headline">  <h2
                                                               style="font-size:18px;font-weight:bold;line-height:24px;">
-                                                              Service 2</h2>
+                                                              Service 2</h2></div>
                                                           </td>
                                                         </tr>
                                                         <tr>
@@ -1147,12 +1148,13 @@ txtColor}" />
                                                         <tr>
                                                           <td class="body-copy" valign="top"
                                                             style="font-family:'Open Sans',arial,sans-serif;font-size:14px;font-weight:normal;line-height:22px;color:${TxtColor};vertical-align:top;">
-                                                            <p
+                                                           <div class="mktoText" id="body_section8_content22"
+                                                    mktoname="Col-2 Content"> <p
                                                               style="font-size:14px;font-weight:normal;line-height:22px;">
                                                               Add short description here. Image above should be sized at
                                                               600px x 470px. It will be 167 x 130 in desktop view but
                                                               stretch to full-width on mobile view.</p>
-                                                          </td>
+                                                              </div>    </td>
                                                         </tr>
                                                         <tr>
                                                           <td height="20" style="line-height:1px;font-size:1px;">&nbsp;
@@ -1160,7 +1162,7 @@ txtColor}" />
                                                         </tr>
                                                       </tbody>
                                                     </table>
-                                                  </div>
+                                                 
                                                 </td>
                                               </tr>
                                             </tbody>
@@ -1186,8 +1188,7 @@ txtColor}" />
                                               </tr>
                                               <tr>
                                                 <td bgcolor="${ColBgColor}" style="background-color:${ColBgColor}">
-                                                  <div class="mktoText" id="body_section8_content3"
-                                                    mktoname="Col-3 Content">
+                                                 
                                                     <table role="presentation" width="90%" align="center"
                                                       cellpadding="0" cellspacing="0" border="0"
                                                       style="width:90%;margin:0 auto;">
@@ -1199,9 +1200,10 @@ txtColor}" />
                                                         <tr>
                                                           <td valign="top"
                                                             style="font-family:'Open Sans',arial,sans-serif;font-size:18px;font-weight:bold;line-height:21px;color:${TxtColor};vertical-align:top;">
-                                                            <h2
+                                                        <div class="mktoText" id="headlinecol3"
+                                                    mktoname="Col-3 Headline">    <h2
                                                               style="font-size:18px;font-weight:bold;line-height:24px;">
-                                                              Service 3 </h2>
+                                                            Service 3 </h2></div>
                                                           </td>
                                                         </tr>
                                                         <tr>
@@ -1211,12 +1213,12 @@ txtColor}" />
                                                         <tr>
                                                           <td class="body-copy" valign="top"
                                                             style="font-family:'Open Sans',arial,sans-serif;font-size:14px;font-weight:normal;line-height:22px;color:${TxtColor};vertical-align:top;">
-                                                            <p
+                                                        <div class="mktoText" id="body_section8_content33" mktoname="Col-3 Content">    <p
                                                               style="font-size:14px;font-weight:normal;line-height:22px;">
                                                               Add short description here. Image above should be sized at
                                                               600px x 470px. It will be 167 x 130 in desktop view but
                                                               stretch to full-width on mobile view.</p>
-                                                          </td>
+                                                              </div>    </td>
                                                         </tr>
                                                         <tr>
                                                           <td height="20" style="line-height:1px;font-size:1px;">&nbsp;
@@ -1224,7 +1226,7 @@ txtColor}" />
                                                         </tr>
                                                       </tbody>
                                                     </table>
-                                                  </div>
+                                 
                                                 </td>
                                               </tr>
                                             </tbody>
@@ -1250,11 +1252,10 @@ txtColor}" />
                   <!--quote module starts here-->
                           <table role="presentation" class="mktoModule" id="body_section6" cellpadding="0"
                             cellspacing="0" align="center" border="0" width="100%"
-                            style="border-collapse: collapse; margin:0 auto;min-width:100%; background-color:${BgColor}"
-                            mktoname="Quote Block">
+                            style="border-collapse: collapse; margin:0 auto;min-width:100%; background-color:${BgColor};animation-direction: " mktoname="Quote Block">
                             <tr>
                               <td>
-                                <table border="0" role="presentation" align="center" style="margin:0 auto; padding: 0 15px;width:100%;" cellpadding="0" cellspacing="0">
+                                <table border="10" role="presentation" align="center" style="margin:0 auto; padding: 0 15px;width:100%;" cellpadding="0" cellspacing="0">
                                   <tr>
                                     <td height="${TopSpacer}" style="line-height:1px;font-size:1px;">
                                       &nbsp;</td>
@@ -1589,16 +1590,11 @@ txtColor}" />
                     </tbody>
                   </table>
 
-                  <table border="0" cellspacing="0" cellpadding="0" width="100%"  style="background-color: #6f7376;" 
+                  <table border="0" cellspacing="0" cellpadding="0" width="100%"
                     class="cool-grey-background grey-bar-footer mktoModule" id="footerLinkRow" mktoname="Link Row"
                     role="presentation">
                     <tbody>
                       <tr>
-                        <td > 
-                          <!--3 COLUMN TABLE WRAPPER--> 
-                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
-                          <tbody>
-
                         <!--UW HOME FOOTER LINK-->
                         <th align="center" valign="top" class="text stack-column column-3"
                           style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1.2; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;">
@@ -1614,7 +1610,6 @@ txtColor}" />
                           style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;">
                           <a href="${footerRightLinkURL}" class="white-link"
                             style="color: #ffffff; ">${footerRightLinkText}</a> </th>
-  </tbody></table></td>
                       </tr>
                     </tbody>
                   </table>
@@ -1724,7 +1719,7 @@ txtColor}" />
                     <tbody>
                       <tr>
                         <td align="center" valign="top" class="text"
-                          style="background-color:${BgColor}; padding: 0 15px 15px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 1.7; text-align: center; text-transform: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: ${TxtColor};">
+                          style="background-color:#ffffff; padding: 0 15px 15px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 1.7; text-align: center; text-transform: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color:#3d3d3d;">
                           <div class="mktoSnippet" id="unsubscribe" mktoName="UW Header" mktoDefaultSnippetId="200">
                           </div>
                           <!--END UNSUBSCRIBE SNIPPET PLACEHOLDER-->
@@ -1733,6 +1728,19 @@ txtColor}" />
                       </tr>
                     </tbody>
                   </table>
+                    
+                     <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row-purple purple-background mktoModule" id="managePreferencesLinkP" mktoname="Opt-Out Footer - Purple" role="presentation"> 
+                        <tbody> 
+                          <tr> 
+                            <td align="center" valign="top" class="text" style="background-color: #4b2e83; padding: 0 15px 15px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 1.7; text-align: center; text-transform: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #ffffff;"> 
+                             <div class="mktoSnippet" id="unsubscribe-2" mktoName="UW Header"  mktoDefaultSnippetId="208"></div>
+            						<!--END UNSUBSCRIBE SNIPPET PLACEHOLDER-->  
+                      <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]-->
+                            
+                            </td> 
+                          </tr> 
+                        </tbody> 
+                      </table>
                     
                 </td>
               </tr>
