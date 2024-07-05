@@ -23,7 +23,7 @@
     mktomodulescope="true" />
   <meta class="mktoList" id="TxtAlign" mktoname="Text Align" values="left,center,right" default="left"
     mktomodulescope="true" />
-      <meta mktomodulescope="true" class="mktoNumber" id="checker-left-top-space" mktoname="Top Space" default="35" />
+  <meta mktomodulescope="true" class="mktoNumber" id="checker-left-top-space" mktoname="Top Space" default="35" />
   <meta mktomodulescope="true" class="mktoNumber" id="checker-left-bottom-space" mktoname="Bottom Space" default="35" />
   <meta mktomodulescope="true" class="mktoNumber" id="checker-right-top-space" mktoname="Top Space" default="35" />
   <meta mktomodulescope="true" class="mktoNumber" id="checker-right-bottom-space" mktoname="Bottom Space"
@@ -1250,12 +1250,13 @@ txtColor}" />
                   </table>
 
                   <!--quote module starts here-->
-                          <table role="presentation" class="mktoModule" id="body_section6" cellpadding="0"
+                          <table bgcolor="${BgColor}"role="presentation" class="mktoModule" id="body_section6" cellpadding="0"
                             cellspacing="0" align="center" border="0" width="100%"
-                            style="border-collapse: collapse; margin:0 auto;min-width:100%; background-color:${BgColor};animation-direction: " mktoname="Quote Block">
+                            style="border-collapse: collapse; margin:0 auto;min-width:100%; background-color:${BgColor}"
+                            mktoname="Quote Block">
                             <tr>
                               <td>
-                                <table border="10" role="presentation" align="center" style="margin:0 auto; padding: 0 15px;width:100%;" cellpadding="0" cellspacing="0">
+                                <table border="0" role="presentation" align="center" style="margin:0 auto; padding: 0 15px;width:100%;" cellpadding="0" cellspacing="0">
                                   <tr>
                                     <td height="${TopSpacer}" style="line-height:1px;font-size:1px;">
                                       &nbsp;</td>
@@ -1595,6 +1596,10 @@ txtColor}" />
                     role="presentation">
                     <tbody>
                       <tr>
+                           <td>
+                                     <!--3 COLUMN TABLE WRAPPER--> 
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
+                                  <tbody>
                         <!--UW HOME FOOTER LINK-->
                         <th align="center" valign="top" class="text stack-column column-3"
                           style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1.2; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;">
@@ -1610,6 +1615,7 @@ txtColor}" />
                           style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;">
                           <a href="${footerRightLinkURL}" class="white-link"
                             style="color: #ffffff; ">${footerRightLinkText}</a> </th>
+                                      </tbody></table></td>
                       </tr>
                     </tbody>
                   </table>
