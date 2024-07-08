@@ -23,6 +23,8 @@
     mktomodulescope="true" />
   <meta class="mktoList" id="TxtAlign" mktoname="Text Align" values="left,center,right" default="left"
     mktomodulescope="true" />
+  <meta class="mktoList" id="BoxAlign" mktoname="Text Box Align" values="left,center" default="left"
+    mktomodulescope="true" />
   <meta mktomodulescope="true" class="mktoNumber" id="checker-left-top-space" mktoname="Top Space" default="35" />
   <meta mktomodulescope="true" class="mktoNumber" id="checker-left-bottom-space" mktoname="Bottom Space" default="35" />
   <meta mktomodulescope="true" class="mktoNumber" id="checker-right-top-space" mktoname="Top Space" default="35" />
@@ -458,7 +460,7 @@ txtColor}" />
                           <tr>
                             <td valign="top" style="vertical-align:top;">
                               <table role="presentation" bgcolor="${BgColor}" class="main" width="270"
-                                align="${TxtAlign}" style="width:270px;" cellpadding="0" cellspacing="0">
+                                align="${BoxAlign}" style="width:270px;" cellpadding="0" cellspacing="0">
                                 <tr>
                                   <td valign="top" style="vertical-align:top;">
                                     <table role="presentation " class="inner-table" width="90%" align="center"
@@ -469,7 +471,7 @@ txtColor}" />
                                       </tr>
                                       <tr>
                                         <td colspan="2" valign="top"
-                                          style="font-family:'Open Sans',arial,sans-serif;font-size:18px;font-weight:bold;line-height:24px;color:${HeadlineColor};vertical-align:top;text-align:left;">
+                                          style="font-family:'Open Sans',arial,sans-serif;font-size:18px;font-weight:bold;line-height:24px;color:${HeadlineColor};vertical-align:top;">
                                           <div class="mktoText" id="body_section4_heading" mktoName="Heading">
                                             <h2
                                               style="font-size:18px;font-weight:bold;line-height:24px;margin:0px;padding:0px;">
@@ -744,13 +746,11 @@ txtColor}" />
                                                       <tr>
                                                         <td valign="top" style="padding-left: 10px; padding-right: 10px;">
 
-                                                          <div class="mktoText" id="CTA-Left" mktoname="CTA - Left">
                                                             <table role="presentation" cellpadding="0" cellspacing="0"
                                                               border="0" align="center">
                                                               <tbody>
                                                                 <tr>
-                                                                  <td
-                                                                    style="background-color:${BtnColor}; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;color:${BtnLabelColor};text-transform:uppercase;line-height:14px;height: 40px; "
+                                                                  <td style="background-color:${BtnColor}; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;color:${BtnLabelColor};text-transform:uppercase;line-height:14px;height: 40px; "
                                                                     valign="middle">
                                                                     <a class="${noTrack}"
                                                                       style="text-decoration: none; color:${BtnLabelColor}; outline:none;text-decoration:none;"
@@ -768,7 +768,6 @@ txtColor}" />
                                                                 </tr>
                                                               </tbody>
                                                             </table>
-                                                          </div>
 
                                                         </td>
                                                       </tr>
@@ -847,7 +846,6 @@ txtColor}" />
                                                       <tr>
                                                         <td valign="top" style="padding-left: 10px; padding-right: 10px;">
 
-                                                          <div class="mktoText" id="ctaRight" mktoname="CTA - Right">
                                                             <table role="presentation" cellpadding="0" cellspacing="0"
                                                               border="0" align="center">
                                                               <tbody>
@@ -856,8 +854,7 @@ txtColor}" />
                                                                     style="background-color:${BtnColor}; text-align: center; font-size: 14px; font-family:'Open Sans',Arial,sans-serif;text-decoration: none; border-radius:0px;padding:0 20px;font-weight:bold;color:${BtnLabelColor};text-transform:uppercase;line-height:14px;height: 40px; "
                                                                     valign="middle">
                                                                     <a class="${noTrack}"
-                                                                      aria-label="Learn More about university of washington"
-                                                                      style="text-decoration: none; color:${BtnLabelColor}; outline:none;text-decoration:none;"
+                                                                      style="text-decoration: none; color:${BtnLabelColor}; text-decoration:none;"
                                                                       href="${RightBtnLink}">
                                                                       ${RightBtnLabel}
                                                                     </a>
@@ -873,7 +870,6 @@ txtColor}" />
                                                                 </tr>
                                                               </tbody>
                                                             </table>
-                                                          </div>
 
                                                         </td>
                                                       </tr>
