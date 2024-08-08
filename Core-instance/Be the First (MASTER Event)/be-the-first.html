@@ -146,9 +146,19 @@
                 mso-line-height-rule: exactly;
             }
              body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; margin:0!important; padding:0!important;}
-        table td {border-collapse:collapse;}
+        table td {
+          border-collapse:collapse;
+          word-break: keep-all;
+          -moz-hyphens: none;
+          -ms-hyphens: none;
+          -webkit-hyphens: none;
+          hyphens: none;
+        }
         table {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;}
-        p {margin:0; padding:0; margin-bottom:0;}
+        p {margin:0; padding:0; margin-bottom:0;-moz-hyphens: none;
+          -ms-hyphens: none;
+          -webkit-hyphens: none;
+          hyphens: none;}
         h1,h2,h3,h4,h5,h6 {margin:0;padding:0;}
 
         body,
