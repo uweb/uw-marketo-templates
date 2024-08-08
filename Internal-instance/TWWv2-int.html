@@ -37,7 +37,7 @@
     default="#e8e3d3" mktomodulescope="true" />
   <meta class="mktoList" id="LinkColor" mktoname="Link Color" values="#00619e,#ffffff,#3d3d3d,"
     default="#00619e" mktomodulescope="true" />
-  <meta class="mktoList" id="LinkColorClass" mktoname="Link Color Class" default="grey" values="grey,white"  mktomodulescope="true" />
+  <meta class="mktoList" id="LinkColorClass" mktoname="Link Color" default="grey" values="grey,white"  mktomodulescope="true" />
   <meta class="mktoList" id="ctaArrow" mktoname="Arrow Color" values="purple,tan,gold" default="purple"
     mktomodulescope="true" />
     
@@ -1725,9 +1725,9 @@
                             <tbody>
                               <tr>
                                 <td > 
-<!--3 COLUMN TABLE WRAPPER--> 
-<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
-<tbody>
+                    <!--3 COLUMN TABLE WRAPPER--> 
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
+                    <tbody>
 
                                 <!--UW HOME FOOTER LINK-->
                                 <th align="center" valign="top" class="text stack-column column-3"
@@ -1747,7 +1747,7 @@
                                   <a href="${footerRightLinkURL}" class="apple-link-white"
                                     style="color: #ffffff; ">${footerRightLinkText}</a>
                                 </th>
-  </tbody></table></td>
+  						</tbody></table></td>
                               </tr>
                             </tbody>
                           </table>
@@ -1805,8 +1805,8 @@
                                   <td align="center" valign="top" class="text" style="background-color: #ffffff; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 13px; line-height: 1.2; text-align: center; color: #3d3d3d; vertical-align: middle; padding: 10px 0 10px 0;"> 
                                     <div class="mktoText" id="socialMediaIcons" mktoName="Social Media Icons">
                                       <a href="" style="text-decoration: none;">
-                             <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/tiktok-GREY.png" alt="tiktok" style=" display:inline-block; color: #FFFFFF;  font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/>
-                          </a>&nbsp;&nbsp;
+                                   <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/tiktok-GREY.png" alt="tiktok" style=" display:inline-block; color: #FFFFFF;  font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/>
+                                </a>&nbsp;&nbsp;
                                       <a href="" style="text-decoration: none;">
                                       <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/facebook-GREY.png" alt="Facebook" style="color: #FFFFFF; display: inline-block; font-family: 'Open Sans', arial, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: auto; padding-bottom: 5px;"/></a>
                                   &nbsp;&nbsp;
@@ -1835,13 +1835,15 @@
                                 <td align="center" valign="top" class="text"
                                     style="background-color: ${BgColor}; padding: 5px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.5; text-align: center; text-transform: uppercase; -ms-text-size-adjust: none; -webkit-text-size-adjust: none;">
                                   <a href="mailto:${contactUsEmail}" class="mktNoTrack apple-link-${LinkColorClass}"
-                                     style="color: ${TxtColor}; ">Contact Us</a> &nbsp;&nbsp;<span
-                                    aria-hidden="true">|</span>&nbsp;&nbsp; <a
+                                     style="color: ${LinkColorClass};">Contact Us</a>
+                                  	&nbsp;&nbsp;<span
+                                    aria-hidden="true" style="color: ${LinkColorClass};">|</span>&nbsp;&nbsp; <a
                                     href="https://www.washington.edu/online/privacy/" class="apple-link-${LinkColorClass}"
-                                    style="color: ${TxtColor}; ">Privacy</a> &nbsp;&nbsp;<span
-                                    aria-hidden="true">|</span>&nbsp;&nbsp; <a
+                                    style="color: ${LinkColorClass}; ">Privacy</a> 
+                                  	&nbsp;&nbsp;<span
+                                    aria-hidden="true" style="color: ${LinkColorClass};">|</span>&nbsp;&nbsp; <a
                                     href="https://www.washington.edu/online/terms/" class="apple-link-${LinkColorClass}"
-                                    style="color: ${TxtColor};">Terms</a>
+                                    style="color: ${LinkColorClass};">Terms</a>
                                 </td>
                               </tr>
                             </tbody>

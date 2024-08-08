@@ -1,10 +1,13 @@
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:office">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta name="x-apple-disable-message-reformatting"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" /> 
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!--[if gte mso 9]><xml>
     <o:OfficeDocumentSettings>
@@ -37,7 +40,7 @@
     default="#e8e3d3" mktomodulescope="true" />
   <meta class="mktoList" id="LinkColor" mktoname="Link Color" values="#00619e,#ffffff,#3d3d3d,"
     default="#00619e" mktomodulescope="true" />
-  <meta class="mktoList" id="LinkColorClass" mktoname="Link Color Class" default="grey" values="grey,white"  mktomodulescope="true" />
+  <meta class="mktoList" id="LinkColorClass" mktoname="Link Color" default="grey" values="grey,white"  mktomodulescope="true" />
   <meta class="mktoList" id="ctaArrow" mktoname="Arrow Color" values="purple,tan,gold" default="purple"
     mktomodulescope="true" />
     
@@ -90,9 +93,7 @@
 				a {
                     font-family: Arial, sans-serif !important;
                 }
-                p {
-                	font-size: 14px;
-                }
+                
                 a:visited{color: inherit;}
                 a.apple-link-white:visited{color: #ffffff;}
 				li {
@@ -125,7 +126,7 @@
         text-align: left;
     }
     /* Force Hotmail to display normal line spacing */
-    body, table, td, th, p, a,  li, blockquote {
+    *, body, table, td, th, p, a,  li, blockquote {
       -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
     }
@@ -330,10 +331,15 @@
   <style>
     /* /\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/ */
     @media only screen and (max-width: 480px) {
+    	td, td p, th p{ 
+    		font-size: 15px !important;
+            line-height: 22px !important;
+    }
 
       /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
-      body,table,td,p,a,li,blockquote {
-        -webkit-text-size-adjust: none !important;
+     *, body,table,td, th ,p,a,li,blockquote {
+            -ms-text-size-adjust: 100% !important;
+            -webkit-text-size-adjust: 100% !important;
       }
 
       /* Prevent Webkit platforms from changing default text sizes */
@@ -407,7 +413,7 @@
     }
 
     @media screen and (max-width:480px) {
-      .stack-column{
+        .stack-column{
         display: block !important;
         width: 100% !important;
       }
@@ -445,10 +451,12 @@
       }
     }
   </style>
+    
+  
 </head>
 
 <body
-  style="margin-bottom: 0; -webkit-text-size-adjust: 100%; padding-bottom: 0; min-width: 100%; margin-top: 0; margin-right: 0; -ms-text-size-adjust: 100%; margin-left: 0; padding-top: 0; padding-right: 0; padding-left: 0; width: 100%;">
+  style="margin-bottom: 0; -webkit-text-size-adjust: 100%; padding-bottom: 0; min-width: 100%; margin-top: 0; margin-right: 0; -ms-text-size-adjust: 100%; margin-left: 0; padding-top: 0; padding-right: 0; padding-left: 0; width: 100%;-webkit-text-size-adjust:none; text-size-adjust:none;">
   <!--PREHEADER TEXT-->
   <div
     style="display: none; font-size: 0px; line-height: 0px; max-height: 0px; max-width: 0px; width: 0px; opacity: 0; overflow: hidden">
@@ -493,10 +501,10 @@
                             </tbody>
                           </table>
                           <table border="0" cellspacing="0" cellpadding="0" width="100%" class="mktoModule"
-                            id="unitName" mktoname="Unit Name" role="presentation">
+                            id="unitName" mktoname="Unit Name" role="presentation"  style="width:100%!important; min-width:100%!important;">
                             <tbody>
                               <tr>
-                                <td valign="top" class="text unit-name"
+                                <td  class="text unit-name"
                                   style="background-color: ${BgColor}; color: ${TxtColor}; font-family: 'Open Sans',Arial, sans-serif;font-size: 14px; font-weight: 600; line-height: 1.2; text-transform: uppercase; padding-top:${TopSpacer}px; padding-bottom:${BtmSpacer}px; padding-left: 15px; padding-right: 15px; vertical-align: middle;">
                                   <div class="mktoText" id="unitNameText" mktoname="Unit Name Text">
                                       <p style="font-size: 14px; line-height:18px;margin:0;"> Unit Name</p>
@@ -554,10 +562,10 @@
 
 
                           <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" class="mktoModule"
-                            id="newsletterTitle" mktoname="Newsletter Title" role="presentation">
+                            id="newsletterTitle" mktoname="Newsletter Title" style="width:100%!important; min-width:100%!important;" role="presentation">
                             <tbody>
                               <tr>
-                                <td background=""class="text newsletter-title"
+                                <td class="text newsletter-title"
                                   style="background-color: ${BgColor}; color:${HeadlineColor}; font-family:'Open Sans',Arial,sans-serif; font-size: 28px; font-weight: 400; line-height: 30px;padding-top:${TopSpacer}px; padding-bottom:${BtmSpacer}px; padding-left: 15px; padding-right: 15px;">
                                   <div class="mktoText" id="newsTitle" mktoname="Title">
                                     <h1 style="font-size: 28px; font-weight: 400; line-height:30px; margin:0;">
@@ -572,7 +580,7 @@
                             <tbody>
                               <tr>
                                 <td class="text"
-                                  style="border-bottom: 1px solid #bcbec0; background-color: ${BgColor}; color: ${TxtColor}; font-family:'Open Sans',Arial,sans-serif; font-size: 14px; font-weight: 400;  padding-top:${TopSpacer}px; padding-bottom:${BtmSpacer}px; padding-left: 15px; padding-right: 15px; text-transform: uppercase; line-height: 18px;">
+                                  style="border-bottom: 1px solid #bcbec0; background-color: ${BgColor}; color: ${TxtColor}; font-family:'Open Sans',Arial,sans-serif; font-size: 15px; font-weight: 400;  padding-top:${TopSpacer}px; padding-bottom:${BtmSpacer}px; padding-left: 15px; padding-right: 15px; text-transform: uppercase; line-height: 18px;">
                                   <div class="mktoText text" id="issueDate" mktoname="Issue Date">
                                       <p style="font-size: 15px; line-height: 18px;"> Month, Day</p>
                                   </div>
@@ -1039,14 +1047,14 @@
                                                     role="presentation">
                                                     <tbody>
                                                       <tr>
-                                                        <td align="center"  class="" style="padding: 0;">
+                                                        <td align="center" style="padding: 0;">
                                                           <div class="mktoImg" id="fourColImgTwo"
                                                             mktoname="4 Column - Image 2" mktolockimgstyle="true">
                                                             <img
                                                               src="http://explore.uw.edu/rs/131-AQO-225/images/ImagePlaceholder_130x150.jpg"
                                                               alt="Enter a short text version of your image, for people who are unable to see it"
                                                               width="130"
-                                                              style="display: block; background-color: #ffffff; max-width: 130px; height: auto; color: #444; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.2; text-align: left; vertical-align: middle;" />
+                                                              style="display: block; background-color: #ffffff; max-width: 130px; height: auto; color: #444; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; text-align: left; vertical-align: middle;" />
                                                           </div>
                                                         </td>
                                                       </tr>
@@ -1055,7 +1063,7 @@
                                                           style="padding: 10px 10px 0 10px; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height:22px; color: ${TxtColor}; vertical-align: middle;">
                                                           <div class="mktoText" id="fourColLinkTwo"
                                                             mktoname="4 Column - Link 2">
-                                                            <p style="font-size: 14px; line-height: 22px;">
+                                                            <p style="font-size: 14px; line-height: 22px;margin:0;">
                                                               Hello world 2<br /> <a href="#ADDLINK"
                                                                 class="text">Atisquis maxime it andwugh</a></p>
                                                           </div>
@@ -1810,14 +1818,14 @@
                     <tbody>
                       <tr>
                         <td align="center" valign="top" class="text"
-                          style="background-color: ${BgColor}; color:${TxtColor}; padding: 5px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.5; text-align: center; text-transform: uppercase; -ms-text-size-adjust: none; -webkit-text-size-adjust: none;">
+                          style="background-color: ${BgColor}; color:${LinkColorClass}; padding: 5px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.5; text-align: center; text-transform: uppercase; -ms-text-size-adjust: none; -webkit-text-size-adjust: none;">
                           <a href="mailto:${contactUsEmail}" class="mktNoTrack apple-link-${LinkColorClass}"
-                            style="color: ${TxtColor}; ">Contact Us</a> &nbsp;&nbsp;<span
-                            aria-hidden="true">|</span>&nbsp;&nbsp; <a href="https://www.washington.edu/online/privacy/"
-                            class="apple-link-${LinkColorClass}" style="color: ${TxtColor}; ">Privacy</a>
-                          &nbsp;&nbsp;<span aria-hidden="true">|</span>&nbsp;&nbsp; <a
+                            style="color: ${LinkColorClass}; ">Contact Us</a> &nbsp;&nbsp;<span
+                            aria-hidden="true"  style="color: ${LinkColorClass};">|</span>&nbsp;&nbsp; <a href="https://www.washington.edu/online/privacy/"
+                            class="apple-link-${LinkColorClass}" style="color: ${LinkColorClass}; ">Privacy</a>
+                          &nbsp;&nbsp;<span aria-hidden="true" style="color: ${LinkColorClass};">|</span>&nbsp;&nbsp; <a
                             href="https://www.washington.edu/online/terms/" class="apple-link-${LinkColorClass}"
-                            style="color: ${TxtColor};">Terms</a>
+                            style="color: ${LinkColorClass};">Terms</a>
                         </td>
                       </tr>
                     </tbody>
