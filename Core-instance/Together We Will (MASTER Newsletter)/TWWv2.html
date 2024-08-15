@@ -5,10 +5,10 @@
 <head>
    
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-  <meta name="x-apple-disable-message-reformatting"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" /> 
- <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting"/>
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!--[if gte mso 9]><xml>
     <o:OfficeDocumentSettings>
     <o:AllowPNG/>
@@ -237,7 +237,7 @@
       width: 33.33%;
     }
     .column-4 {
-      width: 25%;
+     /* width: 25%; */
     }
     .border {
       border: 1px solid #d2d2d2;
@@ -413,10 +413,16 @@
     }
 
     @media screen and (max-width:480px) {
+        td {
+        	
+        }
         .stack-column{
         display: block !important;
         width: 100% !important;
       }
+        .unit-name {
+            text-align: center !important;
+        }
       .unit-logo img {
         margin: 0 auto !important;
       }
@@ -456,7 +462,7 @@
 </head>
 
 <body
-  style="margin-bottom: 0; -webkit-text-size-adjust: 100%; padding-bottom: 0; min-width: 100%; margin-top: 0; margin-right: 0; -ms-text-size-adjust: 100%; margin-left: 0; padding-top: 0; padding-right: 0; padding-left: 0; width: 100%;-webkit-text-size-adjust:none; text-size-adjust:none;">
+  style="margin-bottom: 0; -webkit-text-size-adjust: 100%; padding-bottom: 0; margin-top: 0; margin-right: 0; -ms-text-size-adjust: 100%; margin-left: 0; padding-top: 0; padding-right: 0; padding-left: 0; -webkit-text-size-adjust:none; text-size-adjust:none;">
   <!--PREHEADER TEXT-->
   <div
     style="display: none; font-size: 0px; line-height: 0px; max-height: 0px; max-width: 0px; width: 0px; opacity: 0; overflow: hidden">
@@ -468,8 +474,8 @@
       <tr>
         <td>
           <!--BEGIN TEMPLATE WRAPPER-->
-          <table role="presentation" align="center" cellpadding="0" cellspacing="0" width="600" class="border"
-            style="width: 600px; max-width:600px !important; font-size: 0px !important; line-height: 0px !important;">
+          <table role="presentation" align="center" cellpadding="0" cellspacing="0" width="100%" class="border"
+            style="max-width:600px !important; font-size: 0px !important; line-height: 0px !important;">
             <tbody>
               <tr>
                 <td align="center" valign="top">
@@ -1006,7 +1012,7 @@
                                             <tbody>
                                               <tr>
                                                 <!--COLUMN #1 - 4 COLUMN-->
-                                                <th align="center" class="text column-4 item-paragraph"
+                                                <th align="center" class="text column-4 stack-column item-paragraph"
                                                   style=" width: 25%; padding: 0; vertical-align: top;">
                                                   <!--TABLE WRAPPER-->
                                                   <table border="0" cellpadding="0" cellspacing="0" width="100%"
@@ -1040,7 +1046,7 @@
                                                 </th>
                                                 <!--END COLUMN #1 - 4 COLUMN-->
                                                 <!--COLUMN #2 - 4 COLUMN-->
-                                                <th align="center" class="text column-4 item-paragraph"
+                                                <th align="center" class="text column-4 stack-column item-paragraph"
                                                   style=" width: 25%; padding: 0;vertical-align: top;">
                                                   <!--TABLE WRAPPER-->
                                                   <table border="0" cellpadding="0" cellspacing="0" width="100%"
@@ -1088,7 +1094,7 @@
                                             <tbody>
                                               <tr>
                                                 <!--COLUMN #3 - 4 COLUMN-->
-                                                <th align="center" class="text column-4 item-paragraph"
+                                                <th align="center" class="text column-4 stack-column item-paragraph"
                                                   style=" width: 25%; padding: 0; vertical-align: top;">
                                                   <!--TABLE WRAPPER-->
                                                   <table border="0" cellpadding="0" cellspacing="0" width="100%"
@@ -1122,7 +1128,7 @@
                                                 </th>
                                                 <!--END COLUMN #3 - 4 COLUMN-->
                                                 <!--COLUMN #4 - 4 COLUMN-->
-                                                <th align="center" class="text column-4 item-paragraph"
+                                                <th align="center" class="text column-4 stack-column item-paragraph"
                                                   style=" width: 25%; padding: 0; vertical-align: top;">
                                                   <!--TABLE WRAPPER-->
                                                   <table border="0" cellpadding="0" cellspacing="0" width="100%"
@@ -1480,7 +1486,7 @@
                             </tbody>
                           </table>
                             
-                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule"
+                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule"
                     id="OneColSig" mktoname="1 Column Signature Block"
                     style="width:100%!important; min-width:100%!important;">
                     <tbody>
