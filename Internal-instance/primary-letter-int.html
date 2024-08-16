@@ -4,6 +4,24 @@
   <head> 
      <title>University of Washington message</title>
     <!--START OF MARKETO VARIABLES--> 
+     <meta class="mktoList" id="bgColor" mktoName="Background Color" values="#ffffff,#4b2e83,#e8e3d3,#85754d,#6f7376" default="#ffffff" mktoModuleScope="true" />
+  	<meta class="mktoList" id="textColor" mktoname="Text Color"  default="#3D3D3D" values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3D3D3D" mktomodulescope="true" /> 
+  	<meta class="mktoList" id="grayBgColor" mktoName="Background Color" values="#6f7376,#ffffff,#85754d,#4b2e83,#e8e3d3, #efeef4" default="#6f7376" mktoModuleScope="true" />
+	<meta class="mktoList" id="goldBgColor" mktoName="Background Color" values="#85754d,#6f7376,#ffffff,#4b2e83,#e8e3d3" default="#85754d" mktoModuleScope="true" />
+   	<meta class="mktoList" id="whiteTextColor" mktoname="Text Color"  default="#ffffff" values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3D3D3D" mktomodulescope="true" /> 
+      
+    <meta class="mktoList" id="btnTextColor" mktoname="Button Text Color"  default="#3D3D3D" values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3D3D3D" mktomodulescope="true" /> 
+    <meta class="mktoList" id="btnColor" mktoname="Button Color" values="#4b2e83,#ffffff,#b7a57a,#e8e3d3" default="#e8e3d3" mktomodulescope="true" /> 
+    <meta class="mktoList" id="ctaArrow" mktoname="Arrow Color" values="purple,tan,gold" default="gold" mktomodulescope="true" /> 
+    <meta class="mktoList" id="btnAlign" mktoName="Button Align" values="left,center,right" default="left" mktoModuleScope="true" />
+      
+    <meta mktomodulescope="true" class="mktoNumber" id="topSpace" mktoname="Top Space" default="30" step="1" min="0" max="60" /> 
+    <meta mktomodulescope="true" class="mktoNumber" id="btmSpace" mktoname="Bottom Space" default="30" step="1" min="0" max="60" /> 
+      <meta class="mktoList" id="separatorColor" mktoname="Separator Color" default="#a7a9ab" values="#a7a9ab,#4b2e83,#32006e,#b7a57a,#e8e3d3,#85754d,#ffc700,#aadb1e,#2ad2c9,#e93cac,#c5b4e3" mktomodulescope="true" />
+  	<meta class="mktoList" id="separatorHeight" mktoname="Separator Height " values="0,1,2,3,4,5" default="3"
+    mktomodulescope="true" />  
+      
+      
     <meta class="mktoString" id="whitebkgCTAButtonText" mktoname="Button Text" default="Call to Action" mktomodulescope="true" /> 
     <meta class="mktoString" id="whitebkgCTAButtonURL" mktoname="Button URL" default="#ADDLINK" mktomodulescope="true" /> 
     <meta class="mktoString" id="purplebkgCTAButtonText" mktoname="Button Text" default="Call to Action" mktomodulescope="true" /> 
@@ -361,15 +379,15 @@
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%" height="3px" bgcolor="#a7a9ab" class="mktoModule" id="threePXSpacer" mktoname="Separator" style="width:100%!important; min-width:100%!important;"> 
                             <tbody> 
                                 <tr> 
-                                  <td height="3" bgcolor="#a7a9ab" style="font-size: 3px; line-height: 3px;">&nbsp;</td> 
+                                  <td height="${separatorHeight}" bgcolor="${separatorColor}" style=" line-height: ${separatorHeight};">&nbsp;</td> 
                                 </tr> 
                             </tbody> 
                         </table>
-                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%" class="cool-grey-background mktoModule" id="darkGreyHeadline" mktoname="Headline" role="presentation" style="width:100%!important; min-width:100%!important;"> 
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%" class="mktoModule" id="darkGreyHeadline" mktoname="Headline" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td valign="top" class="text" style="background-color: #6f7376; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 26px; padding: 24px 15px; vertical-align: middle; "> 
-                                    <div class="mktoText" id="headline" mktoname="Main Headline" role="heading" aria-level="1">
+                                    <td valign="top" class="text" style="background-color: ${grayBgColor}; color: ${whiteTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 26px; padding-top:${topSpace}px; padding-bottom:${btmSpace}px; padding-left: 15px; padding-right:15px;  vertical-align: middle; "> 
+                                    <div class="mktoText" id="headline" mktoname="Main Headline" role="heading">
                                         <h1 style="font-size: 24px; font-weight: normal; line-height: 26px;">Main headline or title of event goes here</h1>
                                     </div> </td> 
                                 </tr> 
@@ -378,8 +396,8 @@
                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule" id="headlineWithThumbnail" mktoname="Headline w/ Thumbnail Image" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td class="text main-headline" style="background-color: #6f7376; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; line-height: 28px;  width: 500px; padding: 4px 15px; "> 
-                                    <div class="mktoText" id="thumbnailHeadline" mktoname="Headline" role="heading" aria-level="2">
+                                    <td class="text main-headline" style="background-color: ${grayBgColor}; color:${whiteTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; line-height: 28px;  width: 500px;  padding-top:${topSpace}px; padding-bottom:${btmSpace}px; padding-left: 15px; padding-right:15px; "> 
+                                    <div class="mktoText" id="thumbnailHeadline" mktoname="Headline" role="heading">
                                         <h2 style="font-size: 24px; line-height: 28px;">Alternate headline module</h2>
                                     </div> </td> 
                                   <td align="center" valign="top" style="background-color: #6f7376; color: #ffffff; width: 100px;"> 
@@ -389,7 +407,7 @@
                                 </tr> 
                               </tbody> 
                             </table>
-                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="white-background mktoModule" id="headlineWithImage" mktoname="Headline - 2 Column w/ Image" style="width:100%!important; min-width:100%!important;"> 
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule" id="headlineWithImage" mktoname="Headline - 2 Column w/ Image" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
                                   <!--IMAGE COLUMN--> 
@@ -400,11 +418,11 @@
                                   </th> 
                                   <!--END IMAGE COLUMN--> 
                                   <!--HEADLINE, PURPLE BACKGROUND COLUMN--> 
-                                  <th class="text column-2 stack-column purple-background" style="width: 50%; background-color: #4b2e84;text-align: left;"> 
+                                  <th class="text column-2 stack-column" style="width: 50%; background-color:${bgColor};text-align: left;"> 
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                         <tr> 
-                                          <td class="text main-headline purple-background" style="vertical-align: middle;  line-height:30px; font-size: 24px; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; padding: 24px 15px 24px 15px; background-color: #4b2e84;"> 
-                                            <div class="mktoText" id="halfSizeHeadline" mktoname="Half Size Headline" role="heading" aria-level="2">
+                                          <td class="text main-headline" style="vertical-align: middle; line-height:30px; font-size: 24px; color:${textColor}; font-family: 'Open Sans', arial, sans-serif;  padding-top:${topSpace}px; padding-bottom:${btmSpace}px; padding-left: 15px; padding-right:15px;"> 
+                                            <div class="mktoText" id="halfSizeHeadline" mktoname="Half Size Headline" role="heading" >
                                                 <h2 style="line-height:30px; font-size: 24px;">Alternate headline module</h2>
                                             </div> </td> 
                                         </tr> 
@@ -417,9 +435,9 @@
                             <table border="0" cellspacing="0" cellpadding="0" width="100%" class="subhead dark-gold-background-background mktoModule" id="goldSubhead" mktoname="Subhead" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td valign="top" class="text" style="background-color: #85754d; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; padding: 12px 15px; vertical-align: middle;"> 
+                                    <td valign="top" class="text" style="background-color:${bgColor}; color: ${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5;  padding-top:${topSpace}px; padding-bottom:${btmSpace}px; padding-left: 15px; padding-right:15px;  vertical-align: middle;"> 
                                     <div class="mktoText" id="goldshead" mktoname="Gold Subhead" role="heading" aria-level="2">
-                                        <h2 style="font-size: 16px;  line-height: 22px; ">Optional subhead goes here. Or it could be the date, or the date and location. Area will expand in case it is long.</h2>
+                                        <h2 style="font-size: 16px; line-height: 22px; ">Optional subhead goes here. Or it could be the date, or the date and location. Area will expand in case it is long.</h2>
                                     </div> </td> 
                                 </tr> 
                               </tbody> 
@@ -439,7 +457,7 @@
                               <!-- PURPLE SUBHEAD--> 
                               <tbody> 
                                 <tr> 
-                                  <td class="text" style="background-color: #ffffff; color: #4b2e84; font-size: 20px; font-family: 'Open Sans', arial, sans-serif; line-height: 22px;font-weight: 600; padding: 20px 15px 5px 15px;"> 
+                                  <td class="text" style="background-color:${bgColor}; color:${textColor}; font-size: 20px; font-family: 'Open Sans', arial, sans-serif; line-height: 22px;font-weight: 600;  padding-top:${topSpace}px; padding-bottom:${btmSpace}px; padding-left: 15px; padding-right:15px; "> 
                                     <div class="mktoText" id="bodyPurpleSubhead" mktoname="Purple Subhead" role="heading" aria-level="2">
                                         <h2 style="font-size: 20px; line-height: 22px;font-weight: 600;">Muses eicipit atisquis</h2>
                                     </div> </td> 
@@ -449,7 +467,7 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule" id="bodyCopyParagraph" mktoname="Body Paragraph" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td colspan="3" class="text body-copy" style="background-color: #ffffff; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px; text-align: left; vertical-align: top; padding: 5px 15px 5px 15px;"> 
+                                  <td class="text body-copy" style="background-color:${bgColor}; color:${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px; text-align: left; vertical-align: top;  padding-top:${topSpace}px; padding-bottom:${btmSpace}px; padding-left: 15px; padding-right:15px; "> 
                                     <div class="mktoText" id="bodyParagraph" mktoname="Paragraph">
                                      <p style="font-size: 14px; font-weight: normal; line-height: 22px; "> <strong>Aliassimo maximpe venis</strong> aliassimo maximpe venis ea eosae occulpi qui archicid ut id ex etur as ex et fugiatio vereptatur, sus estius, suntiat perios doluptat ut quam eos naturiberia. 
                                          <a class="text" href="#ADDLINK">Need a link? Copy and paste me.</a></p>
@@ -460,31 +478,31 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule" id="bodyCopyBulletList" mktoname="Bullet List" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td class="text body-copy" style="background-color: #ffffff; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px; text-align: left; vertical-align: top; padding: 5px 15px 5px 15px;"> 
+                                  <td class="text body-copy" style="background-color:${bgColor}; color:${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px; text-align: left; vertical-align: top; padding-top:${topSpace}px; padding-bottom:${btmSpace}px; padding-left: 15px; padding-right:15px; "> 
                                     <div class="mktoText" id="bodyBulletList" mktoname="Bullet List">
-                                        <p style=" ont-size: 14px; font-weight: normal; line-height: 22px;"> <strong>Ratiamendus conseque nonsequis si cone ium:</strong> </p>
+                                        <p style="font-size: 14px; font-weight: normal; line-height: 22px;"> <strong>Ratiamendus conseque nonsequis si cone ium:</strong> </p>
                                       <!-- BULLETED LIST BEGINS HERE --> 
                                       <ul style="padding: 0; Margin: 0 5px 0 18px;"> 
-                                        <li class="text body-copy" style="Margin: 0 0 0 5px; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif !important; font-size: 14px; font-weight: normal; line-height: 22px; text-align: left; text-transform: none;">eos naturiberia vel enim volectia</li> 
-                                        <li class="text body-copy" style="Margin: 0 0 0 5px; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif !important; font-size: 14px; font-weight: normal; line-height: 22px; text-align: left; text-transform: none;">est recto occum esti doluptat ut reped esti tempedit im</li> 
-                                        <li class="text body-copy" style="Margin: 0 0 0 5px; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif !important; font-size: 14px; font-weight: normal; line-height: 22px; text-align: left; text-transform: none;">cuptaquibust odi berchil id eos dem</li> 
+                                        <li class="text body-copy" style="Margin: 0 0 0 5px; color:${textColor}; font-family: 'Open Sans', arial, sans-serif !important; font-size: 14px; font-weight: normal; line-height: 22px; text-align: left; text-transform: none;">eos naturiberia vel enim volectia</li> 
+                                        <li class="text body-copy" style="Margin: 0 0 0 5px; color:${textColor}; font-family: 'Open Sans', arial, sans-serif !important; font-size: 14px; font-weight: normal; line-height: 22px; text-align: left; text-transform: none;">est recto occum esti doluptat ut reped esti tempedit im</li> 
+                                        <li class="text body-copy" style="Margin: 0 0 0 5px; color:${textColor}; font-family: 'Open Sans', arial, sans-serif !important; font-size: 14px; font-weight: normal; line-height: 22px; text-align: left; text-transform: none;">cuptaquibust odi berchil id eos dem</li> 
                                       </ul> 
                                       <!-- BULLETED LIST ENDS HERE -->
                                     </div> </td> 
                                 </tr> 
                               </tbody> 
                             </table>
-                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="mktoModule"  style="width:100%!important; min-width:100%!important;" id="whitebkgCTAButton" mktoname="CTA Button - White"> 
+                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="mktoModule"  style="width:100%!important; min-width:100%!important;" id="whitebkgCTAButton" mktoname="CTA Button"> 
                               <tbody> 
                                 <tr> 
-                                  <td bgcolor="#ffffff" style="background-color: #ffffff; padding: 20px 0;text-align:center" class="text"> 
-                                      <table border="0" cellspacing="0" cellpadding="0" role="presentation"> 
+                                  <td bgcolor="${bgColor}" style="background-color:${bgColor};  padding-top:${topSpace}px; padding-bottom:${btmSpace}px; padding-left: 15px; padding-right:15px;" class="text"> 
+                                      <table align="${btnAlign}" border="0" cellspacing="0" cellpadding="0" role="presentation"> 
                                         <tbody> 
                                           <tr> 
-                                            <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; line-height: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
-                                              <a class="${noTrack}" href="${whitebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${whitebkgCTAButtonText}</a> </td> 
+                                            <td bgcolor="${btnColor}" class="text" style="font-size: 16px; line-height: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
+                                              <a class="${noTrack}" href="${whitebkgCTAButtonURL}" target="_blank" style="color:${btnTextColor}; text-decoration: none; display: inline-block; text-transform: uppercase;">${whitebkgCTAButtonText}</a> </td> 
                                             <td align="center"> <a  tabindex="-1" aria-hidden="true" tabindex="-1" aria-hidden="true" class="${noTrack}" href="${whitebkgCTAButtonURL}"> 
-												<img style="display: block;" src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true" /> </a> </td> 
+												<img style="display: block;" src="https://we.explore.uw.edu/rs/527-AHR-265/images/arrow-${ctaArrow}.png" alt="" aria-hidden="true" /> </a> </td> 
                                           </tr> 
                                         </tbody> 
                                       </table> 
@@ -492,57 +510,30 @@
                                 </tr> 
                               </tbody> 
                             </table>
-                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="purple-background mktoModule" id="bodyCopyPurple" mktoname="Body Paragraph - Purple" role="presentation" style="width:100%!important; min-width:100%!important;"> 
-                              <tbody> 
-                                <tr> 
-                                  <td colspan="3" align="left" valign="top" class="text body-copy" style="background-color: #4b2e84; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px; padding: 10px 15px 10px 15px;text-align: left;  vertical-align: top;"> 
-                                    <div class="mktoText" id="bodyCopyParagraphPurple" mktoname="Body Paragraph">
-                                        <p style="font-size: 14px;line-height: 22px;">Mus es eipcipit atisquis aliassimo maximpe venis ea eosae occulpari odit volum mo doloratur audition rem labo. Inverum endit est quiati diorerc hiliquam, sernatquibus sent re nait en dit is dolend anta proaser nat quibus sent, que sernatquibus sent, que poriorem sustet aut vol. 
-                                      <a class="text apple-link-white" href="#ADDLINK" style="color: #ffffff;">Need a link? Copy and paste me.</a> </p>
-                                    </div> </td> 
-                                </tr> 
-                              </tbody> 
-                            </table>
-                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="mktoModule" id="purplebkgCTAButton" mktoname="CTA Button - Purple" style="width:100%!important; min-width:100%!important;"> 
-                              <tbody> 
-                                <tr> 
-                                  <td bgcolor="#4b2e83" style="padding: 20px 0;text-align:center" class="text"> 
-                                      <table border="0" cellspacing="0" cellpadding="0" role="presentation"> 
-                                        <tbody> 
-                                          <tr> 
-                                            <td align="center" bgcolor="#e8e3d3" class="text" style="font-size: 16px; line-height: 16px; font-family: 'Open Sans', arial, sans-serif; font-weight: 800; height: 40px; max-width: 300px; padding: 0 15px;">
-                                              <a  class="${noTrack}" href="${purplebkgCTAButtonURL}" target="_blank" style="color: #515050; text-decoration: none; display: inline-block; text-transform: uppercase;">${purplebkgCTAButtonText}</a> </td> 
-                                            <td align="center"> <a class="${noTrack}" href="${purplebkgCTAButtonURL}"> <img style="display: block;" src="https://www.washington.edu/marketo/cta-button-arrow-cap.png" alt="" aria-hidden="true" /> </a> </td> 
-                                          </tr> 
-                                        </tbody> 
-                                      </table> 
-                                    </td> 
-                                </tr> 
-                              </tbody> 
-                            </table>
+                            
                               
-                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="white-background mktoModule" id="OneColSig" mktoname="1 Column Signature Block" style="width:100%!important; min-width:100%!important;"> 
+                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule" id="OneColSig" mktoname="1 Column Signature Block" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td style="background-color: #ffffff; padding: 10px 0 20px 0;"> 
+                                  <td style="background-color:${bgColor};  padding-top:${topSpace}px; padding-bottom:${btmSpace}px; padding-left: 0; padding-right:0; "> 
                                     <!--TABLE WRAPPER--> 
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
                                       <tbody> 
                                         <tr> 
                                           <!--COLUMN #1 WRAPPER--> 
-                                          <td align="center" class=" stack-column" style="background-color: #ffffff; width: 50%; padding: 0 ; vertical-align: top;"> 
+                                          <td align="center" class=" stack-column" style="background-color:${bgColor}; width: 50%; padding: 0 ; vertical-align: top;"> 
                                             <!--COLUMN #1 CONTENT--> 
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                               <tbody> 
                                                 <tr> 
-                                                  <td width="300" align="left" style="background-color: #ffffff; padding: 0 15px;"> 
+                                                  <td width="300" align="left" style="background-color:${bgColor}; padding: 0 15px;"> 
                                                     <div class="mktoImg" id="oneColImgOne" mktoname="Column 1 - Signature Image" mktolockimgsize="true" mktolockimgstyle="true">
                                                       <img alt="signature" src="https://we.explore.uw.edu/rs/527-AHR-265/images/Ana-Mari-Signature.png" width="270" style="display: block; background-color: #ffffff; width: 270px !important; height: auto; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; text-align: left; vertical-align: middle;" />
                                                     </div> </td>
                                                    
                                                 </tr> 
                                                 <tr> 
-                                                  <td width="300" align="left" class="text item-paragraph" style="color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px; padding: 0 15px 5px 15px; text-align: left; vertical-align: middle;"> 
+                                                  <td width="300" align="left" class="text item-paragraph" style="color: ${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px; padding: 0 15px 5px 15px; text-align: left; vertical-align: middle;"> 
                                                     <div class="mktoText" id="oneColParagraphOne" mktoname="Column 1 - Paragraph">
                                                         <p style="font-size: 14px;  line-height: 18px; "> Signature image should be 300px wide. Add title here</p>
                                                     </div> </td> 
@@ -552,34 +543,34 @@
                                             </table> 
                                             <!--END COLUMN #1 CONTENT--> </td> 
                                           <!--END COLUMN #1 WRAPPER--> 
-                                           <td width="50%" class="stack-column" style="background-color: #ffffff; padding: 10px 0 20px 0;" >&nbsp;</td>
+                                           <td width="50%" class="stack-column" style="background-color:${bgColor}; padding: 10px 0 20px 0;" >&nbsp;</td>
                                 </tr> 
                               </tbody> 
                             </table>
                               
                                   </tr></tbody></table>
                               
-                              <table border="0" cellpadding="0" cellspacing="0" width="100%" class="white-background mktoModule" id="TwoColSig" mktoname="2 Column Signature Block" style="width:100%!important; min-width:100%!important;"> 
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="TwoColSig" mktoname="2 Column Signature Block" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td style="background-color: #ffffff; padding: 10px 0 20px 0;"> 
+                                  <td style="background-color:${bgColor};  padding-top:${topSpace}px; padding-bottom:${btmSpace}px; padding-left: 0; padding-right:0; "> 
                                     <!--2 COLUMN TABLE WRAPPER--> 
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
                                       <tbody> 
                                         <tr> 
                                           <!--COLUMN #1 WRAPPER--> 
-                                          <td align="center" class=" stack-column" style="background-color: #ffffff; width: 50%; padding: 0; vertical-align: top;"> 
+                                          <td align="center" class=" stack-column" style="background-color:${bgColor}; width: 50%; padding: 0; vertical-align: top;"> 
                                             <!--COLUMN #1 CONTENT--> 
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                               <tbody> 
                                                 <tr> 
-                                                  <td align="left" style="background-color: #ffffff; padding: 0 15px;"> 
+                                                  <td align="left" style="background-color:${bgColor}; padding: 0 15px;"> 
                                                     <div class="mktoImg" id="twoColImgOne" mktoname="Column 1 - Signature Image" mktolockimgsize="true" mktolockimgstyle="true">
                                                       <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Ana-Mari-Signature.png" width="270" style="display: block; background-color: #ffffff; width: 270px !important; height: auto; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; text-align: left; vertical-align: middle;" />
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td align="left" class="text item-paragraph" style="color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px; padding: 0 15px 5px 15px; text-align: left; vertical-align: middle;"> 
+                                                  <td align="left" class="text item-paragraph" style="color:${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px; padding: 0 15px 5px 15px; text-align: left; vertical-align: middle;"> 
                                                     <div class="mktoText" id="twoColParagraphOne" mktoname="Column 1 - Paragraph">
                                                         <p style="font-size: 14px;  line-height: 18px; "> Signature image should be 300px wide. Add title here</p>
                                                     </div> </td> 
@@ -589,18 +580,18 @@
                                             <!--END COLUMN #1 CONTENT--> </td> 
                                           <!--END COLUMN #1 WRAPPER--> 
                                           <!--COLUMN #2 WRAPPER--> 
-                                          <td align="center" class="stack-column" style="background-color: #ffffff; width: 50%; padding: 0px; vertical-align: top;"> 
+                                          <td align="center" class="stack-column" style="background-color:${bgColor}; width: 50%; padding: 0px; vertical-align: top;"> 
                                             <!--COLUMN #2 CONTENT--> 
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                               <tbody> 
                                                 <tr> 
-                                                  <td width="270" align="left" style="background-color: #ffffff; padding: 0 15px;"> 
+                                                  <td width="270" align="left" style="background-color:${bgColor}; padding: 0 15px;"> 
                                                     <div class="mktoImg" id="twoColImgThree" mktoname="Column 2 - Signature Image" mktolockimgsize="true" mktolockimgstyle="true">
                                                       <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Ana-Mari-Signature.png" width="270" style="display: block; background-color: #ffffff; width: 270px !important; height: auto; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 1.2; text-align: left; vertical-align: middle;" />
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td align="left" class="text item-paragraph " style="color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px; padding: 0 15px 5px 15px; text-align: left; vertical-align: middle;"> 
+                                                  <td align="left" class="text item-paragraph " style="color:${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px; padding: 0 15px 5px 15px; text-align: left; vertical-align: middle;"> 
                                                     <div class="mktoText" id="twoColParagraphThree" mktoname="Column 2 - text">
    <p style="font-size: 14px;  line-height: 18px; "> Signature image should be 300px wide. Add title here</p>                                                    </div> </td> 
                                                 </tr> 
@@ -616,27 +607,27 @@
                               </tbody> 
                             </table>
                             
-                            <table border="0" role="presentation" cellpadding="0" cellspacing="0" width="100%" class="white-background mktoModule" id="newsletterThreeCol" mktoname="3 Column Signature Block" style="width:100%!important; min-width:100%!important;"> 
+                            <table border="0" role="presentation" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="newsletterThreeCol" mktoname="3 Column Signature Block" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td style="background-color: #ffffff; padding: 10px 0 20px 0;"> 
+                                  <td style="background-color:${bgColor};  padding-top:${topSpace}px; padding-bottom:${btmSpace}px; padding-left: 0; padding-right:0; "> 
                                     <!--3 COLUMN TABLE WRAPPER--> 
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
                                       <tbody> 
                                         <tr> 
                                           <!--COLUMN #1 WRAPPER--> 
-                                          <td align="center" class="column-3 stack-column" style="background-color: #ffffff; width: 33%; padding: 0; vertical-align: top;"> 
+                                          <td align="center" class="column-3 stack-column" style="background-color:${bgColor}; width: 33%; padding: 0; vertical-align: top;"> 
                                             <!--COLUMN #1 CONTENT--> 
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                               <tbody> 
                                                 <tr> 
-                                                  <td align="left" style="background-color: #ffffff; padding: 0 5px 0 15px;"> 
+                                                  <td align="left" style="background-color: ${bgColor}; padding: 0 5px 0 15px;"> 
                                                     <div class="mktoImg" id="threeColImgOne" mktoname="Column 1 - Image" mktolockimgstyle="true">
                                                       <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Ana-Mari-Signature.png" alt="Enter a short text version of your image, for people who are unable to see it" width="180" style="display: block; background-color: #ffffff; width: 180px !important; height: auto; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; text-align: left; vertical-align: middle;" />
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td  align="left" class="text item-paragraph" style="color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px; padding: 0 5px 5px 15px; text-align: left; vertical-align: middle;"> 
+                                                  <td  align="left" class="text item-paragraph" style="color:${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px; padding: 0 5px 5px 15px; text-align: left; vertical-align: middle;"> 
                                                     <div class="mktoText" id="threeColParagraphOne" mktoname="Column 1 - Paragraph">
                                                         <p style="font-size: 14px;  line-height: 18px; ">  Signature image should be 200px wide. Add title here</p>
                                                     </div> </td> 
@@ -646,18 +637,18 @@
                                             <!--END COLUMN #1 CONTENT--> </td> 
                                           <!--END COLUMN #1 WRAPPER--> 
                                           <!--COLUMN #2 WRAPPER--> 
-                                          <td align="center" class="column-3 stack-column" style="background-color: #ffffff; width: 33%; padding: 0px; vertical-align: top;"> 
+                                          <td align="center" class="column-3 stack-column" style="background-color:${bgColor}; width: 33%; padding: 0px; vertical-align: top;"> 
                                             <!--COLUMN #2 CONTENT--> 
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                               <tbody> 
                                                 <tr> 
-                                                  <td  align="left" style="background-color: #ffffff; padding: 0 10px 0 10px;"> 
+                                                  <td  align="left" style="background-color:${bgColor}; padding: 0 10px 0 10px;"> 
                                                     <div class="mktoImg" id="threeColImgTwo" mktoname="Column 2 - Image" mktolockimgstyle="true">
                                                       <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Ana-Mari-Signature.png" alt="Enter a short text version of your image, for people who are unable to see it" width="180" style="display: block; background-color: #ffffff; width: 180px !important; height: auto; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 1.2; text-align: left; vertical-align: middle;" />
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td  align="left" class="text item-paragraph " style="color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px; padding: 0 10px 5px 10px; text-align: left; vertical-align: middle;"> 
+                                                  <td  align="left" class="text item-paragraph " style="color:${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px; padding: 0 10px 5px 10px; text-align: left; vertical-align: middle;"> 
                                                     <div class="mktoText" id="threeColParagraphTwo" mktoname="Column 2 - Paragraph">
                                                         <p style="font-size: 14px;  line-height: 18px; "> Signature image should be 200px wide.Add title here</p>
                                                     </div> </td> 
@@ -667,18 +658,18 @@
                                             <!--END COLUMN #2 CONTENT--> </td> 
                                           <!--END COLUMN #2 WRAPPER--> 
                                           <!--COLUMN #3 WRAPPER--> 
-                                          <td align="center" class="column-3 stack-column" style="background-color: #ffffff; width: 33%; padding: 0px; vertical-align: top;"> 
+                                          <td align="center" class="column-3 stack-column" style="background-color:${bgColor}; width: 33%; padding: 0px; vertical-align: top;"> 
                                             <!--COLUMN #3 CONTENT--> 
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"> 
                                               <tbody> 
                                                 <tr> 
-                                                  <td  align="left" style="background-color: #ffffff; padding: 0 15px 0 5px ;"> 
+                                                  <td  align="left" style="background-color:${bgColor}; padding: 0 15px 0 5px ;"> 
                                                     <div class="mktoImg" id="threeColImgThree" mktoname="Column 3 - Image" mktolockimgstyle="true">
                                                       <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/Ana-Mari-Signature.png" alt="Enter a short text version of your image, for people who are unable to see it" width="180" style="display: block; background-color: #ffffff; width: 180px !important; height: auto; color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 1.2; text-align: left; vertical-align: middle;" />
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td  align="left" class="text item-paragraph " style="color: #3d3d3d; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px; padding: 0 15px 5px 5px; text-align: left; vertical-align: middle;"> 
+                                                  <td  align="left" class="text item-paragraph " style="color:${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px; padding: 0 15px 5px 5px; text-align: left; vertical-align: middle;"> 
                                                     <div class="mktoText" id="threeColParagraphThree" mktoname="Column 3 - Paragraph">
                                                         <p style="font-size: 14px;  line-height: 18px; "> Signature image should be 200px wide. Add title here</p>
                                                     </div> </td> 
@@ -700,9 +691,9 @@
                               <tbody> 
                                 <tr> 
                                    <td > 
-<!--3 COLUMN TABLE WRAPPER--> 
-<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
-<tbody> 
+                                  <!--3 COLUMN TABLE WRAPPER--> 
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
+                                  <tbody> 
                                   <!--UW HOME FOOTER LINK--> 
                                   <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerLeftLinkURL}" class="apple-link-white" style="color: #ffffff; ">${footerLeftLinkText}</a> </th> 
                                   <!--DEPARTMENT HOME FOOTER LINK--> 
