@@ -12,6 +12,37 @@
 		<!--Banner section Starts here-->
         <meta class="mktoBoolean" id="noTrack" mktoname="Remove tracking link?" default="false" true_value="mktNoTrack" false_value="" true_value_name="YES" false_value_name="NO" mktomodulescope="true" /> 
 
+       <!--padding-->
+     	<meta class="mktoNumber" id="Top0pxSpacer" mktoName="Top Space" default="0" min="0" max="300" step="1" mktoModuleScope="true" />
+     	<meta class="mktoNumber" id="Bot0pxSpacer" mktoName="Bottom Space" default="0" min="0" max="300" step="1" mktoModuleScope="true" />
+     	<meta class="mktoNumber" id="Top25pxSpacer" mktoName="Top Space" default="25" min="0" max="300" step="1" mktoModuleScope="true" />
+     	<meta class="mktoNumber" id="Bot25pxSpacer" mktoName="Bottom Space" default="25" min="0" max="300" step="1" mktoModuleScope="true" />
+
+        <!--colors-->
+   		<meta class="mktoList" id="WhiteBgColor" mktoName="Background Color" values="#ffffff,#4b2e83,#e8e3d3,#3d3d3d,#85754d" default="#ffffff" mktoModuleScope="true" />
+   		<meta class="mktoList" id="LightPurpleBgColor" mktoName="Background Color" values="#efeef4,#ffffff,#4b2e83,#e8e3d3,#3d3d3d,#85754d" default="#efeef4" mktoModuleScope="true" />
+  		<meta class="mktoList" id="PurpleBgColor" mktoName="Background Color" values="#ffffff,#4b2e83,#e8e3d3,#3d3d3d,#85754d" default="#4b2e83" mktoModuleScope="true" />
+   		<meta class="mktoList" id="CircleBgColor" mktoName="Circle Background Color" values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3d3d3d,#85754d" default="#4b2e83" mktoModuleScope="true" />
+   		<meta class="mktoList" id="CircleTextColor" mktoName="Circle Text Color" values="#ffffff,#4b2e83,#e8e3d3,#3d3d3d" default="#ffffff" mktoModuleScope="true" />
+        
+         <meta class="mktoList" id="headlineColor" mktoName="Headline Color" values="#ffffff,#4b2e83,#e8e3d3,#3d3d3d" default="#4b2e83" mktoModuleScope="true" />
+         <meta class="mktoList" id="WhiteText" mktoName="Text Color" values="#ffffff,#4b2e83,#e8e3d3,#3d3d3d" default="#ffffff" mktoModuleScope="true" />
+         <meta class="mktoList" id="GreyText" mktoName="Text Color" values="#ffffff,#4b2e83,#e8e3d3,#3d3d3d" default="#3d3d3d" mktoModuleScope="true" />
+      
+       <!--alignments-->
+      <meta class="mktoList" id="TitleAlignLeft" mktoName="Title Align" values="left,center,right" default="left" mktoModuleScope="true" />
+      <meta class="mktoList" id="TxtAlignCenter" mktoName="Text Align" values="left,center,right" default="center" mktoModuleScope="true" />
+      <meta class="mktoList" id="TxtAlignLeft" mktoName="Text Align" values="left,center,right" default="left" mktoModuleScope="true" />
+      <meta class="mktoList" id="TxtAlignRight" mktoName="Text Align" values="left,center,right" default="right" mktoModuleScope="true" />
+      <meta class="mktoList" id="LinkAlignCenter" mktoName="Link Align" values="left,center,right" default="center" mktoModuleScope="true" />
+      <meta class="mktoList" id="ImgAlignCenter02" mktoName="Social Icons Align" values="left,center,right" default="center" mktoModuleScope="true" />
+      <meta class="mktoList" id="LogoAlignCenter" mktoName="Logo Align" values="left,center,right" default="center" mktoModuleScope="true" />
+      <meta class="mktoList" id="ImgAlignCenter" mktoName="Social Icons Align" values="left,center,right" default="center" mktoModuleScope="true" />
+
+      <meta class="mktoList" id="BtnAlignLeft" mktoName="Button Align " values="left,center,right" default="left" mktoModuleScope="true" />
+      <meta class="mktoList" id="BtnAlignCenter" mktoName="Button Align" values="left,center,right" default="center" mktoModuleScope="true" />
+      
+      
 		<meta mktoModuleScope="true" class="mktoString" id="body_section1_bg_image" mktoname="Background Image" default="https://explore.uw.edu/rs/131-AQO-225/images/Marketo-Template-images600x300-px.png"  />
 		<meta mktoModuleScope="true" class="mktoString" id="Banner-btntext" mktoname="Button Text" default="Add descriptive link" />
 		<meta mktoModuleScope="true" class="mktoString" id="BannerbtnUrl" mktoName="Button URL" default="#" />
@@ -378,6 +409,43 @@
 									</tr>
 								</table>
 								<!--section1 End here-->
+                              
+                                 <!-- Start of Headline -->   
+                        <table  role="presentation" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" class="mktoModule tableCollapse" id="HeadlineModule01" mktoName="Headline" mktoAddByDefault="true" mktoActive="true" style="margin:0px auto; width:100%!important; min-width:100%!important;">
+                            <tr>
+                                <td class="mktEditable mobLeft w25" id="Headline01" mktoName="Headline" style="background-color:${WhiteBgColor};padding-left:20px; padding-right:20px; padding-top:${Top25pxSpacer}px; padding-bottom:${Bot0pxSpacer}px; font-family:'Open Sans', sans-serif; font-size:24px; line-height:26px; color:${headlineColor};text-align:${TitleAlignLeft};">
+                                    <h2 style="font-size:24px;line-height:26px;">
+                                        Headline headline
+                                    </h2>
+                                </td>
+                            </tr>
+                        </table>
+
+                    <!-- End of Headline -->
+
+
+                    <!-- Start of Full Width paragraph -->   
+
+                        
+
+                        <table  role="presentation" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" class="mktoModule tableCollapse" id="WhiteBannerModule01" mktoName="Paragraph" mktoAddByDefault="true" mktoActive="true" style="margin:0px auto; width:100%!important; min-width:100%!important;">
+                            <tr>
+                                <td class="mktEditable w25" id="Copy10" mktoName="Banner Copy" style="background-color:${WhiteBgColor};padding-left:20px; padding-right:20px; padding-top:${Top25pxSpacer}px;padding-bottom:${Bot25pxSpacer}; font-family:'Open Sans', sans-serif; font-size:14px; line-height:22px; color:${GreyText}; text-align:${TxtAlignLeft}; font-weight:normal;">
+                                    <p style="font-size:14px; line-height:22px; ">
+                                        <strong>Aliassimo maximpe venis</strong> aliassimo maximpe venis ea eosae fugiatio vereptatur, sus estius, suntiat perios doluptat ut quam eos naturiberia. <a href="#" target="_blank" style="color:#00619e; text-decoration:underline;"><span style="color:#00619e; text-decoration:underline;">Need a link?</span></a> Copy and paste me.
+                                        
+
+
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+
+
+
+                       <!-- End of Full Width Paragraph -->
+                              
+                              
 								<!--section2 Starts here-->
 								<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;" class="deviceWidth mktoModule"  mktoName="2 Column - Left Image" id="BodySection2">
 									<tr>
@@ -760,32 +828,7 @@
 								</table>
 								<!--Section8 End here-->
                               
-                              <!-- Headline module starts -->
-                              <table mktoName="Headline" border="0" cellpadding="0" cellspacing="0" width="100%" class="white-background mktoModule" id="newsletterSectionHeadline" role="presentation"> 
-                              <tbody> 
-                                <tr> 
-                                  <td class="text section-headline" style="background-color: #ffffff; color: #4b2e83; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; font-weight: 400; line-height: 28px; padding: 20px 15px 15px 15px; text-align: left; vertical-align: middle;"> 
-                                    <div mktoname="H2" class="mktoText" id="sectionHeadline" role="heading" aria-level="2"> 
-                                      <h2 style="font-size: 24px; line-height: 28px;margin:0;"> Headline </h2> 
-                                    </div> </td> 
-                                </tr> 
-                              </tbody> 
-                            </table>
-                              <!-- Headline module ends -->
-							
-								<!--BODY COPY, FULL WIDTH, PURPLE BACKGROUND-->
-                        <table border="0" cellspacing="0" cellpadding="0" width="100%" class="purple-background mktoModule" id="bodyCopyPurple" mktoName="Body Paragraph - Purple" role="presentation">
-                            <tr>
-                                <td colspan="3" align="left" valign="top" class="text body-copy" style="background-color: #4b2e84; color: #FFFFFF; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 10px 15px 10px 15px;text-align: left;  vertical-align: top;">
-                                <div  class="body-copy" class="mktoText" id="bodyCopyParagraphPurple" mktoName="Body Paragraph">
-                                    <p style="font-size: 14px;line-height: 22px;">
-                                     Mus es eipcipit atisquis aliassimo maximpe venis ea eosae occulpari odit volum mo doloratur audition rem labo. Inverum endit est quiati diorerc hiliquam, sernatquibus sent re nait en dit is dolend anta proaser nat quibus sent, que sernatquibus sent, que poriorem sustet aut vol. <a class="text apple-link-white" href="#ADDLINK" style="color: #FFFFFF;">Add descriptive link.</a> 
-                                    </p>
-                                </div>    
-                                </td>
-                            </tr>
-                        </table>
-                        <!--END BODY COPY, FULL-WIDTH, PURPLE BACKGROUND-->
+                             
 
                         <!--CTA BUTTON - PURPLE BACKGROUND-->
                         <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="mktoModule" id="purplebkgCTAButton" mktoName="CTA Button - Purple">
