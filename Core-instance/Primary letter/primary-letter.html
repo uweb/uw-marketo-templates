@@ -4,7 +4,7 @@
   <head> 
     <!--START OF MARKETO VARIABLES--> 
     <meta class="mktoList" id="bgColor" mktoName="Background Color" values="#ffffff,#4b2e83,#e8e3d3,#85754d,#6f7376" default="#ffffff" mktoModuleScope="true" />
-  	<meta class="mktoList" id="textColor" mktoname="Text Color"  default="#3D3D3D" values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3D3D3D" mktomodulescope="true" /> 
+  	<meta class="mktoList" id="textColor" mktoname="Text Color" default="#3D3D3D" values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3D3D3D" mktomodulescope="true" /> 
   	<meta class="mktoList" id="grayBgColor" mktoName="Background Color" values="#6f7376,#ffffff,#85754d,#4b2e83,#e8e3d3, #efeef4" default="#6f7376" mktoModuleScope="true" />
 	<meta class="mktoList" id="goldBgColor" mktoName="Background Color" values="#85754d,#6f7376,#ffffff,#4b2e83,#e8e3d3" default="#85754d" mktoModuleScope="true" />
    	<meta class="mktoList" id="whiteTextColor" mktoname="Text Color"  default="#ffffff" values="#ffffff,#4b2e83,#b7a57a,#e8e3d3,#3D3D3D" mktomodulescope="true" /> 
@@ -15,10 +15,14 @@
       
     <meta mktomodulescope="true" class="mktoNumber" id="topSpace" mktoname="Top Space" default="30" step="1" min="0" max="60" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="btmSpace" mktoname="Bottom Space" default="30" step="1" min="0" max="60" /> 
-      <meta class="mktoList" id="separatorColor" mktoname="Separator Color" default="#a7a9ab" values="#a7a9ab,#4b2e83,#32006e,#b7a57a,#e8e3d3,#85754d,#ffc700,#aadb1e,#2ad2c9,#e93cac,#c5b4e3"
-    mktomodulescope="true" />
-  	<meta class="mktoList" id="separatorHeight" mktoname="Separator Height " values="0,1,2,3,4,5" default="3"
-    mktomodulescope="true" />
+    <meta class="mktoList" id="separatorColor" mktoname="Separator Color" default="#a7a9ab" values="#a7a9ab,#4b2e83,#32006e,#b7a57a,#e8e3d3,#85754d,#ffc700,#aadb1e,#2ad2c9,#e93cac,#c5b4e3" mktomodulescope="true" />
+  	<meta class="mktoList" id="separatorHeight" mktoname="Separator Height " values="0,1,2,3,4,5" default="3" mktomodulescope="true" />
+    
+    <meta class="mktoList" id="socialIconsColor" mktoname="Social Icons  Color" default="GREY" values="GREY,WHITE"/>
+    <meta class="mktoList" id="boundlessLogoColor" mktoname="Boundless Logo Color" default="purple" values="white,purple"/>
+    <meta class="mktoList" id="LinkColor" mktoname="Link Color" values="#00619e,#ffffff,#3d3d3d," default="#00619e" mktomodulescope="true" />
+    <meta class="mktoList" id="LinkColorClass" mktoname="Link Color" default="grey" values="grey,white"  mktomodulescope="true" />
+  
     
     <meta class="mktoString" id="whitebkgCTAButtonText" mktoname="Button Text" default="Call to Action" mktomodulescope="true" /> 
     <meta class="mktoString" id="whitebkgCTAButtonURL" mktoname="Button URL" default="#ADDLINK" mktomodulescope="true" />
@@ -213,7 +217,7 @@
             }
             
             .anti-spam-row a {
-                color: #3d3d3d !important;
+                color: #3d3d3d;
             }
             
             .grey-bar-footer a:hover, .anti-spam-row a:hover, .anti-spam-row-purple a:hover {
@@ -356,16 +360,16 @@
                             <table border="0" cellspacing="0" cellpadding="0" width="100%" class="mktoModule" id="unitName" mktoname="Unit Name" role="presentation"  style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td valign="top" class="text unit-name" style="background-color: #ffffff; color: #4b2e83; font-family: 'Open Sans', arial, sans-serif;  font-size: 14px; font-weight: 600; line-height: 1.2; text-transform: uppercase; text-align: right; padding: 12px 15px; vertical-align: middle;"> 
+                                  <td valign="top" class="text unit-name" style="background-color: ${bgColor}; color: ${textColor}; font-family: 'Open Sans', arial, sans-serif;  font-size: 14px; font-weight: 600; line-height: 1.2; text-transform: uppercase;  padding-left:15px; padding-right: 15px; padding-top:${topSpace}px; padding-bottom:${btmSpace}px;vertical-align: middle;"> 
                                     <div class="mktoText" id="unitNameText" mktoname="Unit Name Text">
                                       Your Innovation Partner
                                     </div> </td> 
                                 </tr> 
                               </tbody> 
                             </table>
-                                <table border="0" cellspacing="0" cellpadding="0" width="100%" class="white-background mktoModule" id="unitLogo" mktoName="Unit Logo" mktoAddByDefault="false" role="presentation"> 
+                                                           <table border="0" cellspacing="0" cellpadding="0" width="100%" class="mktoModule" id="unitLogo" mktoName="Unit Logo" mktoAddByDefault="false" role="presentation"> 
                             <tr>
-                                <td valign="top" class="unit-logo" style="background-color: #fff; padding: 10px 15px;" align="right">
+                                <td valign="top" class="unit-logo" style="background-color: ${bgColor};padding-left:15px; padding-right: 15px; padding-top:${topSpace}px; padding-bottom:${btmSpace}px;" align="right">
                                     
                                     <div class="mktoImg" id="unitLogoImg" mktoName="Unit Logo" mktoImgLink="#" mktoLockImgSize="false" mktoLockImgStyle="true">
                                         <img src="https://explore.uw.edu/rs/131-AQO-225/images/SampleLogo_CEI.jpg" alt="Replace with the text content of your logo" style="color: #444444; display: block; font-family: 'Open Sans', arial, sans-serif; font-size: 18px; font-weight: 800; text-align: right; text-transform: uppercase; vertical-align: middle; max-width: 300px; line-height: 1.2;"/>
@@ -386,7 +390,7 @@
                             <table border="0" cellspacing="0" cellpadding="0" width="100%" class=" mktoModule" id="darkGreyHeadline" mktoname="Headline" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                    <td  valign="top" class="text" style="background-color: ${grayBgColor}; color: ${whiteTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 26px; padding-left:15px; padding-right: 15px; padding-top:${topSpace}px; padding-bottom:${btmSpace}px; vertical-align: middle; "> 
+                                    <td  valign="top" class="text" style="background-color: ${bgColor}; color: ${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 26px; padding-left:15px; padding-right: 15px; padding-top:${topSpace}px; padding-bottom:${btmSpace}px; vertical-align: middle; "> 
                                     <div class="mktoText" id="headline" mktoname="Main Headline" role="heading" aria-level="1">
                                         <h1 style="font-size: 24px; font-weight: normal; line-height: 26px;">Main headline or title of event goes here</h1>
                                     </div> 
@@ -398,7 +402,7 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule" id="headlineWithThumbnail" mktoname="Headline w/ Thumbnail Image" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                    <td class="text main-headline" style="background-color: ${grayBgColor}; color: ${whiteTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; line-height: 28px;  width: 500px;padding-left:15px; padding-right: 15px; padding-top:${topSpace}px; padding-bottom:${btmSpace}px; "> 
+                                    <td class="text main-headline" style="background-color: ${bgColor}; color: ${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 24px; line-height: 28px;  width: 500px;padding-left:15px; padding-right: 15px; padding-top:${topSpace}px; padding-bottom:${btmSpace}px; "> 
                                     <div class="mktoText" id="thumbnailHeadline" mktoname="Headline" role="heading" aria-level="2">
                                         <h2 style="font-size: 24px; line-height: 28px;">Alternate headline module</h2>
                                     </div> 
@@ -414,7 +418,7 @@
                                 <tr> 
                                   <!--IMAGE COLUMN--> 
                                   <th class="text column-2 stack-column stretch-image" style="width: 50%;">
-                                    <div class="mktoImg" class="mktoImg" id="halfSizeImg" role="presentation" mktoname="Half Size Image" mktolockimgstyle="true">
+                                    <div class="mktoImg" id="halfSizeImg" role="presentation" mktoname="Half Size Image" mktolockimgstyle="true">
                                       <img src="https://explore.uw.edu/rs/131-AQO-225/images/ImagePlaceholder_300x140.jpg" alt="Enter a short text version of your image, for people who are unable to see it" width="300" style="display: block; height: auto; width: 100% !important; text-align: center; line-height: 1.2; font-size: 14px; color: #ffffff; font-family: 'Open Sans', arial, sans-serif; text-transform: uppercase;" /> 
                                     </div>
                                   </th> 
@@ -439,7 +443,7 @@
                             <table border="0" cellspacing="0" cellpadding="0" width="100%" class="subhead mktoModule" id="goldSubhead" mktoname="Subhead" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                    <td valign="top" class="text" style="background-color: ${goldBgColor}; color: ${whiteTextColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; padding-left:15px; padding-right: 15px; padding-top:${topSpace}px; padding-bottom:${btmSpace}px; vertical-align: middle;"> 
+                                    <td valign="top" class="text" style="background-color: ${bgColor}; color: ${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.5; padding-left:15px; padding-right: 15px; padding-top:${topSpace}px; padding-bottom:${btmSpace}px; vertical-align: middle;"> 
                                     <div class="mktoText" id="goldshead" mktoname="Gold Subhead" role="heading" aria-level="2">
                                         <h2 style="font-size: 16px;  line-height: 22px; ">Optional subhead goes here. Or it could be the date, or the date and location. Area will expand in case it is long.</h2>
                                     </div> 
@@ -630,8 +634,8 @@
                                                 <tr> 
                                                   <td align="left" class="text item-paragraph " style="color: ${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px; padding: 0 10px 5px 5px; text-align: left; vertical-align: middle;"> 
                                                     <div class="mktoText" id="twoColParagraphThree" mktoname="Column 2 - text">
-   													  <p style="font-size: 14px;  line-height: 18px; "> 
-     													Signature image should be 300px wide. Add title here
+                                                      <p style="font-size: 14px;  line-height: 18px; "> 
+                                                        Signature image should be 300px wide. Add title here
                                                       </p>        
                                                     </div> 
                                                   </td> 
@@ -731,28 +735,32 @@
                             </table>
                             
                             
-                            <table border="0" cellspacing="0" cellpadding="0" width="100%"  style="background-color: #6f7376;"  class="cool-grey-background grey-bar-footer mktoModule" id="footerLinkRow" mktoname="Link Row" role="presentation" style="width:100%!important; min-width:100%!important;"> 
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="cool-grey-background grey-bar-footer mktoModule" id="footerLinkRow" mktoname="Link Row" role="presentation" style="background-color: #6f7376;width:100%!important; min-width:100%!important;"> 
                               <tbody> 
-                                <tr> <td > 
+                                <tr> 
+                                    <td > 
                                 <!--3 COLUMN TABLE WRAPPER--> 
                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
                                 <tbody>
-
                                   <!--UW HOME FOOTER LINK--> 
                                   <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerLeftLinkURL}" class="apple-link-white" style="color: #ffffff; ">${footerLeftLinkText}</a> </th> 
                                   <!--DEPARTMENT HOME FOOTER LINK--> 
                                   <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerCenterLinkURL}" class="apple-link-white" target="_blank" style="color: #ffffff;">${footerCenterLinkText}</a> </th> 
                                   <!--OPTIONAL FOOTER LINK--> 
-                                  <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerRightLinkURL}" class="apple-link-white" style="color: #ffffff;">${footerRightLinkText}</a> </th> 
-  								</tbody></table></td>  </tr> 
+                                  <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Open Sans', arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="${footerRightLinkURL}" class="apple-link-white" style="color: #ffffff;">${footerRightLinkText}</a>
+                                    </th> 
+                                </tbody>
+                                        </table>
+                                    </td>  
+                                  </tr> 
                               </tbody> 
                             </table>
-                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="white-background mktoModule" id="campaignTagline" mktoname="Campaign Tagline" role="presentation" style="width:100%!important; min-width:100%!important;"> 
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="mktoModule" id="campaignTagline" mktoname="Campaign Tagline" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td align="center" valign="top" style="background-color: #fff; padding: 15px 0 10px 0;"> 
+                                    <td align="center" valign="top" style="background-color:${bgColor}; padding: 15px 0 10px 0;"> 
                                     <div class="mktoImg" id="campaignLogoW" mktoname="Campaign Logo" mktolockimgstyle="true">
-                                      <a style="text-decoration: none;" href="https://www.washington.edu/boundless/"> <img src="https://www.washington.edu/marketo/boundless-campaign-tagline-purple.png" alt="Be Boundless / For Washington, For the World" width="200" style="color: #4B2E83; display: block; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; line-height: 1.2; font-weight: 800; text-align: center; text-transform: uppercase; vertical-align: middle;" /> </a>
+                                      <a style="text-decoration: none;" href="https://www.washington.edu/boundless/"> <img src="https://www.washington.edu/marketo/boundless-campaign-tagline-${boundlessLogoColor}.png" alt="Be Boundless / For Washington, For the World" width="200" style="color: #4B2E83; display: block; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; line-height: 1.2; font-weight: 800; text-align: center; text-transform: uppercase; vertical-align: middle;" /> </a>
                                     </div> 
                                     <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]--> </td> 
                                 </tr> 
@@ -777,20 +785,21 @@
                                 </tr> 
                               </tbody> 
                             </table>
-                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row white-background mktoModule" id="antiSpamLinks" mktoname="Required Contact &amp; Privacy Links" role="presentation"  style="width:100%!important; min-width:100%!important;"> 
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row mktoModule" id="antiSpamLinks" mktoname="Required Contact &amp; Privacy Links" role="presentation"  style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                    <td align="center" valign="top" class="text" style="background-color: #ffffff; padding: 5px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.5; text-align: center; text-transform: uppercase; -ms-text-size-adjust: none; -webkit-text-size-adjust: none;"> <a href="mailto:${contactUsEmail}" class="apple-link-grey" style="color: #3d3d3d; ">Contact Us</a> &nbsp;&nbsp;<span aria-hidden="true">|</span>&nbsp;&nbsp; 
-										<a href="https://www.washington.edu/online/privacy/" class="apple-link-grey" style="color: #3d3d3d; ">Privacy</a> &nbsp;&nbsp;<span aria-hidden="true">|</span>&nbsp;&nbsp; 
-										<a href="https://www.washington.edu/online/terms/" class="apple-link-grey" style="color: #3d3d3d;">Terms</a> 
+                                    <td align="center" valign="top" class="text" style="background-color: ${bgColor} ; padding: 5px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.5; text-align: center; text-transform: uppercase; -ms-text-size-adjust: none; -webkit-text-size-adjust: none;"> 
+                                        <a href="mailto:${contactUsEmail}" class="apple-link-${LinkColorClass} " style="color: ${LinkColorClass}; ">Contact Us</a> &nbsp;&nbsp;<span style="color: ${LinkColorClass};" aria-hidden="true">|</span>&nbsp;&nbsp; 
+                                        <a href="https://www.washington.edu/online/privacy/" class="apple-link-${LinkColorClass} " style="color:${LinkColorClass}; ">Privacy</a> &nbsp;&nbsp;<span style="color: ${LinkColorClass};" aria-hidden="true">|</span>&nbsp;&nbsp; 
+                                        <a href="https://www.washington.edu/online/terms/" class="apple-link-${LinkColorClass}" style="color:${LinkColorClass}; ">Terms</a> 
                                     <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]--> </td> 
                                 </tr> 
                               </tbody> 
                             </table>
-                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row white-background mktoModule" id="copyrightRow" mktoname="Copyright &amp; Address Footer" role="presentation"  style="width:100%!important; min-width:100%!important;"> 
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row mktoModule" id="copyrightRow" mktoname="Copyright &amp; Address Footer" role="presentation"  style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
-                                  <td align="center" valign="top" class="text apple-link-grey" style=" background-color: #ffffff; padding: 5px 15px 10px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.0; text-align: center; text-transform: none; color: #3d3d3d; -ms-text-size-adjust: none; -webkit-text-size-adjust: none;"> 
+                                  <td align="center" valign="top" class="text apple-link-${LinkColorClass} " style=" background-color: ${bgColor}; padding: 5px 15px 10px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.0; text-align: center; text-transform: none; color:${textColor}; -ms-text-size-adjust: none; -webkit-text-size-adjust: none;"> 
                                     <div class="mktoSnippet" id="uwFooter" mktoName="UW Footer"  mktoDefaultSnippetId="172" style="display: inline;"></div>
                                     <div class="mktoText" id="copyrightAndAddress" mktoname="Copyright &amp; Address" style="display:inline;">Unit Name and address go here.
                                     </div> 
@@ -803,24 +812,14 @@
                                 <tr> 
                                   <td align="center" valign="top" class="text" style="background-color: #ffffff; padding: 0 15px 15px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 1.7; text-align: center; text-transform: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #3d3d3d;"> 
                                  <div class="mktoSnippet" id="unsubscribe" mktoName="UW Header"  mktoDefaultSnippetId="200"></div>
-            						<!--END UNSUBSCRIBE SNIPPET PLACEHOLDER-->  
+                                    <!--END UNSUBSCRIBE SNIPPET PLACEHOLDER-->  
                      
                                   
                                   </td> 
                                 </tr> 
                               </tbody> 
                             </table>
-                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="purple-background mktoModule" id="campaignTaglineW" mktoname="Campaign Tagline - Purple" role="presentation"  style="width:100%!important; min-width:100%!important;"> 
-                              <tbody> 
-                                <tr> 
-                                  <td align="center" valign="top" style="background-color: #4b2e83; padding: 15px 0 10px 0;"> 
-                                    <div class="mktoImg" id="campaignLogoP" mktoname="Campaign Logo" mktolockimgstyle="true">
-                                      <a style="text-decoration: none;" href="https://www.washington.edu/boundless/"> <img src="https://www.washington.edu/marketo/boundless-campaign-tagline-white.png" alt="Be Boundless / For Washington, For the World" width="200" style="color: #FFFFFF; display: block; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; line-height: 1.2; font-weight: 800; text-align: center; text-transform: uppercase; vertical-align: middle;" /> </a>
-                                    </div> 
-                                    <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]--> </td> 
-                                </tr> 
-                              </tbody> 
-                            </table>
+                          
                             <table border="0" cellspacing="0" cellpadding="0" width="100%" class="purple-background social-media-footer mktoModule" id="socialMediaFooterP" mktoname="Social Media Footer - Purple" role="presentation" style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
@@ -839,34 +838,14 @@
                                 </tr> 
                               </tbody> 
                             </table>
-                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row-purple purple-background mktoModule" id="footerAntiSpamRowP" mktoname="Required Contact & Privacy links - Purple" role="presentation" style="width:100%!important; min-width:100%!important;"> 
-                              <tbody> 
-                                <tr> 
-                                  <td align="center" valign="top" class="text" style="background-color: #4b2e83; padding: 5px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.5; text-align: center; text-transform: uppercase; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #ffffff;"> <a href="mailto:${contactUsEmail}" class="mktNoTrack apple-link-white" style="color: #FFFFFF; ">Contact Us</a> &nbsp;&nbsp;<span aria-hidden="true">|</span>&nbsp;&nbsp; 
-									<a href="https://www.washington.edu/online/privacy/" class="apple-link-white" style="color: #FFFFFF; ">Privacy</a> &nbsp;&nbsp;<span aria-hidden="true">|</span>&nbsp;&nbsp; <a href="https://www.washington.edu/online/terms/" class="apple-link-white" style="color: #FFFFFF;">Terms</a> 
-                                    <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]--> </td> 
-                                </tr> 
-                              </tbody> 
-                            </table>
-                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row-purple purple-background mktoModule" id="copyrightRowP" mktoname="Copyright &amp; Address - Purple" role="presentation" style="width:100%!important; min-width:100%!important;"> 
-                              <tbody> 
-                                <tr> 
-                                  <td align="center" valign="top" class="text apple-link-white" style=" background-color: #4b2e83; padding: 5px 15px 10px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.0; text-align: center; text-transform: none; color: #ffffff; -ms-text-size-adjust: none; -webkit-text-size-adjust: none;"> 
-                                    <div class="mktoSnippet" id="uwFooterP" mktoName="UW Footer"  mktoDefaultSnippetId="171" style="display: inline;"></div>
-                                   <div class="mktoText" id="copyrightAndAddressP" mktoname="Copyright &amp; Address" style="display: inline;">Unit Name and address go here
-                                    </div> 
-                                    <!--[if gte mso 12]><p style="font-size:12px;line-height:12px;>&nbsp;</p><![endif]--> 
-                                  </td> 
-                                </tr> 
-                              </tbody> 
-                            </table>
-                            <table  role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row-purple purple-background mktoModule" id="managePreferencesLinkP" mktoname="Opt-Out Footer - Purple" role="presentation" style="width:100%!important; min-width:100%!important;"> 
+                           
+                         
+                            <table  role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row-purple purple-background mktoModule" id="managePreferencesLinkP" mktoname="Opt-Out Footer - Purple"  style="width:100%!important; min-width:100%!important;"> 
                               <tbody> 
                                 <tr> 
                                   <td align="center" valign="top" class="text" style="background-color: #4b2e83; padding: 0 15px 15px 15px; font-family: 'Open Sans', arial, sans-serif; font-weight: 400; font-size: 9px; line-height: 1.7; text-align: center; text-transform: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; color: #ffffff;"> 
-
                                     <div class="mktoSnippet" id="unsubscribe-2" mktoName="UW Header"  mktoDefaultSnippetId="208"></div>
-            						<!--END UNSUBSCRIBE SNIPPET PLACEHOLDER-->  
+                                    <!--END UNSUBSCRIBE SNIPPET PLACEHOLDER-->  
                                    
                                   </td> 
                                 </tr> 
@@ -887,4 +866,4 @@
       </tbody>
     </table>  
   </body>
-</html>
+</html> 
