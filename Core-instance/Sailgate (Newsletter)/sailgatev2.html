@@ -28,16 +28,12 @@
   <meta mktomodulescope="true" class="mktoNumber" id="checker-left-top-space" mktoname="Top Space" default="35" />
   <meta mktomodulescope="true" class="mktoNumber" id="checker-left-bottom-space" mktoname="Bottom Space" default="35" />
   <meta mktomodulescope="true" class="mktoNumber" id="checker-right-top-space" mktoname="Top Space" default="35" />
-  <meta mktomodulescope="true" class="mktoNumber" id="checker-right-bottom-space" mktoname="Bottom Space"
-    default="35" />
+  <meta mktomodulescope="true" class="mktoNumber" id="checker-right-bottom-space" mktoname="Bottom Space" default="35" />
     
   <!-- Color -->
-    <meta class="mktoList" id="BgColor" mktoname="Background Color" values="#ffffff,#d9d9d9,#e8e3d3,#4b2e83"
-    default="#ffffff" mktomodulescope="true" />
-    <meta class="mktoList" id="LeftBgColor" mktoname="Left BG Color" values="#ffffff,#d9d9d9,#e8e3d3,#4b2e83"
-    default="#ffffff" mktomodulescope="true" />
-    <meta class="mktoList" id="RightBgColor" mktoname="Right BG Color" values="#ffffff,#d9d9d9,#e8e3d3,#4b2e83"
-    default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoList" id="BgColor" mktoname="Background Color" values="#ffffff,#d9d9d9,#e8e3d3,#4b2e83" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoList" id="LeftBgColor" mktoname="Left BG Color" values="#ffffff,#d9d9d9,#e8e3d3,#4b2e83" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoList" id="RightBgColor" mktoname="Right BG Color" values="#ffffff,#d9d9d9,#e8e3d3,#4b2e83" default="#ffffff" mktomodulescope="true" />
 
   <meta class="mktoList" id="HeadlineColor" mktoname="Headline Color" values="#ffffff,#4b2e83,#3d3d3d" default="#4b2e83"
     mktomodulescope="true" />
@@ -444,14 +440,14 @@
                     style="border-collapse: collapse; margin:0 auto;min-width:100%;"
                     mktoname="Image + Text Box Overlay">
                     <tr>
-                      <td background="${BgImg}" bgcolor="#ebebeb" width="600" 
-                        style="background:url('${BgImg}');background-repeat:no-repeat;background-position:center center;background-size:cover; font-size:1px;line-height:1px;">
+                      <td background="${BgImg}" bgcolor="#ebebeb" width="600" style="background:url('${BgImg}');background-repeat:no-repeat;background-position:center center;background-size:cover; font-size:1px;line-height:1px;">
+
                         <!--[if gte mso 9]>
-											<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
-												<v:fill type="frame" src="${BgImg}" color="${
-txtColor}" />
-												<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
-													<![endif]-->
+                            <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 600px; height:200px;" src="${BgImg}" />               
+                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; width: 600px; height:200px;">
+                            <v:fill  opacity="0%" color="${TxtColor}”  />
+                            <v:textbox inset="0,0,0,0">
+                        <![endif]-->
                         <table role="presentation " align="center" style="margin:0 auto;width:500px;"
                           class="inner_table" width="500" cellpadding="0" cellspacing="0">
                           <tr>
@@ -743,7 +739,7 @@ txtColor}" />
                                                       </tr>
                                                       <tr>
                                                         <td valign="top" style="padding-left: 10px; padding-right: 10px;">
-
+                                                            <div class="mktoText" id="left-btn" mktoname="Left Button">
                                                             <table role="presentation" cellpadding="0" cellspacing="0"
                                                               border="0" align="center">
                                                               <tbody>
@@ -766,7 +762,7 @@ txtColor}" />
                                                                 </tr>
                                                               </tbody>
                                                             </table>
-
+                                                            </div>
                                                         </td>
                                                       </tr>
                                                       <tr>
@@ -843,6 +839,8 @@ txtColor}" />
                                                       <tr>
                                                         <td valign="top" style="padding-left: 10px; padding-right: 10px;">
 
+                                                          <div class="mktoText" id="right-btn" mktoname="Right Button">
+
                                                             <table role="presentation" cellpadding="0" cellspacing="0"
                                                               border="0" align="center">
                                                               <tbody>
@@ -867,7 +865,7 @@ txtColor}" />
                                                                 </tr>
                                                               </tbody>
                                                             </table>
-
+                                                            </div>
                                                         </td>
                                                       </tr>
                                                       <tr>
