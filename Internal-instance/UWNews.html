@@ -56,7 +56,7 @@
     <!-- END 3/4|1/1 SECTION VARIABLES --> 
     <!--UTM VARIABLES--> 
     <meta class="mktoString" id="link-variable" mktoname="URL" default="http://www.uw.edu/news/" mktomodulescope="true" /> 
-    <meta mktomodulescope="true" class="mktoString" id="utm-tag" mktoname="UTM" default="?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today" /> 
+    <meta mktomodulescope="true" class="mktoString" id="utm-tag" mktoname="UTM" default="" /> 
     <meta mktomodulescope="false" class="mktoString" id="utm-source" mktoname="UTM Source" default="UW_News_Subscribers" /> 
     <meta mktomodulescope="false" class="mktoString" id="utm-medium" mktoname="UTM Medium" default="email" /> 
     <meta mktomodulescope="false" class="mktoString" id="utm-campaign" mktoname="UTM Campaign" default="UW Today" /> 
@@ -397,7 +397,7 @@
                                 <tr> 
                                   <td align="center" valign="top" style="background-color: #ffffff;" class="stretch-image"> 
                                     <div class="mktoImg" id="bannerImg" mktoname="Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                      <a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_banner">
+                                      <a href="${link-variable}_banner">
                                         <img src="http://we.explore.uw.edu/rs/527-AHR-265/images/mem-day-banner-600x110.jpg" width="600" alt="mem-day-banner-600x110.jpg" style="color: #444444; display: block; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 600; font-size: 14px; height: auto;  width: 100% !important; text-align: center; text-transform: uppercase; vertical-align: middle;" />
                                       </a>
                                     </div> </td> 
@@ -416,7 +416,7 @@
                                 <tr> 
                                   <td align="center" valign="top" style="background-color: #ffffff;"> 
                                     <div class="mktoImg" id="fullWidthImage3" mktoname="Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                      <a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_lead">
+                                      <a href="${link-variable}_lead">
                                         <img src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" alt="uw-today-hero.jpg" width="600" style="color: #444444; display: block; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 600; font-size: 14px; height: auto; width: 100% !important; text-align: center; text-transform: uppercase; vertical-align: middle;" /></a>
                                     </div> </td> 
                                 </tr> 
@@ -426,7 +426,7 @@
                               <tbody> 
                                 <tr> 
                                   <td class="text " style="background-color: #ffffff; color: #4b2e83; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 22px; font-weight:600; line-height: 1.1; padding: 20px ; text-align: left; vertical-align: middle;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                      <h1 style="font-size: 22px; font-weight:600; line-height: 1.1; "> <a class="lead-headline" style="color: #4b2e83;" href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_lead">${lead-headline}</a> </h1>
+                                      <h1 style="font-size: 22px; font-weight:600; line-height: 1.1; "> <a class="lead-headline" style="color: #4b2e83;" href="${link-variable}_lead">${lead-headline}</a> </h1>
                                     </td> 
                                 </tr> 
                               </tbody> 
@@ -458,9 +458,9 @@
                                       <tbody> 
                                         <tr> 
                                           <td align="left" bgcolor="#4b2e83" class="text" style="font-size: 11px; font-family:'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 600; height: 40px; max-width: 300px; padding: 0 15px;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; ">
-                                            <a href="http://www.washington.edu/news/?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_more_news" style="color: #ffffff; text-transform: uppercase;text-decoration: none;  display: inline-block;-ms-text-size-adjust: none; -webkit-text-size-adjust: none;line-height:1; ">
+                                            <a href="http://www.washington.edu/news/_more_news" style="color: #ffffff; text-transform: uppercase;text-decoration: none;  display: inline-block;-ms-text-size-adjust: none; -webkit-text-size-adjust: none;line-height:1; ">
                                             More News Headlines</a> </td> 
-                                          <td align="center"> <a href="${whitebkgCTAButtonURL}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_more_news"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-purple.png" alt="" aria-hidden="true" /> </a> </td> 
+                                          <td align="center"> <a href="${whitebkgCTAButtonURL}_more_news"> <img src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-purple.png" alt="" aria-hidden="true" /> </a> </td> 
                                         </tr> 
                                       </tbody> 
                                     </table> </td> 
@@ -476,7 +476,7 @@
                                           <th valign="top" class="checkerboard_block2 checkerboard_center_align"  width="290" style="width: 290px;text-align: left;padding: 0;vertical-align: top;"> 
                                             
                                               <div class="mktoImg" id="half-img" mktoname="50% Image" mktolockimgsize="true">
-                                                <a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_secondary"> 
+                                                <a href="${link-variable}_secondary"> 
                                                 <img align="top" src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" alt="henry-600x358.jpg" border="0" width="290"  style="display: block; height: auto !important; width: 100% !important; text-align: center; font-size: 14px; color: #444444; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif;" />
                                                 </a>
                                                </div>
@@ -493,7 +493,7 @@
                                                 </tr> 
                                                 <tr> 
                                                   <td valign="top" class="text body-copy" style="font-family: 'Helvetica Neue',Helvetica, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: #3d3d3d; font-weight: normal; text-align: left;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                                   <a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_secondary"> ${story-link}</a> </td> 
+                                                   <a href="${link-variable}_secondary"> ${story-link}</a> </td> 
                                                 </tr> 
                                             </table> </th> 
                                         </tr> 
@@ -509,7 +509,7 @@
                                           <th class="checkerboard_block2 checkerboard_center_align" valign="top" width="290" style="width: 290px;text-align: left;padding: 0;"> 
                                           
                                               <div class="mktoImg" id="half-img-1" mktoname="50% Image" mktolockimgsize="true">
-                                                  <a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_secondary"> 
+                                                  <a href="${link-variable}_secondary"> 
                                                 <img  src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" alt="henry-600x358.jpg" border="0" width="290" height="auto" style="display: block; height: auto !important; width: 100% !important; text-align: center; line-height: 1.2; font-size: 14px; color: #444444; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 700;" />
                                               </a>
                                                </div> </th> 
@@ -540,7 +540,7 @@
                                         <tr> 
                                           <th class="checkerboard_block2 checkerboard_center_align" valign="top" width="160" style="width:160px; text-align: left; padding: 0;"> 
                                               <div class="mktoImg" id="body4-img0" mktoname="33% Image" mktolockimgsize="true">
-                                                <a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_secondary">
+                                                <a href="${link-variable}_secondary">
                                                 <img alt="" src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" border="0" width="160" style="display: block; height: auto; width: 100% !important; text-align: center; line-height: 22px; font-size: 13px; color: #444444; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 700;" />
                                                 </a>
                                             </div>
@@ -556,7 +556,7 @@
                                                 </tr> 
                                                 <tr> 
                                                   <td valign="top" class="text body-copy" style="font-family: 'Helvetica Neue',Helvetica, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: #3d3d3d; font-weight: normal; text-align: left;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                                    <a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_secondary">${story-link}</a> 
+                                                    <a href="${link-variable}_secondary">${story-link}</a> 
                                                   </td> 
                                                 </tr> 
                                             </table> </th> 
@@ -575,7 +575,7 @@
                                           <th class="checkerboard_block2 checkerboard_center_align" valign="top" width="160" style="width:160px; text-align: left; padding: 0;"> 
                                           
                                               <div class="mktoImg" id="body4-img1" mktoname="Image" mktolockimgsize="true">
-                                                  <a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_secondary"> 
+                                                  <a href="${link-variable}_secondary"> 
                                                     <img alt="" src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" border="0" width="160" style="display: block; height: auto; width: 100% !important; text-align: center; line-height: 22px; font-size: 13px; color: #444444; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 700;" />
                                                 </a> </div></th> 
                                           <th class="checkerboard_block2 none" valign="top" width="30" style="width:30px;">&nbsp;</th> 
@@ -628,7 +628,7 @@
                                         <tr> 
                                           <th class="checkerboard_block2 checkerboard_center_align" valign="top" width="160" style="width:160px; text-align: left; padding: 0;">
                                               <div class="mktoImg" id="body4-img2" mktoname="Image" mktolockimgsize="true">
-												<a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_secondary">
+												<a href="${link-variable}_secondary">
                                                 <img  src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" alt="forest-600x358.jpg" border="0" width="160" height="95" style="display: block; width: 100% !important; height: auto !important; text-align: center; line-height: 1.2; font-size: 14px; color: #444444;" />
                                                 </a>   </div> 
                                             </th> 
@@ -641,7 +641,7 @@
                                                 </tr> 
                                                 <tr> 
                                                   <td valign="top" class="text body-copy" style="font-family: 'Helvetica Neue',Helvetica, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: #3d3d3d; font-weight: normal; text-align: left;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                                   <a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_secondary"> ${story-link}</a> 
+                                                   <a href="${link-variable}_secondary"> ${story-link}</a> 
                                                   </td> 
                                                 </tr> 
                                               </tbody> 
@@ -661,7 +661,7 @@
                                         <tr> 
                                           <th class="checkerboard_block2 checkerboard_center_align" valign="top" width="160" style="width:160px; text-align: left; padding: 0;"> 
                                               <div class="mktoImg" id="body4-img014b9e139-b7f7-4920-bea9-a70cb63be9f3" mktoname="Image" mktolockimgsize="true">
-                                                 <a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_secondary">
+                                                 <a href="${link-variable}_secondary">
  													<img alt="" src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" border="0" width="160" height="95" style="display: block; height: auto !important; width: 100% !important; text-align: center; line-height: 1.2; font-size: 14px; color: #444444; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 700;" />
                                                 </a>
                                             </div></th> 
@@ -673,7 +673,7 @@
                                                   <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td> 
                                                 </tr> 
                                                 <tr> 
-                                                  <td valign="top" class="text body-copy" style="font-family: 'Helvetica Neue',Helvetica, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: #3d3d3d; font-weight: normal; text-align: left;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_secondary"> ${story-link}</a> </td> 
+                                                  <td valign="top" class="text body-copy" style="font-family: 'Helvetica Neue',Helvetica, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: #3d3d3d; font-weight: normal; text-align: left;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable}_secondary"> ${story-link}</a> </td> 
                                                 </tr> 
                                               </tbody> 
                                             </table> </th> 
@@ -792,7 +792,7 @@
                                   <!--EVENTS PARAGRAPH--> 
                                   <td class="text body-copy" style="background-color: #ffffff; color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 10px 20px; text-align: left; vertical-align: middle;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
                                     <div class="mktoText" id="lightGoldParagraph" mktoname="Paragraph">
-                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today"> Event name - time and place</a>
+                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable}"> Event name - time and place</a>
                                     </div> </td> 
                                   <!--END EVENTS PARAGRAPH--> 
                                 </tr> 
@@ -805,10 +805,10 @@
                                     <table align="left" border="0" cellspacing="0" cellpadding="0" role="presentation"> 
                                       <tbody> 
                                         <tr> 
-                                          <td align="left" bgcolor="#4b2e83" class="text" style="font-size: 11px; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 600; height: 40px; max-width: 300px; padding: 0 15px;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "><a href="http://www.washington.edu/calendar/?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today" target="_blank" style="color: #ffffff; text-decoration: none;  text-transform: uppercase;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; ">
+                                          <td align="left" bgcolor="#4b2e83" class="text" style="font-size: 11px; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 600; height: 40px; max-width: 300px; padding: 0 15px;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "><a href="http://www.washington.edu/calendar/" target="_blank" style="color: #ffffff; text-decoration: none;  text-transform: uppercase;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; ">
                                             Events Calendar</a> </td> 
                                           <td align="left" style=" display:inline-block; height:40px; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                            <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="http://www.washington.edu/calendar/?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today"> 
+                                            <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="http://www.washington.edu/calendar/"> 
                                               <img src="https://explore.uw.edu/rs/131-AQO-225/images/arrow-purple.png" alt="" aria-hidden="true" /> </a> </td> 
                                         </tr> 
                                       </tbody> 
@@ -875,7 +875,7 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style="padding: 0 12px 0 0;"> 
                                                     <div class="mktoImg" id="threeColImg1" mktoname="Column 1 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="${link-variable-1}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_COVID" target="_blank"> <img src="http://we.explore.uw.edu/rs/527-AHR-265/images/20200116January-Campus_117.jpg" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d;  text-align: left; vertical-align: middle;" alt="" /></a>
+                                                      <a href="${link-variable-1}" target="_blank"> <img src="http://we.explore.uw.edu/rs/527-AHR-265/images/20200116January-Campus_117.jpg" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d;  text-align: left; vertical-align: middle;" alt="" /></a>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
@@ -886,7 +886,7 @@
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400;-ms-text-size-adjust: none; -webkit-text-size-adjust: none;  line-height:22px; padding: 5px 12px 5px 0px; text-align: left; vertical-align: middle;"> 
-                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-1}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_COVID">${story-link-1}</a> </td> 
+                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-1}">${story-link-1}</a> </td> 
                                                 </tr> 
                                               </tbody> 
                                             </table> 
@@ -900,7 +900,7 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style=" padding: 0 6px 0 6px;"> 
                                                     <div class="mktoImg" id="threeColImgTwo2" mktoname="Column 2 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="${link-variable-2}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_COVID" target="_blank"> 
+                                                      <a href="${link-variable-2}" target="_blank"> 
                                                         <img src="http://we.explore.uw.edu/rs/527-AHR-265/images/Denszil-AMC.jpg" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d; text-align: left; vertical-align: middle;" alt="two people having a conversation" /></a>
                                                     </div> </td> 
                                                 </tr> 
@@ -912,7 +912,7 @@
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px;-ms-text-size-adjust: none; -webkit-text-size-adjust: none;  font-weight: 400; line-height:22px; padding: 5px 6px 5px 6px; text-align: left; vertical-align: middle;"> 
-                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-2}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_COVID">${story-link-2}</a></td> 
+                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-2}">${story-link-2}</a></td> 
                                                 </tr> 
                                               </tbody> 
                                             </table> 
@@ -926,7 +926,7 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style=" padding: 0 0px 0 12px;"> 
                                                     <div class="mktoImg" id="threeColImgThree3" mktoname="Column 3 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="${link-variable-3}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_COVID" target="_blank"> 
+                                                      <a href="${link-variable-3}" target="_blank"> 
                                                         <img src="http://we.explore.uw.edu/rs/527-AHR-265/images/coronavirus-image-cdc.jpg" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d;  text-align: left; vertical-align: middle;" alt="coroanvirus cell" /></a>
                                                     </div> </td> 
                                                 </tr> 
@@ -938,7 +938,7 @@
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 5px 0px 5px 12px; text-align: left; vertical-align: middle;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; ">
-                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none;" href="${link-variable-3}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_COVID">${story-link-3}</a> 
+                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none;" href="${link-variable-3}">${story-link-3}</a> 
                                                   </td> 
                                                 </tr> 
                                               </tbody> 
@@ -981,7 +981,7 @@
                                         <tr> 
                                           <th class="checkerboard_block2 checkerboard_center_align" valign="top" width="160" style="width:160px; text-align: left; padding: 0;"> 
                                               <div class="mktoImg" id="left-img" mktoname="Image" mktolockimgsize="true">
-                                                <a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_COVID">
+                                                <a href="${link-variable}">
                                                 <img alt="" src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" border="0" width="160" style="display: block; height: auto; width: 100% !important; text-align: center; line-height: 22px; font-size: 13px; color: #444444; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 700;" />
                                                 </a>
                                             </div>
@@ -997,7 +997,7 @@
                                                 </tr> 
                                                 <tr> 
                                                   <td valign="top" class="text body-copy" style="font-family: 'Helvetica Neue',Helvetica, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: #3d3d3d; font-weight: normal; text-align: left;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                                    <a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_COVID">${story-link}</a> 
+                                                    <a href="${link-variable}">${story-link}</a> 
                                                   </td> 
                                                 </tr> 
                                             </table> </th> 
@@ -1122,7 +1122,7 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style="background-color: #ffffff; padding: 0 12px 0 0;"> 
                                                     <div class="mktoImg" id="threeColImgOne" mktoname="Column 1 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="${link-variable-1}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row" target="_blank">
+                                                      <a href="${link-variable-1}" target="_blank">
                                                         <img alt="" src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d;  text-align: left; vertical-align: middle;" /></a>
                                                     </div> </td> 
                                                 </tr> 
@@ -1134,7 +1134,7 @@
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400;-ms-text-size-adjust: none; -webkit-text-size-adjust: none;  line-height:22px; padding: 5px 12px 5px 0px; text-align: left; vertical-align: middle;"> 
-                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-1}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row">${story-link-1}</a> </td> 
+                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-1}">${story-link-1}</a> </td> 
                                                 </tr> 
                                               </tbody> 
                                             </table> 
@@ -1148,7 +1148,7 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style="background-color: #ffffff; padding: 0 6px 0 6px;"> 
                                                     <div class="mktoImg" id="threeColImgTwo" mktoname="Column 2 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="${link-variable-2}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row" target="_blank"> <img alt=""  src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d; text-align: left; vertical-align: middle;" /></a>
+                                                      <a href="${link-variable-2}" target="_blank"> <img alt=""  src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d; text-align: left; vertical-align: middle;" /></a>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
@@ -1159,7 +1159,7 @@
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px;-ms-text-size-adjust: none; -webkit-text-size-adjust: none;  font-weight: 400; line-height:22px; padding: 5px 6px 5px 6px; text-align: left; vertical-align: middle;"> 
-                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-2}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row">${story-link-2}</a></td> 
+                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-2}">${story-link-2}</a></td> 
                                                 </tr> 
                                               </tbody> 
                                             </table> 
@@ -1173,7 +1173,7 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style="background-color: #ffffff; padding: 0 0px 0 12px;"> 
                                                     <div class="mktoImg" id="threeColImgThree" mktoname="Column 3 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="${link-variable-3}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row" target="_blank"> <img alt=""  src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d;  text-align: left; vertical-align: middle;" /></a>
+                                                      <a href="${link-variable-3}" target="_blank"> <img alt=""  src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d;  text-align: left; vertical-align: middle;" /></a>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
@@ -1184,7 +1184,7 @@
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 5px 0px 5px 12px; text-align: left; vertical-align: middle;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-3}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row">${story-link-3}</a> </td> 
+                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-3}">${story-link-3}</a> </td> 
                                                 </tr> 
                                               </tbody> 
                                             </table> 
@@ -1216,7 +1216,7 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style="background-color: #ffffff; padding: 0 12px 0 0;"> 
                                                     <div class="mktoImg" id="threeColImgOne-3" mktoname="Column 1 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="${link-variable-1}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row" target="_blank">
+                                                      <a href="${link-variable-1}" target="_blank">
                                                         <img src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" width="175" alt="" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d;  text-align: left; vertical-align: middle;" /></a>
                                                     </div> </td> 
                                                 </tr> 
@@ -1228,7 +1228,7 @@
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400; line-height:22px; padding: 5px 12px 5px 0px; text-align: left; vertical-align: middle;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-1}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row">${story-link-1}</a> </td> 
+                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-1}">${story-link-1}</a> </td> 
                                                 </tr> 
                                               </tbody> 
                                             </table> 
@@ -1242,7 +1242,7 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style="background-color: #ffffff; padding: 0 6px 0 6px;"> 
                                                     <div class="mktoImg" id="threeColImgTwo-3" mktoname="Column 2 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="${link-variable-2}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row" target="_blank">
+                                                      <a href="${link-variable-2}" target="_blank">
                                                         <img alt="" src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d; text-align: left; vertical-align: middle;" /></a>
                                                     </div> </td> 
                                                 </tr> 
@@ -1254,7 +1254,7 @@
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400; line-height:22px; padding: 5px 6px 5px 6px; text-align: left; vertical-align: middle;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-2}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row">${story-link-2}</a></td> 
+                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-2}">${story-link-2}</a></td> 
                                                 </tr> 
                                               </tbody> 
                                             </table> 
@@ -1268,7 +1268,7 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style="background-color: #ffffff; padding: 0 0px 0 12px;"> 
                                                     <div class="mktoImg" id="threeColImgThree-3" mktoname="Column 3 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="${link-variable-3}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row" target="_blank"> 
+                                                      <a href="${link-variable-3}" target="_blank"> 
                                                         <img alt="" src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d;  text-align: left; vertical-align: middle;" /></a>
                                                     </div> </td> 
                                                 </tr> 
@@ -1282,7 +1282,7 @@
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 5px 0px 5px 12px; text-align: left; vertical-align: middle;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
                                                    <div class="mktoText" id="threeColParagraphThree-3" mktoname="Column 3 - Paragraph">
                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                     <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-3}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row">${story-link-3}</a> </div></td> 
+                                                     <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-3}">${story-link-3}</a> </div></td> 
                                                 </tr> 
                                               </tbody> 
                                             </table> 
@@ -1328,13 +1328,13 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style="background-color: #ffffff; padding: 0 12px 0 0;"> 
                                                     <div class="mktoImg" id="threeColImgOne-2" mktoname="Column 1 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="${link-variable-1}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row" target="_blank">
+                                                      <a href="${link-variable-1}" target="_blank">
                                                         <img src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" width="175" style="display: block; background-color: #ffffff; width: 100% !important; height: auto; color: #3d3d3d;  text-align: left; vertical-align: middle;" alt="SylvanGrove09-600x358.jpg" /></a>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400; line-height:22px; padding: 5px 12px 5px 0px; text-align: left; vertical-align: middle;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-1}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row">${story-link-1}</a> </td> 
+                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-1}">${story-link-1}</a> </td> 
                                                 </tr> 
                                                 <tr> 
                                                   <td class="hide" height="${left-bottom-space}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
@@ -1367,13 +1367,13 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style="background-color: #ffffff; padding: 0 6px 0 6px;"> 
                                                     <div class="mktoImg" id="threeColImgTwo-2" mktoname="Column 2 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="${link-variable-2}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row" target="_blank"> 
+                                                      <a href="${link-variable-2}" target="_blank"> 
                                                         <img alt="" src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" width="175" height="104" style="display: block; background-color: #ffffff; width: 100% !important; height: auto !important; color: #3d3d3d; text-align: left; vertical-align: middle;" /></a>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400; line-height:22px; padding: 5px 6px 5px 6px; text-align: left; vertical-align: middle;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-2}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row">${story-link-2}</a>
+                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-2}">${story-link-2}</a>
                                                   </td> 
                                                 </tr> 
                                                 <tr> 
@@ -1407,13 +1407,13 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style="background-color: #ffffff; padding: 0 0px 0 12px;"> 
                                                     <div class="mktoImg" id="threeColImgThree-2" mktoname="Column 3 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="${link-variable-3}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row" target="_blank">
+                                                      <a href="${link-variable-3}" target="_blank">
                                                         <img src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" alt="" width="175" height="104" style="display: block; background-color: #ffffff; width: 100% !important; height: auto !important; color: #3d3d3d;  text-align: left; vertical-align: middle;" /></a>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 5px 0px 5px 12px; text-align: left; vertical-align: middle;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                                   <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-3}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row">${story-link-3}</a> </td> 
+                                                   <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-3}">${story-link-3}</a> </td> 
                                                 </tr> 
                                                 <tr> 
                                                   <td class="hide" height="${right-bottom-space}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
@@ -1462,13 +1462,13 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style="background-color: #ffffff; padding: 0 12px 0 0;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
                                                     <div class="mktoImg" id="threeColImgOne1" mktoname="Column 1 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-1}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row">
+                                                      <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-1}">
                                                         <img alt="" src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" width="175" height="104" style="display: block; background-color: #ffffff; width: 100% !important; height: auto !important; color: #3d3d3d;  text-align: left; vertical-align: middle;" /></a>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400; line-height:22px; padding: 5px 12px 5px 0px; text-align: left; vertical-align: middle;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-1}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row">${story-link-1}</a> </td> 
+                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-1}">${story-link-1}</a> </td> 
                                                 </tr> 
                                                 <tr> 
                                                   <td class="hide" height="${left-bottom-space}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
@@ -1501,13 +1501,13 @@
                                                 <tr> 
                                                   <td class="no-pad" align="center" style="background-color: #ffffff; padding: 0 6px 0 6px;"> 
                                                     <div class="mktoImg" id="threeColImgTwo1" mktoname="Column 2 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="${link-variable-2}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row" target="_blank">
+                                                      <a href="${link-variable-2}" target="_blank">
                                                         <img alt="" src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" width="175" height="104" style="display: block; background-color: #ffffff; width: 100% !important; height: auto !important; color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 1.2; text-align: left; vertical-align: middle;" /></a>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400; line-height:22px; padding: 5px 6px 5px 6px; text-align: left; vertical-align: middle;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "  href="${link-variable-2}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row">${story-link-2}</a>
+                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "  href="${link-variable-2}">${story-link-2}</a>
                                                   </td> 
                                                 </tr> 
                                                 <tr> 
@@ -1525,7 +1525,7 @@
                                                 <tr> 
                                                   <td class="text item-head no-pad" style="background-color: #ffffff; padding: 10px 0  0 12px;text-transform: uppercase;text-align: left; vertical-align: middle;"> 
                                                     <div class="mktoImg" id="threeColImgThree1" mktoname="Column 3 - Image" mktolockimgsize="true" mktolockimgstyle="true">
-                                                      <a href="http://www.washington.edu/boundless/?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row"> 
+                                                      <a href="http://www.washington.edu/boundless/"> 
                                                         <img width="175" src="https://explore.uw.edu/rs/131-AQO-225/images/be-boundless.jpg" alt="Be Boundless" style="display: block; background-color: #ffffff; width: 100% !important;  text-align: left; vertical-align: middle;" /></a>
                                                     </div> </td> 
                                                 </tr> 
@@ -1535,13 +1535,13 @@
                                                 <tr> 
                                                   <td class="no-pad" style="background-color: #ffffff; padding: 10px 0  0 12px;"> 
                                                     <div class="mktoImg" id="body4-img3" mktoname="Image" mktolockimgsize="true">
-                                                      <a href="${link-variable-3}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row" target="_blank"> 
+                                                      <a href="${link-variable-3}" target="_blank"> 
                                                         <img class="top-pad" src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" border="0" width="175" height="104" style="display: block; height: auto !important; width: 100%; text-align: center;" alt="gym-699x358.jpg" /></a>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
                                                   <td align="center" class="text item-paragraph more-link body-copy" style="color: #3d3d3d; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 5px 0px 5px 12px; text-align: left; vertical-align: middle;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
-                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-3}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today_row">${story-link-3}</a> </td> 
+                                                    <a style="-ms-text-size-adjust: none; -webkit-text-size-adjust: none; " href="${link-variable-3}">${story-link-3}</a> </td> 
                                                 </tr> 
                                                 <tr> 
                                                   <td class="hide" height="${right-bottom-space}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
@@ -1591,7 +1591,7 @@
                                         <tr> 
                                           <th class="stack-column body-copy center-align stretch-image" width="18%" style="padding-right:15px;-ms-text-size-adjust: none; -webkit-text-size-adjust: none; "> 
                                             <div class="mktoImg" id="featuredNewsImage" mktoname="Featured News Image" mktolockimgsize="true">
-                                                 <a href="${link-variable}?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today">
+                                                 <a href="${link-variable}">
 
                                               <img alt="" width="120" style="width: 100%;" src="http://we.explore.uw.edu/rs/527-AHR-265/images/600X358-placeholder.jpg" />
                                               </a>
@@ -1648,11 +1648,11 @@
                                 <tr> 
                                   <!--UW HOME FOOTER LINK--> 
                                   <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 600; letter-spacing: 1.2; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> 
-                                    <a href="http://www.washington.edu/?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today" class="apple-link-white" style="color: #ffffff; ">UW Home</a> </th> 
+                                    <a href="http://www.washington.edu/" class="apple-link-white" style="color: #ffffff; ">UW Home</a> </th> 
                                   <!--DEPARTMENT HOME FOOTER LINK--> 
-                                  <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="http://www.washington.edu/news/?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today" class="apple-link-white" target="_blank" style="color: #ffffff;">UW News</a> </th> 
+                                  <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="http://www.washington.edu/news/" class="apple-link-white" target="_blank" style="color: #ffffff;">UW News</a> </th> 
                                   <!--OPTIONAL FOOTER LINK--> 
-                                  <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="http://www.washington.edu/news/uw-in-the-media/?utm_source=UW_News_Subscribers&amp;utm_medium=email&amp;utm_campaign=UW_Today" class="apple-link-white" style="color: #ffffff; ">UW in the Media</a> </th> 
+                                  <th align="center" valign="top" class="text stack-column column-3" style="background-color: #6f7376; padding: 4px 0; font-family:'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;"> <a href="http://www.washington.edu/news/uw-in-the-media/" class="apple-link-white" style="color: #ffffff; ">UW in the Media</a> </th> 
                                 </tr> 
                               </tbody> 
                             </table>
