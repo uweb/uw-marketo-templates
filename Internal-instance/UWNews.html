@@ -24,7 +24,7 @@
     <meta class="mktoString" id="footerCenterLinkURL" mktoname="Center Link URL" default="#ADDLINK" mktomodulescope="true" /> 
     <meta class="mktoString" id="footerRightLinkText" mktoname="Right Link Text" default="Optional Link" mktomodulescope="true" /> 
     <meta class="mktoString" id="footerRightLinkURL" mktoname="Right Link URL" default="#ADDLINK" mktomodulescope="true" /> 
-    <meta class="mktoString" id="contactUsEmail" mktoname="Contact Us Email" default="ADD EMAIL" mktomodulescope="true" /> 
+    <meta class="mktoString" id="contactUsEmail" mktoname="Contact Us Email" default="uwcurrent@uw.edu" mktomodulescope="true" /> 
    
     <meta class="mktoString" id="lead-headline" mktoname="Lead Headline" default="Add Lead Headline " mktomodulescope="true" /> 
     <meta class="mktoString" id="story-link" mktoname="Story Headline" default="ADD Story Link " mktomodulescope="true" /> 
@@ -329,14 +329,19 @@
                       <tbody> 
                         <tr> 
                           <td class="mktoContainer" id="marketoContainer">
-                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="mktoModule" id="masthead" mktoname="Masthead Image" style="border-collapse: collapse;"> 
+                              <table border="0" cellspacing="0" cellpadding="0" width="100%" class="mktoModule" id="masthead" mktoname="Masthead Image" style="border-collapse: collapse;"> 
                               <tbody> 
                                 <tr> 
-                                  <td align="center" valign="top" style="background-color: #4b2e83;" class="stretch-image"> 
+                                  <td align="center" valign="top" style="background-color: #ffffff;" class="stretch-image"> 
                                     <div class="mktoImg" id="UWTodayMast" mktoname="Masthead" mktolockimgsize="true" mktolockimgstyle="true">
-                                      <img src="https://explore.uw.edu/rs/131-AQO-225/images/UWTodayHeader.jpg" alt="UW Today Masthead" width="100%" style=" display: block; width: 100%; text-align: center; text-transform: uppercase; vertical-align: middle;" />
+                                      <a href="${link-variable}_banner">
+                                        <img src="https://we.explore.uw.edu/rs/527-AHR-265/images/UWTodayHeader.jpg" width="600" alt="UW Today masthead" style="color: #444444; display: block; font-family: 'Helvetica Neue',Helvetica, arial, sans-serif; font-weight: 600; font-size: 14px; height: auto;  width: 100% !important; text-align: center; text-transform: uppercase; vertical-align: middle;" />
+                                      </a>
                                     </div> </td> 
                                 </tr> 
+                              </tbody> 
+                            </table>
+                               <table border="0" cellspacing="0" cellpadding="0" width="100%" class="mktoModule" id="dateline" mktoname="Masthead dateline" style="border-collapse: collapse;"> <tbody>
                                 <tr> 
                                   <td valign="top" class="no-pad text section-headline" style="padding: 0 5px 0 25px;background: #4b2e83;"> 
                                     <table width="100%" align="left"> 
