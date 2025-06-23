@@ -250,21 +250,37 @@
                                 <tr>
 
                                     <td class="mktoContainer" id="template-wrapper">
-
-                                        <table role="presentation" class="mktoModule" mktoName="Text box" id="text-box-overlay" cellpadding="0" cellspacing="0" align="center" border="0" width="100%" style="border-collapse: collapse; margin:0 auto;min-width:100%;">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%" class="mktoModule" id="wordmark" mktoname="UW Wordmark" role="presentation" style="width: 100%; min-width: 100%; ">
                                             <tbody>
                                                 <tr>
-                                                    <td style=" font-family: 'Open Sans', arial, sans-serif; font-size: 14px;  line-height: 22px;">
-                                                        <div class=" mktoSnippet" id="wordmark" mktoName="UW wordmark" mktoDefaultSnippetId="12" style="background-color: #4b2e83;display: inline;">
+                                                    <td align="center" style="background-color: #ffffff; color: #4b2e83;font-family: 'Open Sans', arial, sans-serif;font-size:14px; line-height: 22px; width: 100%;">
+                                                        <div class="mktoSnippet" id="uw-wordmark" mktoName="UW Wordmark snip" mktoDefaultSnippetId="62" style="background-color: #ffffff;display: inline;"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="mktoModule tableCollapse" id="fw-img" mktoName="Full width img" mktoAddByDefault="true" mktoActive="true" style="margin:0px auto; width:100%!important; min-width:100%!important;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 100%;background: #ffffff;">
+                                                        <div class="mktoImg" id="Img08" mktoname="full width img" mktolockimgsize="false" mktoImgLinkTarget="_blank" mktoLockImgStyle="false">
+                                                            <img border="0" alt="Banner" src="https://explore.uw.edu/rs/131-AQO-225/images/600x_inverted%20wave.png" style="width:100%; height:auto!important; display:inline-block; border:none; outline:none; text-decoration:none; vertical-align:middle;" />
                                                         </div>
                                                     </td>
                                                 </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- End of header img -->
+
+                                        <table role="presentation" class="mktoModule" mktoName="Masthead" id="masthead" cellpadding="0" cellspacing="0" align="center" border="0" width="100%" style="border-collapse: collapse; margin:0 auto;min-width:100%;" mktoaddbydefault="false">
+                                            <tbody>
+
                                                 <tr>
-                                                    <td background="https://explore.uw.edu/rs/131-AQO-225/images/UWCurren_Header_Tall.png?version=0" bgcolor="#ffffff" style="background:url('https://explore.uw.edu/rs/131-AQO-225/images/UWCurren_Header_Tall.png?version=0');background-repeat:no-repeat;background-position:center center;background-size:cover; font-size:1px;line-height:1px;width: 100%;">
+                                                    <td background="https://explore.uw.edu/rs/131-AQO-225/images/UWCurren_Header_Tall.png?version=0" bgcolor="${bgColor}" style="background:url('https://explore.uw.edu/rs/131-AQO-225/images/UWCurren_Header_Tall.png?version=0');background-repeat:no-repeat;background-position:center center;background-size:cover; font-size:1px;line-height:1px;width: 100%;background-color: ${bgColor};">
                                                         <!--[if gte mso 9]>
-                            <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 600px; height:350px;" src="https://explore.uw.edu/rs/131-AQO-225/images/UWCurren_Header_Tall.png?version=0" />               
-                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; width: 600px; height:350px;">
-                            <v:fill  opacity="0%" color="#ffffff”  />
+                            <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 600px; height:236px;" src="https://explore.uw.edu/rs/131-AQO-225/images/UWCurren_Header_Tall.png?version=0" />               
+                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; width: 600px; height:236px;">
+                            <v:fill  opacity="0%" color=" ${bgColor}”  />
                             <v:textbox inset="0,0,0,0">
                         <![endif]-->
                                                         <table role="presentation " align="center" style="margin:0 auto;width:500px;" class="inner_table" width="500" cellpadding="0" cellspacing="0">
@@ -280,19 +296,11 @@
                                                                                     <td valign="top" style="vertical-align:top;">
                                                                                         <table role="presentation " class="inner-table" width="90%" align="center" style="width:90%;margin:0 auto;" cellpadding="0" cellspacing="0">
                                                                                             <tbody>
-
-                                                                                                <tr>
-                                                                                                    <td colspan="2" valign="top" style="font-family:'Open Sans',arial,sans-serif;font-size:18px;font-weight:bold;line-height:24px;color:#ffffff;vertical-align:top;">
-                                                                                                        <div class="mktoText" mktoName="header" id="body_section4_heading">
-
-                                                                                                        </div>
-                                                                                                    </td>
-                                                                                                </tr>
                                                                                                 <tr>
                                                                                                     <td colspan="2" height="8" style="line-height:1px;font-size:1px;"> &nbsp;</td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td colspan="2" class="body-copy" valign="top" style="font-family:'Open Sans',arial,sans-serif;font-size:14px;font-weight:normal;line-height:22px;color:#ffffff;vertical-align:top;text-align:left;">
+                                                                                                    <td colspan="2" class="body-copy" valign="top" style="font-family:'Open Sans',arial,sans-serif;font-size:14px;font-weight:normal;line-height:22px;color:#ffffff;vertical-align:top;text-align:center;">
                                                                                                         <div class="mktoText" mktoName="Masthead name" id="body_section4_content">
                                                                                                             <h1 style="font-size: 60px; font-weight: normal; line-height: 68px; margin: 0px; padding: 0px;"><strong>UW Current</strong></h1>
                                                                                                         </div>
@@ -324,18 +332,6 @@
                                         <!--end masthead -->
                                         <!-- Start of header img -->
 
-                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="mktoModule tableCollapse" id="fw-img" mktoName="Full width img" mktoAddByDefault="true" mktoActive="true" style="margin:0px auto; width:100%!important; min-width:100%!important;">
-                                            <tbody>
-                                                <tr>
-                                                    <td style="background-color: ${bgColor};">
-                                                        <div class="mktoImg" id="Img08" mktoname="full width img" mktolockimgsize="false" mktoImgLinkTarget="_blank" mktoLockImgStyle="false">
-                                                            <img class="w100" border="0" alt="Banner" src="https://explore.uw.edu/rs/131-AQO-225/images/uw-current-header.png" style="width:100%; height:auto!important; display:inline-block; border:none; outline:none; text-decoration:none; vertical-align:middle;width: 600px;" />
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <!-- End of header img -->
                                         <!-- start of main story -->
                                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="main-story" mktoname="Main story" style="width: 100%; min-width: 100%!important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;" mktoActive="true" mktoAddByDefault="true">
                                             <tbody>
@@ -346,13 +342,13 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <!--TEXT COLUMN-->
-                                                                    <td class="text stack-column foot" style="width: 200px;padding-left: 0px; padding-right: 20px;">
+                                                                    <td class="text stack-column foot" style="width: 240px;padding-left: 30px; padding-right: 20px;">
 
                                                                         <!--TEXT HEAD & TEXT BODY-->
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td class="no-border-left" style="border-left:0;padding: 0; margin: 0; line-height: 0;padding-right: 30px;"></td>
+                                                                                    <td class="no-border-left" style="border-left:0;padding: 0; margin: 0; line-height: 0;padding-right: 20px;"></td>
                                                                                     <td style="color: ${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 0;  vertical-align: middle;font-style: italic;">
                                                                                         <div class="mktoText" id="category" mktoname="Category">
                                                                                             <p style="font-size: 14px; font-weight: 400; line-height: 22px;margin:0;font-style: italic; ">Category</p>
@@ -377,11 +373,11 @@
                                                                                 </tr>
                                                                                 <tr>
 
-                                                                                    <td class="text" colspan="2" style="background-color: ${bgColor}; padding-left:15px; padding-top:15px;">
+                                                                                    <td class="text" colspan="2" style="background-color: ${bgColor}; padding-left:30px; padding-top:15px;">
                                                                                         <table align="${btnAlign}" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td align="center" valign="middle" height="40" style="height:40px; padding-left:20px; padding-right:10px; font-family:'Open Sans', sans-serif; font-size:14px; line-height:14px;background-color:${btnBgColor}; color: ${btnColor}; mso-line-height-rule:exactly; font-weight:bold; text-align:center; ">
+                                                                                                    <td align="center" valign="middle" height="40" style="height:40px; padding-left:12px; padding-right:12px; font-family:'Open Sans', sans-serif; font-size:14px; line-height:14px;background-color:${btnBgColor}; color: ${btnColor}; mso-line-height-rule:exactly; font-weight:bold; text-align:center; ">
                                                                                                         <a class="${noTrack}" href="${btnLink}" style="color: ${btnColor}; ">
                                                                                                             <span class="link-btn" style="color: ${btnColor};">${btnText}</span></a>
                                                                                                     </td>
@@ -398,7 +394,7 @@
                                                                     <!--END TEXT COLUMN-->
 
                                                                     <!--IMAGE COLUMN-->
-                                                                    <td valign="top" class="round-img stack-column text head" style="width: 220px;  vertical-align:top;">
+                                                                    <td align="center" valign="top" class="round-img stack-column text head" style="width: 240px;  vertical-align:top;padding-right: 20px">
                                                                         <div class="mktoImg" id="round-img" mktoname="Round Image" mktolockimgstyle="true">
                                                                             <img src="https://explore.uw.edu/rs/131-AQO-225/images/round-image.png?version=0" alt="" width="240" style="display: block; height: auto; width: 100% ;  line-height: 1.2; font-size: 14px; color: #444444; font-family: 'Open Sans', arial, sans-serif; font-weight: 700;" />
                                                                         </div>
@@ -417,7 +413,7 @@
                                         <!-- end of main story -->
 
                                         <!-- start of 75/25 story -->
-                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="main-story" mktoname="Main story" style="width: 100%; min-width: 100%!important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;" mktoActive="true" mktoAddByDefault="true">
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="story-75" mktoname="75-25 story" style="width: 100%; min-width: 100%!important;mso-table-lspace: 0pt; mso-table-rspace: 0pt;" mktoActive="true" mktoAddByDefault="true">
                                             <tbody>
                                                 <tr>
                                                     <td class="w0" style="background-color: ${bgColor}; padding-bottom:${btmSpace}px;padding-top:${topSpace}px;">
@@ -426,7 +422,7 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <!--TEXT COLUMN-->
-                                                                    <td class="text stack-column foot" style="width: 200px;padding-left: 20px; padding-right: 20px;">
+                                                                    <td class="text stack-column foot" style="width: 420px;padding-left: 30px; padding-right: 20px;">
 
                                                                         <!--TEXT HEAD & TEXT BODY-->
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
@@ -434,15 +430,15 @@
 
                                                                                 <tr>
                                                                                     <td class="w25 text" style="color: ${headlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 20px; font-weight: 700; line-height: 22px; padding-left: 0; padding-right: 0; padding-top: ${headlineTopSpace}px; padding-bottom: ${headlineBtmSpace}px; vertical-align: middle;-webkit-text-size-adjust: none;">
-                                                                                        <div class="mktoText" id="main-heading" mktoname="H1 Heading">
-                                                                                            <h2 style="font-size: 20px; font-weight: 700; line-height: 22px;margin:0; ">
-                                                                                                75% text /25% img</h2>
+                                                                                        <div class="mktoText" id="heading-75" mktoname="Heading">
+                                                                                            <h3 style="font-size: 20px; font-weight: 700; line-height: 22px;margin:0; ">
+                                                                                                75% text /25% img</h3>
                                                                                         </div>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td class="w25 text body-copy item-paragraph" style="color: ${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; vertical-align: middle;-webkit-text-size-adjust: 100%; mso-line-height-rule: exactly;">
-                                                                                        <div class="mktoText" id="main-story1" mktoname="Main story Paragraph">
+                                                                                        <div class="mktoText" id="story-paragraph" mktoname="Paragraph">
                                                                                             <p style="font-size: 14px; line-height: 22px;margin:0; -webkit-text-size-adjust: 100%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget leo eleifend, hendrerit sem sit amet, interdum sem. Nunc varius faucibus nunc, sed efficitur ante malesuada et.</p>
                                                                                         </div>
                                                                                     </td>
@@ -454,9 +450,9 @@
                                                                     <!--END TEXT COLUMN-->
 
                                                                     <!--IMAGE COLUMN-->
-                                                                    <td valign="top" class="round-img stack-column text head" style="width: 150px;  vertical-align:top;">
-                                                                        <div class="mktoImg" id="round-img" mktoname="Round Image" mktolockimgstyle="true">
-                                                                            <img src="https://explore.uw.edu/rs/131-AQO-225/images/round-image.png?version=0" alt="" width="240" style="display: block; height: auto; width: 100% ;  line-height: 1.2; font-size: 14px; color: #444444; font-family: 'Open Sans', arial, sans-serif; font-weight: 700;" />
+                                                                    <td valign="top" class="round-img stack-column text head" style="width: 130px;  vertical-align:top;padding-right: 20px">
+                                                                        <div class="mktoImg" id="round-img-25" mktoname="Round Image" mktolockimgstyle="true">
+                                                                            <img src="https://explore.uw.edu/rs/131-AQO-225/images/round-image.png?version=0" alt="" width="130" style="display: block; height: auto;  line-height: 1.2; font-size: 14px; color: #444444; font-family: 'Open Sans', arial, sans-serif; font-weight: 700;" />
                                                                         </div>
                                                                     </td>
                                                                     <!--END IMAGE COLUMN-->
@@ -483,67 +479,6 @@
                                         <!-- end of separator -->
 
 
-                                        <!-- start dubs question -->
-                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="dubs-q" mktoname="Dubs Question" style="background-color:${bgColor};width:100%;min-width:100%;border-collapse:collapse; margin:0 auto;">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="w25" valign="top" style="padding-top:${topSpace}px;padding-bottom:${btmSpace}px;">
-                                                        <!--TWO COLUMN LAYOUT ROW-->
-                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <!--TEXT COLUMN-->
-                                                                    <td class="stack-column" style="color:${headlineColor}; width: 410px;">
-                                                                        <!--TEXT HEAD & TEXT BODY-->
-                                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td class="no-border-left hidden" rowspan="2" style="border-left: 2px solid ${separatorColor};color:${textColor};padding:0;padding-right: 20px;">&nbsp;</td>
-                                                                                    <td style="color:${headlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 20px; font-weight: 700; line-height: 24px; padding-left: 0; padding-right: 0; padding-top: ${headlineTopSpace}px; padding-bottom: ${headlineBtmSpace}px; vertical-align: middle;">
-
-                                                                                        <div class="mktoText" id="dq1" mktoname="Dubs Question title">
-                                                                                            <h2 style="font-size: 20px; line-height: 24px;margin:0; ">
-                                                                                                Pop quiz:</h2>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td class="text" style="color:${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; padding: 0;  vertical-align: middle;">
-                                                                                        <div class="mktoText" id="dq2" mktoname="Dubs question">
-                                                                                            <p style="font-size: 14px; line-height: 22px;margin:0;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget leo eleifend, hendrerit sem sit amet, interdum sem. Nunc varius faucibus nunc, sed efficitur ante malesuada et.</p>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td class="hidden" style="height: 20px;">&nbsp;</td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                        <!--END TEXT HEAD & TEXT BODY-->
-                                                                    </td>
-                                                                    <!--END TEXT COLUMN-->
-
-
-                                                                    <!--IMAGE COLUMN-->
-                                                                    <td align="left" valign="bottom" class="stack-column" style="width: 150px; vertical-align:bottom;">
-                                                                        <div class="mktoImg" id="dubs-question" mktoname="Dubs Question" mktolockimgstyle="true">
-                                                                            <img src="https://explore.uw.edu/rs/131-AQO-225/images/dubs-question.png?version=0" alt="Dubs ears with some question marks surrounding" width="150" style="display: block; height: auto; width:100%;  line-height: 1.2; font-size: 14px; color: #444444; font-family: 'Open Sans', arial, sans-serif; font-weight: 700;" />
-                                                                        </div>
-                                                                    </td>
-                                                                    <!--END IMAGE COLUMN-->
-
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <!--TWO COLUMN LAYOUT ROW-->
-
-                                                    </td>
-
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <!-- end dubs question -->
 
 
                                         <!-- start left img round -->
@@ -556,16 +491,16 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <!--IMAGE COLUMN-->
-                                                                    <td align="left" valign="top" class="stack-column round-img " style="width:245px; vertical-align:top;">
+                                                                    <td align="center" valign="top" class="stack-column round-img " style="width:240px; vertical-align:top;padding-left:30px;">
                                                                         <div class="mktoImg" id="round-img2" mktoname="Round Image" mktolockimgstyle="true">
-                                                                            <img src="https://explore.uw.edu/rs/131-AQO-225/images/round-image.png?version=0" alt="" width="245" style="display: block; height: auto; width: 100%;  line-height: 1; font-size: 14px; color: #444444; font-family: 'Open Sans', arial, sans-serif; font-weight: 700;" />
+                                                                            <img src="https://explore.uw.edu/rs/131-AQO-225/images/round-image.png?version=0" alt="" width="240" style="display: block; height: auto; width: 100%;  line-height: 1; font-size: 14px; color: #444444; font-family: 'Open Sans', arial, sans-serif; font-weight: 700;" />
                                                                         </div>
                                                                     </td>
                                                                     <!--END IMAGE COLUMN-->
                                                                     <td class="hidden" style="width: 10px;padding: 0; margin: 0; line-height: 0;"></td>
 
                                                                     <!--TEXT COLUMN-->
-                                                                    <td class=" stack-column" style="width: 200px;">
+                                                                    <td class=" stack-column" style="width: 220px; padding-right: 20px">
                                                                         <!--TEXT HEAD & TEXT BODY-->
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" style="border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                                                                             <tbody>
@@ -637,7 +572,7 @@
 
 
                                         <!--start SYMHM - small image left - Stories you might have missed -->
-                                        <table role="presentation" class="mktoModule" id="two-col-sm-img" mktoName="Stories You Missed" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+                                        <table role="presentation" class="mktoModule" id="two-col-sm-img" mktoName="Stories You Missed" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse;" mktoaddbydefault="true">
                                             <tr>
                                                 <td class="w0" bgcolor="${bgColor}" valign="top" style="background-color:${bgColor};padding-left:30px; padding-right:30px;">
                                                     <table class="deviceWidth1" role="presentation" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style=" margin: 0 auto;">
@@ -675,7 +610,7 @@
 
 
                                         <!-- start social section -->
-                                        <table bgcolor="${bgColor}" role=" presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;" class="deviceWidth mktoModule" mktoname="Social Image" id="social-img-section">
+                                        <table bgcolor="${bgColor}" role=" presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;" class="deviceWidth mktoModule" mktoname="Social Image" id="social-img-section" mktoaddbydefault="false">
                                             <tbody>
                                                 <tr>
                                                     <td class="stack-column" style="font-family:'Open Sans', Arial, Helvetica,sans-serif;font-size:26px;line-height:32px;background-color:${bgColor};color:${textColor};vertical-align:middle; text-align: center; padding-bottom:0; padding-top:${topSpace}px;">
@@ -794,7 +729,7 @@
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td class="" style="color:${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; vertical-align: middle;">
+                                                                                    <td class="" style="color:${textColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 22px; vertical-align: middle;padding-right: 30px">
                                                                                         <div class="mktoText" id="news-items" mktoname="News items">
                                                                                             <ul>
                                                                                                 <li style="font-size: 14px; line-height: 22px;margin:0;color:${textColor};"> Here is the title of the News here is the title of the news.</li>
@@ -843,7 +778,7 @@
                                                                                     <td style="padding-left: 30px;">&nbsp;</td>
                                                                                     <td class="text stack-column" valign="top" style="font-family:'Open Sans',Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:${textColor};padding-left: 0; padding-right: 10px; ">
                                                                                         <div class="mktoImg" id="galleryImgLeft" mktoname="Gallery Left Image" mktolockimgsize="true">
-                                                                                            <img id="gallery1" src="https://explore.uw.edu/rs/131-AQO-225/images/photo3.png?version=0" width="260" alt="" border="0" style="height:auto!important; display:inline-block; border:none; outline:none; text-decoration:none; vertical-align:middle;" />
+                                                                                            <img id="gallery1" src="https://explore.uw.edu/rs/131-AQO-225/images/photo3.png?version=0" width="255" alt="" border="0" style="height:auto!important; display:inline-block; border:none; outline:none; text-decoration:none; vertical-align:middle;" />
                                                                                         </div>
                                                                                         <div class="mktoText w0" id="text1" mktoname="Paragraph" style=" padding-right: 0px; padding-bottom:${captionBtmSpace}px;padding-top:${captionTopSpace}px;">
                                                                                             <p style="font-size:14px; line-height:20px;">Left lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sit amet nunc eu blandit.</p>
@@ -853,7 +788,7 @@
 
                                                                                     <td class="stack-column " valign="top" style="font-family:'Open Sans',Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:${textColor}; padding-left: 10px;">
                                                                                         <div class="mktoImg" id="galleryImgRight" mktoname="Left Image" mktolockimgsize="true">
-                                                                                            <img id="gallery2" src="https://explore.uw.edu/rs/131-AQO-225/images/photo3.png?version=0" width="260" alt="" border="0" style="height:auto!important; display:inline-block; border:none; outline:none; text-decoration:none; vertical-align:middle;" mktoname=" Right Image" mktolockimgsize="true" />
+                                                                                            <img id="gallery2" src="https://explore.uw.edu/rs/131-AQO-225/images/photo3.png?version=0" width="255" alt="" border="0" style="height:auto!important; display:inline-block; border:none; outline:none; text-decoration:none; vertical-align:middle;" mktoname=" Right Image" mktolockimgsize="true" />
                                                                                         </div>
                                                                                         <div class="mktoText" id="text2" mktoname="Paragraph" style="padding-bottom:${captionBtmSpace}px;padding-top:${captionTopSpace}px;">
                                                                                             <p style="font-size:14px; line-height:20px;">Right lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque sit amet nunc eu blandit.</p>
@@ -881,7 +816,7 @@
                                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class=" mktoModule" id="dubs-a" mktoname="Quiz and Social" style="background-color:${bgColor};width:100%;min-width:100%;border-collapse:collapse; margin:0 auto;">
                                             <tbody>
                                                 <tr>
-                                                    <td class="w25" valign="top" style="padding-top:${topSpace}px;">
+                                                    <td class="w25" valign="top" style="padding-top:${topSpace}px;padding-left: 30px; padding-right: 30px;">
                                                         <!--TWO COLUMN LAYOUT ROW-->
                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
                                                             <tbody>
@@ -892,12 +827,12 @@
                                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td class="no-border-left hidden" rowspan="2" style="border-left: 2px solid ${separatorColor};color:${textColor};padding: 0;padding-right: 20px;">&nbsp;</td>
+                                                                                    <td class="no-border-left hidden" rowspan="2" style="border-left: 2px solid ${separatorColor};color:${textColor};padding-left: 0px;padding-right: 10px;">&nbsp;</td>
                                                                                     <td class="text" style="color:${headlineColor}; font-family: 'Open Sans', arial, sans-serif; font-size: 20px; font-weight: 700; line-height: 24px; padding-left: 0; padding-right: 0; padding-top: ${headlineTopSpace}px; padding-bottom: ${headlineBtmSpace}px;vertical-align: middle;">
 
                                                                                         <div class="mktoText" id="da1" mktoname="Dubs Answer title">
                                                                                             <h2 style="font-size: 20px; line-height: 24px;margin:0; ">
-                                                                                                Hey! I've got an answer for ya</h2>
+                                                                                                Quiz and social</h2>
                                                                                         </div>
                                                                                     </td>
                                                                                 </tr>
@@ -920,9 +855,9 @@
                                                                     <td class="hidden" style="width: 20px;"></td>
 
                                                                     <!--IMAGE COLUMN-->
-                                                                    <td align="left" valign="bottom" class="stack-column" style="width: 150px; vertical-align:bottom;">
+                                                                    <td align="left" valign="bottom" class="stack-column" style="width: 120px; vertical-align:bottom;">
                                                                         <div class="mktoImg" id="dubs-answer" mktoname="Dubs Answer Img" mktolockimgstyle="true">
-                                                                            <img src="https://explore.uw.edu/rs/131-AQO-225/images/quiz_Answer%20150x.png" alt="Dubs ears with some exclamation points surrounding" width="150" style="display: block; height: auto; width:100%;  line-height: 1.2; font-size: 14px; color: #444444; font-family: 'Open Sans', arial, sans-serif; font-weight: 700;" />
+                                                                            <img src="https://explore.uw.edu/rs/131-AQO-225/images/quiz_Answer%20150x.png" alt="Dubs ears with some exclamation points surrounding" width="120" style="display: block; height: auto; width:100%;  line-height: 1.2; font-size: 14px; color: #444444; font-family: 'Open Sans', arial, sans-serif; font-weight: 700;" />
                                                                         </div>
                                                                     </td>
                                                                     <!--END IMAGE COLUMN-->
@@ -936,8 +871,6 @@
                                             </tbody>
                                         </table>
                                         <!-- end dubs answer -->
-
-
 
 
                                         <!-- start Link Row 1 -->
@@ -969,8 +902,6 @@
                                             </tbody>
                                         </table>
                                         <!-- end Link Row 2 -->
-
-
 
 
                                         <!-- start footer -->
@@ -1026,11 +957,12 @@
                                                 </tr>
                                             </tbody>
                                         </table>
+
                                         <table border="0" cellspacing="0" cellpadding="0" width="100%" class="mktoModule" id="copyrightRow" mktoname="Copyright &amp; Address Footer" role="presentation" style="width: 100%; min-width: 100%; ">
                                             <tbody>
                                                 <tr>
                                                     <td align="center" bgcolor="#4b2e83" style="background-color: #4b2e83; color: #ffffff;font-family: 'Open Sans', arial, sans-serif;font-size:14px; line-height: 22px; width: 100%;">
-                                                        <div class="mktoSnippet" id="uwFooter" mktoName="UW copyright" mktoDefaultSnippetId="171" style="background-color: #4b2e83;display: inline;"></div>
+
                                                         <div class="mktoText" id="copyrightAndAddress" mktoname="Copyright &amp; Address" style="background-color: #4b2e83;display: inline;">
                                                             <p style="font-family: 'Open Sans', arial, sans-serif;font-size:14px; line-height: 22px; "> Unit Name and address go here.</p>
                                                         </div>
